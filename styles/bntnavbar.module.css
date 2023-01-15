@@ -1,0 +1,18 @@
+
+.navOnScroll {
+    background-color:#fff;
+    box-shadow: -4px -3px 5px 1px #90caf9;
+}
+
+.navList{
+    font-family: Montserrat!important; 
+    font-size: 14px!important;
+     color: #616161!important;
+}
+
+.navActive{
+    font-family: Montserrat!important; 
+    font-size: 14px!important;
+    color:#2196f3!important;
+    border-bottom: 1px solid #2196f3!important;
+}
