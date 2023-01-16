@@ -6,7 +6,7 @@ const Footer = () => {
         <>
             <Box sx={{
                 minHeight: '400px',
-                background: 'linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(/images/footerImage2.jpg)',
+                background: 'linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(/home/images/footerImage2.jpg)',
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 color: 'white',

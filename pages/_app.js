@@ -1,19 +1,14 @@
 import '../styles/globals.css'
 import '../styles/styles.css'
-import BNTNavbar from '../components/BNTNavbar'
-
 import Navbar from '../components/Navbar'
-// import BNTNavbar from '../components/BNTNavbar'
-import Homepage from '../components/Homepage'
+import Footer from '../components/Footer'
+
 import Head from 'next/head';
 import dynamic from 'next/dynamic'
 import Aos from 'aos';
 import 'aos/dist/aos.css'
 import { createTheme, colors, ThemeProvider, Stack, Box } from '@mui/material';
 import { useEffect } from 'react';
-const DynamicHomepage = dynamic(() => import('../components/Homepage'), {
-  ssr: false,
-})
 
 const theme = createTheme({
   palette: {
@@ -22,9 +17,6 @@ const theme = createTheme({
     }
   }
 });
-
-
-
 
 function MyApp({ Component, pageProps }) {
 
@@ -48,10 +40,11 @@ function MyApp({ Component, pageProps }) {
       <link href='https://fonts.googleapis.com/css?family=Raleway:200,400,800' rel='stylesheet' type='text/css'></link>
       <link href='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/css/demo.css' rel='stylesheet' type='text/css'></link>
     </Head>
-    
-    <BNTNavbar />
+  
+    <Navbar />
     <Component {...pageProps} />
-
+    <Footer />
+    
   </ThemeProvider>
 </>
 

@@ -1,5 +1,4 @@
 import React from 'react'
-import BNTNavbar from '../components/BNTNavbar'
 import styles from '../styles/about.module.css'
 
 
