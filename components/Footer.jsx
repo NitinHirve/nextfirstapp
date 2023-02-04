@@ -1,5 +1,7 @@
 import React from 'react'
+import styles from '../styles/footer.module.css';
 import { Stack, Box, Typography, List, ListItem } from '@mui/material';
+
 
 const Footer = () => {
     return (
@@ -15,6 +17,7 @@ const Footer = () => {
             }}>
                 <Box sx={{width:'100%',color:'#cccccc'}} >
                     <Stack
+                        className={styles.bb} 
                         direction={{ xs: 'column', sm: 'row' }}
                         sx={{width:'100%',justifyContent:{xs:'center',sm:'space-evenly'}}}
                         alignItems='top'
@@ -41,8 +44,8 @@ const Footer = () => {
                         <Box sx={{display:'flex',justifyContent:{xs:'center',sm:'space-evenly'}}}>
                             <List>
                                 <ListItem sx={{fontSize:'22px',color:'#fff'}}>Solutions</ListItem>
-                                <ListItem>Dupes Preventer</ListItem>
-                                <ListItem>Configpay</ListItem>
+                                <ListItem >Dupes Preventer</ListItem>
+                                <ListItem >Configpay</ListItem>
                                 <ListItem>Remittance Framework</ListItem>
                                 <ListItem></ListItem>
                                 <ListItem></ListItem>
@@ -60,6 +63,14 @@ const Footer = () => {
                     </Stack>
                 </Box>
             </Box>
+
+            <style jsx>
+          {`
+
+           
+
+          `}
+        </style>
         </>
     )
 }

@@ -36,10 +36,15 @@ function Navbar(props) {
 
 
     useEffect(()=>{
+        
+        var navElement = document.querySelector(".navScroll");
+         navElement.classList.add(styles.navOnScroll);   
         function changeCss () {
             // var bodyElement = document.querySelector("body");
             var navElement = document.querySelector(".navScroll");
-            this.scrollY > 160 ? navElement.classList.add(styles.navOnScroll) :navElement.classList.remove(styles.navOnScroll)
+            // if(router.asPath =='/'){
+            // (  this.scrollY > 160) ? navElement.classList.add(styles.navOnScroll) :navElement.classList.remove(styles.navOnScroll)
+            // }
             console.log("Scroll Y : ", this.scrollY)
           }
           
