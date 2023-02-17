@@ -1,0 +1,45 @@
+
+.dupesBackground{
+    height:100vh;
+    /* background-image: url('../../public/solutions/Dupes/blurrygradient.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+}
+
+.configBox{
+    background-image: url('../../public/solutions/Configpay/configImg.png');
+    /* background: linear-gradient(rgba(248, 206, 171, 0.7),rgba(250, 217, 180, 0.7)), url(../../public/solutions/Configpay/configImg.png); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed;  */
+}
+
+.configSubHead
+    {
+        width: 100%;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+        border-top-left-radius: 15px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        background-color: #388e3c;
+        font-family: 'Alexandria'; 
+        font-weight: 400; 
+        color: white;
+        text-align: center;
+        font-size: 25px;
+        padding-left: 25px;
+    }
+
+    .remitanceBox{
+        background-image: url('../../public/solutions/Dupes/waves.png');
+        /* background: linear-gradient(rgba(248, 206, 171, 0.7),rgba(250, 217, 180, 0.7)), url(../../public/solutions/Configpay/configImg.png); */
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* background-attachment: fixed;  */
+        transform: skew(-17deg)!important;
+        /* border:1px solid black; */
+    
+    }

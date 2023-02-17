@@ -1,7 +1,14 @@
 import React from 'react'
-import { Box, styled, Typography } from '@mui/material'
+import { MdKeyboardArrowUp } from 'react-icons/md';
+
+import { Box, Stack, styled, Typography, Grid } from '@mui/material'
 import styles from '../../styles/services/payments.module.css'
-import AcquiringPayments from './AcquiringPayments'
+import AcquiringPayments from './AcquiringPayments';
+import ProcessorSolutions from './ProcessorSolutions'
+import Ewallets from './Ewallets'
+import MobilePayments from './MobilePayments'
+
+
 
 
 
@@ -9,10 +16,14 @@ const StyledBox = styled(Box)({
     height: '180px',
     // border: '1px solid black',
     display: 'flex',
-    justifyContent: 'center'
+    justifyContent: 'end',
+    paddingRight: '40px',
+    marginTop: '50px',
+    marginBottom: '50px'
 })
 
-const headings = ['Mobile Payment Solutions',
+const headings = [
+    'Mobile Payment Solutions',
     'Terminal Management System',
     'Payment Terminal Applications',
     'Acquiring Authorization',
@@ -35,106 +46,96 @@ const desc = [
 
 const payments = () => {
     return (
+
         <>
-            <div>
-                <div style={{ height: '400px', backgroundColor: '#222' }} className={styles.container} >
-                    <StyledBox >
-                        <Box  >
-                            <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1100" data-aos-offset="100">
-                                <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: '110px', color: '#e8e8e8' }}>ACQUIRING</Typography>
-                            </Box>
-                            <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1500" data-aos-offset="100">
-                                <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, color: '#1e8be1', textAlign: 'center', fontSize: '6vw', marginTop: '-40px' }}>Solutions</Typography>
-                            </Box>
-                        </Box>
-                    </StyledBox>
-                </div>
+            <Stack className={styles.myBG} direction="row" >
+                <Box sx={{ position: 'relative', width: '50%', height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <Box sx={{ position: 'absolute', marginTop: '-60px' }}>
+                        {/* <Typography data-aos="fade-right" style={{ fontFamily: 'Alexandria', fontWeight: '300', color: '#1a237e', fontSize: '60px' }}>Next-Gen</Typography> */}
+                        <Typography data-aos="fade-down" style={{ fontFamily: 'Alexandria', fontWeight: '300', color: '#8f1e9e', fontSize: '75px', marginTop: '-10px', }}>
+                            Payments
+                        </Typography>
+                        <Typography data-aos="fade-up" sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: '22px', color: '#535151', maxWidth: '400px' }}>
+                            Fuelled with technology, expertise,<br /> and experiences. Our team offers<br /> an effective combination of broad<br />  fintech service expertise
+                            and deep product knowledge to help you deliver a differentiated financial experience.
+                        </Typography>
+                    </Box>
+                </Box>
+                <StyledBox sx={{ position: 'relative' }}>
+                    <Box data-aos="zoom-out" sx={{ position: 'relative' }}>
+                        <figure >
+                            <img className={styles.floatingImg} style={{ width: '500px' }} src="/services/images/payments.png" alt="abutImg"></img>
+                        </figure>
+                    </Box>
+                </StyledBox>
+            </Stack>
+
+            <StyledBox >
+                <Box  >
+                    <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1100" data-aos-offset="100">
+                        <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: '100px', color: '#fbdcfc' }}>ACQUIRING</Typography>
+                    </Box>
+                    <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1500" data-aos-offset="100">
+                        <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, color: '#1e8be1', textAlign: 'center', fontSize: '6vw', marginTop: '-90px' }}>Solutions</Typography>
+                    </Box>
+                </Box>
+            </StyledBox>
+
+
+            <Grid sx={{ padding: '30px 70px' }} container spacing={2} >
+                {headings.map((item, i) => (<>
+                    <Grid item xs={12} sm={4} md={3} >
+                        <div data-aos="fade-left" data-aos-delay={i <= 3 ? 300 * i : 300 * (i - 4)} className={styles.card_outer}>
+                            <div className={styles.card}>
+                                <Typography style={{ fontFamily: 'Alexandria', fontWeight: 400, fontSize: '24px' }} >{item}</Typography>
+                            </div>
+                            <div className={styles.car_footer}>
+                                <MdKeyboardArrowUp />
+                                <Typography className={styles.car_footer_readMore} > Read More</Typography>
+                                <p className={styles.card_desc}>{desc[i]}</p>
+                            </div>
+                        </div>
+                    </Grid>
+                </>))}
+            </Grid>
+
+            <ProcessorSolutions />
+            <Ewallets />
+            <MobilePayments />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            {/* <div style={{ height: '300px' }}>
+
+            </div> */}
+            {/* <div>
+               
                 <div style={{ minHeight: '500px', backgroundColor: '#222' }} className={styles.container} >
                     {
                         headings.map((heading, i) => (<AcquiringPayments heading={heading} desc={desc[i]} />))
                     }
                 </div>
-            </div>
-{/* second */}
-            <div>
-                <div style={{ height: '400px', backgroundColor: '#00796b' }} className={styles.container} >
-                    <StyledBox >
-                        <Box  >
-                            <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1100" data-aos-offset="100">
-                                <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: '110px', color: '#e8e8e8' }}>PROCESSOR</Typography>
-                            </Box>
-                            <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1500" data-aos-offset="100">
-                                <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, color: '#1e8be1', textAlign: 'center', fontSize: '6vw', marginTop: '-40px' }}>Solutions</Typography>
-                            </Box>
-                        </Box>
-                    </StyledBox>
-                </div>
-                <div style={{ minHeight: '500px', backgroundColor: '#00796b' }} className={styles.container} >
-                    {
-                        headings.map((heading, i) => (<AcquiringPayments heading={heading} desc={desc[i]} />))
-                    }
-                </div>
-            </div>
-{/* third */}
-            <div>
-                <div style={{ height: '400px', backgroundColor: '#558b2f' }} className={styles.container} >
-                    <StyledBox >
-                        <Box  >
-                            <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1100" data-aos-offset="100">
-                                <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: '110px', color: '#e8e8e8' }}>MOBILE</Typography>
-                            </Box>
-                            <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1500" data-aos-offset="100">
-                                <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, color: '#fff', textAlign: 'center', fontSize: '4vw', marginTop: '-40px' }}>Payments</Typography>
-                            </Box>
-                        </Box>
-                    </StyledBox>
-                </div>
-                <div style={{ minHeight: '500px', backgroundColor: '#558b2f' }} className={styles.container} >
-                    {
-                        headings.map((heading, i) => (<AcquiringPayments heading={heading} desc={desc[i]} />))
-                    }
-                </div>
-            </div>
-{/* fourth */}
-           <div>
-                <div style={{ height: '400px', backgroundColor: '#7e57c2' }} className={styles.container} >
-                    <StyledBox >
-                        <Box  >
-                            <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1100" data-aos-offset="100">
-                                <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: '110px', color: '#e8e8e8' }}>PREPAID</Typography>
-                            </Box>
-                            <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1500" data-aos-offset="100">
-                                <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, color: '#fff', textAlign: 'center', fontSize: '6vw', marginTop: '-40px' }}>Cards</Typography>
-                            </Box>
-                        </Box>
-                    </StyledBox>
-                </div>
-                <div style={{ minHeight: '500px', backgroundColor: '#7e57c2' }} className={styles.container} >
-                    {
-                        headings.map((heading, i) => (<AcquiringPayments heading={heading} desc={desc[i]} />))
-                    }
-                </div>
-            </div>    
-{/* fifth */}
-            <div>
-                <div style={{ height: '400px', backgroundColor: '#5d4037' }} className={styles.container} >
-                    <StyledBox >
-                        <Box  >
-                            <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1100" data-aos-offset="100">
-                                <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: '110px', color: '#e8e8e8' }}>E-WALLETS</Typography>
-                            </Box>
-                            {/* <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1500" data-aos-offset="100">
-                                <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, color: '#fff', textAlign: 'center', fontSize: '6vw', marginTop: '-40px' }}>Cards</Typography>
-                            </Box> */}
-                        </Box>
-                    </StyledBox>
-                </div>
-                <div style={{ minHeight: '500px', backgroundColor: '#5d4037' }} className={styles.container} >
-                    {
-                        headings.map((heading, i) => (<AcquiringPayments heading={heading} desc={desc[i]} />))
-                    }
-                </div>
-            </div>                     
+            </div> */}
         </>
     )
 }

@@ -49,7 +49,7 @@ const Homepage = () => {
         <>
             <Stack className={styles.myBG} direction="row" >
                 <StyledBox sx={{ position: 'relative' }}>
-                    <Box sx={{ position: 'absolute', right: '20px', top: '200px' }}>
+                    <Box sx={{ position: 'absolute', right: '20px', top: '145px' }}>
                         <Typography data-aos="fade-down" sx={{ color: '#424242', fontFamily: 'Alexandria', fontWeight: '200', fontSize: '35px' }}>
                             Building and Integrating
                         </Typography>
@@ -63,7 +63,7 @@ const Homepage = () => {
                     </Box>
                 </StyledBox>
                 <StyledBox sx={{ position: 'relative' }}>
-                    <Box data-aos="zoom-out" sx={{ position: 'relative', top: '150px' }}>
+                    <Box data-aos="zoom-out" sx={{ position: 'relative', top: '95px' }}>
                         <figure className={`moving-image ${styles.artbox}`}>
                             <img className={`movable-image ${styles.box_image} ${styles.floatingImg}`} style={{ width: '550px' }} src="/home/images/homePayment.png" alt="abutImg"></img>
                         </figure>
