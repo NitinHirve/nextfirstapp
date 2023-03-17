@@ -2,14 +2,6 @@ import React from 'react'
 import { Box, Stack, styled, Typography, Grid } from '@mui/material'
 import styles from '../../styles/services/payments.module.css'
 
-// const Styledh1 = styled(h1)({
-
-//     // backgroundColor: '#fff',
-//     // padding: '15px 7.5px 0px 7.5px',
-//     // border: '1px solid #e9e9e9',
-//     // borderRadius: '4px',
-
-//   })
 
 const StyledBox = styled(Box)({
     height: '180px',
