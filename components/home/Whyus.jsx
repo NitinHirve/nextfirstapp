@@ -9,7 +9,8 @@ import stylesWhyus from '../../styles/home/whyus.module.css';
 const desc = ['Our customers are our priority! Our successful partnership with various Organizations',
 'Our flexibility allows easy adaptability and a seamless approach to any tech development',
 'Utilizing advanced technology, we ensure to apply the best tech practices',
-'Our experts have absolute domain know-how and in-depth knowledge offering the most relevant and suitable business solutions.']
+'Our experts have absolute domain know-how and in-depth knowledge offering the most relevant and suitable business solutions.'
+]
 
 
 const Whyus = () => {

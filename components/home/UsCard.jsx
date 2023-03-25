@@ -5,17 +5,21 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 
-const UsCard = ({title,cardImage,desc}) => {
+const UsCard = ({ title, cardImage, desc }) => {
   return (
-    <Card sx={{ maxWidth: 270,borderRadius:0 }} elevation={0}>
+    <Card sx={{ maxWidth: 270, borderRadius: 0 }} elevation={0}>
       <CardActionArea elevation={0}>
         <CardMedia
-        
-        sx={{webkitTransition: '0.4s ease',
-  transition: '0.4s ease'}}
-          onMouseOver ={(e)=>{e.target.style.cssText = `-webkit-transform: scale(1.10);
+
+          sx={{
+            webkitTransition: '0.4s ease',
+            transition: '0.4s ease'
+          }}
+          onMouseOver={(e) => {
+            e.target.style.cssText = `-webkit-transform: scale(1.10);
   transform: scale(1.10);`}}
-          onMouseOut ={(e)=>{e.target.style.cssText = `-webkit-transform: scale(1);
+          onMouseOut={(e) => {
+            e.target.style.cssText = `-webkit-transform: scale(1);
   transform: scale(1);`}}
           component="img"
           height="160"
@@ -23,11 +27,11 @@ const UsCard = ({title,cardImage,desc}) => {
           alt="green iguana"
         />
         <CardContent elevation={0}>
-          <Typography gutterBottom variant="h6" component="div" sx={{fontFamily: 'Alexandria',fontWeight:'500'}}>
+          <Typography gutterBottom variant="h6" component="div" sx={{ fontFamily: 'Alexandria', fontWeight: '500' }}>
             {title}
           </Typography>
-          <Typography variant="body2" color="text.secondary" sx={{fontFamily: 'Alexandria', fontWeight: '300', color: 'black', fontSize: '16px'}}>
-           {desc}           
+          <Typography variant="body2" color="text.secondary" sx={{ fontFamily: 'Alexandria', fontWeight: '300', color: 'black', fontSize: '16px' }}>
+            {desc}
           </Typography>
         </CardContent>
       </CardActionArea>

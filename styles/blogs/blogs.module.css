@@ -1,0 +1,11 @@
+
+
+.myBG {
+    background-image: url('../../public/blogs/images/blogsBG.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display:grid;
+    place-items: center;
+    color:white;
+}
