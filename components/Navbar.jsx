@@ -95,20 +95,20 @@ function Navbar(props) {
             <Box sx={{ display: 'flex', }} >
                 <HideOnScroll {...props} >
                     <AppBar elevation={0} className={'navScroll'} component="nav" sx={{ backgroundColor: 'transparent' }}>
-                        <Toolbar sx={{ minHeight: '55px!important' }}>
+                        <Toolbar sx={{ minHeight: '55px!important',position:"relative" }}>
                             <IconButton
                                 color="inherit"
                                 aria-label="open drawer"
                                 edge="start"
                                 onClick={handleDrawerToggle}
-                                sx={{ mr: 2, display: { sm: 'none' } }}
+                                sx={{ mr: 2, display: { sm: 'none' },position:'absolute',right:0 }}
                             >
                                 <MenuIcon />
                             </IconButton>
                             <Box
                                 variant="h6"
                                 component="div"
-                                sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' }, color: 'text.primary', marginLeft: '50px', padding: 0, cursor: 'pointer' }}
+                                sx={{ flexGrow: 1, color: 'text.primary', marginLeft: { xs: 'none', sm: '50px' }, padding: 0, cursor: 'pointer' }}
                             >
                                 {/* <p className="bntLogo" style={{fontFamily: 'Alexandria',fontWeight:'bold'}}> BNT-SOFT</p> */}
 
@@ -184,7 +184,6 @@ function Navbar(props) {
                         {drawer}
                     </Drawer>
                 </Box>
-
             </Box>
 
             <style jsx>
