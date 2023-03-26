@@ -15,7 +15,7 @@ import {
 
 const drawerWidth = 240;
 const navItems = ['Home', 'About Us', 'Services', 'Solutions', 'Blogs', 'Career', 'Build With Us'];
-const navItemsNav = ['/', '/about', '/services', '/solutions', '/blogs', '/career', '/buildwithus'];
+const navItemsNav = ['/', '/aboutus', '/services', '/solutions', '/blogs', '/career', '/buildwithus'];
 
 function HideOnScroll(props) {
     const { children } = props;

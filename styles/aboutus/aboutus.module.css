@@ -1,0 +1,55 @@
+.leaders {
+    position: relative;
+    /* background-image: url('../../public/aboutus/images/leaders/leader1.jpg'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.leader2BG {
+    background-image: url('../../public/aboutus/images/leaders/leader2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.leader3BG {
+    position: relative;
+    background-image: url('../../public/aboutus/images/leaders/leader3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.leader4BG {
+    position: relative;
+    background-image: url('../../public/aboutus/images/leaders/leader4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+.leaders:before {
+    content: '';
+    position: absolute;
+    top: 13px;
+    right: 13px;
+    width: 100%;
+    height: 100%;
+    border:1px solid rgb(199, 134, 243);
+    background-color: white;
+    z-index: -99;
+}
+
+
+
+/* .leader3BG:before {
+    content: '';
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    width: 100%;
+    height: 100%;
+    border:1px solid rgb(199, 134, 243);
+    z-index: -99;
+} */
