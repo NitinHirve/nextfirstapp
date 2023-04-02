@@ -158,7 +158,7 @@ function Navbar(props) {
                                     </Link>
                                 </MenuItem>
                                 <MenuItem onClick={handleClose}>
-                                    <Link href={''}>
+                                    <Link href={'/services/fintech'}>
                                         Fintech Startup
                                     </Link>
                                 </MenuItem>

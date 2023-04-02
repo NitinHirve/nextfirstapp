@@ -11,7 +11,7 @@ const Ourmission = () => {
 
     return (
         <>
-            <Box sx={{ marginTop: '100px', width: '100vw', height: '464px', display: 'flex' }}>
+            <Box sx={{ width: '100vw', height: '464px', display: 'flex' }}>
                 <Box className={styles.OurmissionLeftSection} sx={{ width: '50%', padding: '20px', boxSizing: 'border-box' }}>
                     <Box sx={{ marginLeft: '250px', marginTop: '50px' }}>
                         <p style={{ margin: 0, padding: 0, fontFamily: 'Alexandria', fontSize: '11px', color: '#6f6675' }}>Top level company</p>
@@ -30,7 +30,7 @@ const Ourmission = () => {
             </Box>
 
 
-            <Box sx={{ marginTop: '100px', width: '100vw', height: '461px', display: 'flex' }}>
+            <Box sx={{ marginTop: '30px', width: '100vw', height: '461px', display: 'flex' }}>
                 <Box sx={{ width: '53%', display: 'flex', alignItems: 'center', justifyContent: 'end' }}>
                     <Box className={styles.aboutBnt} sx={{ height: '80%', width: '80%' }}></Box>
                 </Box>
