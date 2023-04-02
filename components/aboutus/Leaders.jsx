@@ -54,7 +54,7 @@ const leadersDetail = [
 const Leaders = () => {
   return (
     <>
-      <Box sx={{ height: { xs: '100px', sm: '180px' },marginTop:'50px', display: 'flex', justifyContent: 'center' }} >
+      <Box sx={{ height: { xs: '100px', sm: '180px' }, marginTop: '50px', display: 'flex', justifyContent: 'center' }} >
         <Box  >
           <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1100" data-aos-offset="100">
             <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, textAlign: 'center', fontSize: { xs: '32px', sm: '110px' }, letterSpacing: '20px', color: '#e8e8e8' }}>OUR</Typography>
@@ -65,18 +65,18 @@ const Leaders = () => {
         </Box>
       </Box>
 
-      <Box sx={{ width: '100vw', display: 'flex', justifyContent: 'center' }}>
+      <Box sx={{ width: '100vw', display: 'flex', justifyContent: 'center', marginTop: '50px' }}>
         <Box sx={{ width: { xs: '75%', sm: '65%' } }}>
           <Grid container spacing={6} sx={{ height: '100%' }} >
             {leadersDetail.map((leader, index) => (<>
               <Grid
 
                 item xs={12} sm={6} md={4}
-                data-aos={
-                  ((index == 0 || index == 3 || index == 6) && 'zoom-out-right') ||
-                  ((index == 1 || index == 4 || index == 7) && 'zoom-out') ||
-                  ((index == 2 || index == 5 || index == 8) && 'zoom-out-left')
-                }
+              // data-aos={
+              //   ((index == 0 || index == 3 || index == 6) && 'zoom-out-right') ||
+              //   ((index == 1 || index == 4 || index == 7) && 'zoom-out') ||
+              //   ((index == 2 || index == 5 || index == 8) && 'zoom-out-left')
+              // }
               >
                 <Box className={styles.leaders} sx={{ height: { xs: '340px', sm: '310px', backgroundImage: `url(/aboutus/images/leaders/${leader.profilePic}.jpg)` } }}></Box>
                 <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '35px' }}>
@@ -90,9 +90,20 @@ const Leaders = () => {
 
       </Box>
 
+      <Box sx={{ width: '100vw', height: '190px', marginTop: '150px', display: 'flex' }}>
+        <Box sx={{ display:'flex',alignItems:'center', width: '60%', backgroundColor: '#7e16f5', clipPath: 'polygon(0% 0%, 55% 0%,80% 45%,80% 65%, 92% 100%, 0% 100%)' }}>
+          <Typography sx={{marginLeft:'200px',lineHeight:'32px', fontFamily: 'Alexandria', color: 'white', fontSize: '30px' }}>Unlock Your Potential<br></br> &nbsp;&nbsp; and Conquer Together!</Typography>
+        </Box>
+      </Box>
+      <Box sx={{ marginTop: '-191px', width: '100vw', height: '190px', display: 'flex', justifyContent: 'end' }}>
+        <Box className={styles.joinUs} sx={{ display:'grid',placeContent:'center', width: '63%', clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%,33% 100%,20% 62%,20% 39%)' }}>
+           <Box sx={{cursor: 'pointer',fontFamily: 'Alexandria',display:'grid',placeContent:'center',color:'white',height:'40px',width:'158px',background:' linear-gradient(90deg, rgba(126,22,245,1) 0%, rgba(192,144,247,1) 71%)'}}>Join Us</Box>
+         </Box>
+      </Box>
 
 
-      <Box sx={{ height: '300px' }}></Box>
+
+      {/* <Box sx={{ height: '300px' }}></Box> */}
     </>
 
   )
