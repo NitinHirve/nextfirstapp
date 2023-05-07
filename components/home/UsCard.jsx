@@ -7,7 +7,7 @@ import { CardActionArea } from '@mui/material';
 
 const UsCard = ({ title, cardImage, desc }) => {
   return (
-    <Card sx={{ maxWidth: 270, borderRadius: 0 }} elevation={0}>
+    <Card sx={{ maxWidth: {sm:270,xs:'100vw'}, borderRadius: 0 }} elevation={0}>
       <CardActionArea elevation={0}>
         <CardMedia
 

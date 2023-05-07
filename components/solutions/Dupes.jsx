@@ -24,13 +24,13 @@ const Dupes = () => {
 
 
             <Stack className={styles.myBG} direction="row" >
-                <Box sx={{ position: 'relative', width: '50%', height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                    <Box sx={{ position: 'absolute', marginTop: '-60px' }}>
+                <Box sx={{ position: 'relative', width: {sm:'50%',xs:'100vw'}, height: {sm:'100vh',xs:'80vh'}, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+                    <Box sx={{ position: 'absolute',margin:{xs:'-130px 15px 0 15px',sm:'-60px 0px 0 0px'}  }}>
                         {/* <Typography data-aos="fade-right" style={{ fontFamily: 'Alexandria', fontWeight: '300', color: '#1a237e', fontSize: '60px' }}>Next-Gen</Typography> */}
-                        <Typography data-aos="fade-down" style={{ fontFamily: 'Alexandria', fontWeight: '400', color: '#0328a3', fontSize: '75px', marginTop: '-10px' }}>
+                        <Typography fontSize={{sm:'75px',xs:'55px'}} data-aos="fade-down" style={{ fontFamily: 'Alexandria', fontWeight: '400', color: '#0328a3', marginTop: '-10px' }}>
                             Solutions
                         </Typography>
-                        <Typography data-aos="fade-up" sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: '22px', color: '#535151', maxWidth: '400px' }}>
+                        <Typography fontSize={{sm:'22px',xs:'19px'}} data-aos="fade-up" sx={{ fontFamily: 'Alexandria', fontWeight: 300, color: '#535151', maxWidth: '400px' }}>
                             With an increasing focus on customer experience, it is imperative to offer an elevated and competitive shopping experience for consumers. Thus, it is optimum to strengthen your retail in-store operations.
                         </Typography>
                     </Box>
@@ -45,35 +45,35 @@ const Dupes = () => {
             </Stack>
 
 
-            <Stack direction="row" >
-                <Box  sx={{ position: 'relative', width: '40%', height: '595px' }}>
-                    <Box className={styles.dupesblob} data-aos="zoom-out" sx={{ position: 'relative', top: '95px' }}>
-                        <img style={{ width: '650px' }}  src="/solutions/Dupes/blobdupes.svg" ></img>
+            <Stack direction={{sm:"row",xs:'column',height: {sm:'595px',xs:'auto'}}} >
+                <Box  sx={{ position: 'relative', width: {sm:'40%',xs:'100%'},  }}>
+                    <Box className={styles.dupesblob} data-aos="zoom-out" sx={{ position: 'relative', top: '95px',left:{xs:'-80px',sm:0} }}>
+                        <img className={styles.dupesblobImg}   src="/solutions/Dupes/blobdupes.svg" ></img>
                         {/* <img style={{ width: '650px' }} src="/solutions/Dupes/dot-hori.svg" ></img> */}
                         <Box sx={{ marginTop: '-50px', position: 'absolute', top: 165, left: 140 }} >
                             <Box data-aos="fade-right">
-                                <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 200, fontSize: '50px', color: '#fff' }}>Dupes</Typography>
+                                <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 200, fontSize: {sm:'50px',xs:'30px'}, color: '#fff' }}>Dupes</Typography>
                             </Box>
                             <Box data-aos="fade-left">
-                                <Typography sx={{ fontFamily: 'Alexandria', marginLeft: '20px', fontWeight: 300, color: '#fff', textAlign: 'center', fontSize: '5vw', marginTop: '-40px' }}>Preventer</Typography>
+                                <Typography sx={{ fontFamily: 'Alexandria', marginLeft: '20px', fontWeight: 300, color: '#fff', textAlign: 'center', fontSize: {sm:'67px',xs:'44px'}, marginTop: {sm:'-40px',xs:'-24px'} }}>Preventer</Typography>
                             </Box>
                         </Box>
                     </Box>
                 </Box>
 
-                <Box style={{ width: '60%', height: '595px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                    <Box style={{ backgroundColor: '#fcfcfc', borderRadius: '10px', width: '95%', height: '80%', padding: '30px' }}>
-                        <Typography data-aos="fade-left" data-aos-once="false"  sx={{ fontFamily: 'Alexandria', fontWeight: '300', color: '#676767', fontSize: '18px' }}>
+                <Box sx={{ width: {sm:'60%',xs:'100%'}, display: 'flex', alignItems: 'center', justifyContent: 'center',marginTop:{sm:'0px',xs:'70px'} }}>
+                    <Box padding= {{sm:'30px',xs:'15px'}} sx={{ backgroundColor: '#fcfcfc', borderRadius: '10px', width: '95%', height: '80%' }}>
+                        <Typography data-aos="fade-left" data-aos-once="false"  sx={{ fontFamily: 'Alexandria', fontWeight: '300', color: '#676767', fontSize: {sm:'18px',xs:'15px'} }}>
                             <span style={{ fontSize: '30px', color: '#1e8be1' }}>DupesPreventer</span>   is the perfect solution for the problem of duplicity. Designed to detect duplicates of standard objects
                             like accounts, contact, lead, lead to account, lead to contact, and vice versa arising from prospect entries,
                             web-to-lead or integrated systems. With the help of this Application any duplicate entry can be blocked or
                             reported based on yourrequirement.
                         </Typography>
-                        <Typography data-aos="fade-left" data-aos-once="false"  sx={{ fontFamily: 'Alexandria', fontWeight: '300', color: '#676767', fontSize: '18px', marginTop: '20px' }}>
+                        <Typography data-aos="fade-left" data-aos-once="false"  sx={{ fontFamily: 'Alexandria', fontWeight: '300', color: '#676767',  marginTop: '20px',fontSize: {sm:'18px',xs:'15px'} }}>
                             It can detect duplicates to Accounts, Contacts, Leads, along with, “Lead to Contact” and “Lead to Account” and VICEVERSA. It’s a two way
                             Duplicate checker which gives the application a distinctive characteristic.
                         </Typography>
-                        <Typography data-aos="fade-left" data-aos-once="false"  sx={{ fontFamily: 'Alexandria', fontWeight: '300', color: '#676767', fontSize: '18px', marginTop: '20px' }}>
+                        <Typography data-aos="fade-left" data-aos-once="false"  sx={{ fontFamily: 'Alexandria', fontWeight: '300', color: '#676767',  marginTop: '20px',fontSize: {sm:'18px',xs:'15px'} }}>
                             DupesPreventer allows to either block the duplicates completely or just allow the duplicates enter the system
                             and generate warnings for those. Duplicates to Accounts, Contacts and Leads can all be detected with this
                             product and it also allows cross object deduplication like lead to contact and lead to account.
@@ -86,36 +86,36 @@ const Dupes = () => {
 
 
 
-            <Stack direction="row" >
-                <Box style={{ width: '60%', height: '695px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                    <Box style={{ backgroundColor: '#fcfcfc', borderRadius: '10px', width: '95%', height: '80%', padding: '30px' }}>
-                        <Typography data-aos="fade-left" data-aos-once="false" sx={{ fontFamily: 'Alexandria', fontWeight: '300', color: '#676767', fontSize: '18px' }}>
+            <Stack direction={{sm:"row",xs:'column-reverse',height: {sm:'695px',xs:'auto'}}} >
+                <Box style={{ width: {sm:'60%',xs:'100%'},  display: 'flex', alignItems: 'center', justifyContent: 'center' ,marginTop:{sm:'0px',xs:'70px'}}}>
+                    <Box sx={{ backgroundColor: '#fcfcfc', borderRadius: '10px', width: '95%', height: '80%', padding: {sm:'30px',xs:'15px'},marginTop:{sm:0,xs:'70px'} }}>
+                        <Typography data-aos="fade-left" data-aos-once="false" sx={{ fontFamily: 'Alexandria', fontWeight: '300', color: '#676767',fontSize: {sm:'18px',xs:'15px'}}}>
                             <span style={{ fontSize: '30px', color: '#1e8be1' }}>ConfigPay</span> a SAP Hybris Commerce application is an intelligent payment integration tool. A readymade payment gateway
                             platform, the application is designed for easy and convenient integration with other SAP Hybris Commerce
                             platforms. Our payment system provides payment data localization, payment service provider (PSP)
                             integration, and data sync between SAP and Hybris Ecommerce.
                         </Typography>
-                        <Typography data-aos="fade-left" data-aos-once="false" sx={{ fontFamily: 'Alexandria', fontWeight: '300', color: '#676767', fontSize: '18px', marginTop: '20px' }}>
+                        <Typography data-aos="fade-left" data-aos-once="false" sx={{ fontFamily: 'Alexandria', fontWeight: '300', color: '#676767', fontSize: {sm:'18px',xs:'15px'}, marginTop: '20px' }}>
                             <span style={{ fontSize: '20px', color: '#07ad07' }}>Reduced Time</span> : An efficient payment integration application that is custom made and fit for all SAP Hybris Commerce Platform.
                         </Typography>
-                        <Typography data-aos="fade-left" data-aos-once="false"  sx={{ fontFamily: 'Alexandria', fontWeight: '300', color: '#676767', fontSize: '18px', marginTop: '20px' }}>
+                        <Typography data-aos="fade-left" data-aos-once="false"  sx={{ fontFamily: 'Alexandria', fontWeight: '300', color: '#676767', fontSize: {sm:'18px',xs:'15px'}, marginTop: '20px' }}>
                             <span style={{ fontSize: '20px', color: '#07ad07' }}>Cost Effective</span> : A payment gateway is a basic module while developing an ecommerce platform.
                         </Typography>
-                        <Typography data-aos="fade-left" data-aos-once="false"  sx={{ fontFamily: 'Alexandria', fontWeight: '300', color: '#676767', fontSize: '18px', marginTop: '20px' }}>
+                        <Typography data-aos="fade-left" data-aos-once="false"  sx={{ fontFamily: 'Alexandria', fontWeight: '300', color: '#676767', fontSize: {sm:'18px',xs:'15px'}, marginTop: '20px' }}>
                             <span style={{ fontSize: '20px', color: '#07ad07' }}>Zero Coding</span> : ConfigPay can be appropriately configured with any SAP and Hybris ecommerce platform.
                         </Typography>
-                        <Typography data-aos="fade-left" data-aos-once="false"  sx={{ fontFamily: 'Alexandria', fontWeight: '300', color: '#676767', fontSize: '18px', marginTop: '20px' }}>
+                        <Typography data-aos="fade-left" data-aos-once="false"  sx={{ fontFamily: 'Alexandria', fontWeight: '300', color: '#676767', fontSize: {sm:'18px',xs:'15px'}, marginTop: '20px' }}>
                             <span style={{ fontSize: '20px', color: '#07ad07' }}>Configuration Based</span> : For integrating PSP/Payment gateway, read the guided manner carefully and simply add configuration.
                         </Typography>
                     </Box>
                 </Box>
-                <Box sx={{ position: 'relative', width: '40%', height: '595px' }}>
-                    <Box data-aos="zoom-out" className={styles.configpayblob}  sx={{ position: 'relative', top: '95px' }}>
-                        <img style={{ width: '800px', marginLeft: '-100px', marginTop: '-30px' }} src="/solutions/Configpay/blobConfigpay.svg" ></img>
+                <Box sx={{ position: 'relative', width: {sm:'40%',xs:'100%'} }}>
+                    <Box data-aos="zoom-out" className={styles.configpayblob}  sx={{ position: 'relative', top: '95px',left:{xs:'-10%',sm:0} }}>
+                        <img className={styles.configpayblobImg}  src="/solutions/Configpay/blobConfigpay.svg" ></img>
                         {/* <img style={{ width: '650px' }} src="/solutions/Dupes/dot-hori.svg" ></img> */}
                         <Box sx={{ marginTop: '30px', position: 'absolute', top: 195, left: 140 }} >
                             <Box data-aos="fade-left">
-                                <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, marginLeft: '-10px', color: '#fff', textAlign: 'center', fontSize: '5vw', marginTop: '-40px' }}>ConfigPay</Typography>
+                                <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, marginLeft: {sm:'-10px',xs:'-33px'}, color: '#fff', textAlign: 'center', fontSize: {sm:'67px',xs:'40px'}, marginTop: {sm:'-40px',xs:'-72px'} }}>ConfigPay</Typography>
                             </Box>
                         </Box>
                     </Box>
@@ -222,35 +222,35 @@ const Dupes = () => {
             </Box> */}
 
 
-            <Stack direction="row" >
-                <Box sx={{ position: 'relative', width: '40%', height: '595px' }}>
+            <Stack direction={{sm:"row",xs:'column',height: {sm:'595px',xs:'auto'}}} >
+                <Box sx={{ position: 'relative', width: {sm:'40%',xs:'100%'} }}>
                     <Box data-aos="zoom-out" className={styles.remitanceblob} sx={{ position: 'relative', top: '22px',left:'-100px' }}>
-                        <img style={{ width: '730px' }} src="/solutions/Configpay/blobRemitance.svg" ></img>
+                        <img className={styles.remitanceblobImg}  src="/solutions/Configpay/blobRemitance.svg" ></img>
                         {/* <img style={{ width: '650px' }} src="/solutions/Dupes/dot-hori.svg" ></img> */}
                         <Box sx={{ marginTop: '-50px', position: 'absolute', top: 230, left: 220 }} >
                             <Box data-aos="fade-right">
-                                <Typography sx={{ fontFamily: 'Alexandria',marginLeft:'-40px', fontWeight: 200, fontSize: '45px', color: '#fff' }}>Remittance</Typography>
+                                <Typography sx={{ fontFamily: 'Alexandria',marginLeft:{sm:'-40px',xs:'-52px'}, fontWeight: 200, fontSize: {sm:'45px',xs:'28px'}, color: '#fff',marginTop:{sm:0,xs:'-18px'} }}>Remittance</Typography>
                             </Box>
                             <Box data-aos="fade-left">
-                                <Typography sx={{ fontFamily: 'Alexandria', marginLeft:'-10px', fontWeight: 300, color: '#fff', textAlign: 'center', fontSize: '60px', marginTop: '-40px' }}>Framework</Typography>
+                                <Typography sx={{ fontFamily: 'Alexandria', marginLeft:'-10px', fontWeight: 300, color: '#fff', textAlign: 'center', fontSize: {sm:'60px',xs:'34px'}, marginTop: {sm:'-40px',xs:'-18px'} }}>Framework</Typography>
                             </Box>
                         </Box>
                     </Box>
                 </Box>
 
-                <Box style={{ width: '60%', height: '500px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                    <Box style={{ backgroundColor: '#fcfcfc', borderRadius: '10px', width: '95%', height: '80%', padding: '30px' }}>
-                        <Typography data-aos="fade-left" data-aos-once="false" sx={{ fontFamily: 'Alexandria', fontWeight: '300', color: '#676767', fontSize: '18px' }}>
+                <Box sx={{ width: {sm:'60%',xs:'100%'}, display: 'flex', alignItems: 'center', justifyContent: 'center',marginBottom:{sm:0,xs:'70px'} }}>
+                    <Box sx={{ backgroundColor: '#fcfcfc', borderRadius: '10px', width: '95%', height: '80%', padding: {sm:'30px',xs:'15px'}}}>
+                        <Typography data-aos="fade-left" data-aos-once="false" sx={{ fontFamily: 'Alexandria', fontWeight: '300', color: '#676767', fontSize: {sm:'18px',xs:'15px'} }}>
                             <span style={{ fontSize: '30px', color: '#1e8be1' }}>Remittance Framework </span>is a multi-threaded robust platform, that exposes API’s to create/modify alerts.
                         </Typography>
-                        <Typography data-aos="fade-left" data-aos-once="false"  sx={{ fontFamily: 'Alexandria', fontWeight: '300', color: '#676767', fontSize: '18px', marginTop: '20px' }}>
+                        <Typography data-aos="fade-left" data-aos-once="false"  sx={{ fontFamily: 'Alexandria', fontWeight: '300', color: '#676767', fontSize: {sm:'18px',xs:'15px'}, marginTop: '20px' }}>
                         The platform Notifx is a BNT developed application that supports real-time monitoring and notifications.
                         </Typography>
-                        <Typography data-aos="fade-left" data-aos-once="false"  sx={{ fontFamily: 'Alexandria', fontWeight: '300', color: '#676767', fontSize: '18px', marginTop: '20px' }}>
+                        <Typography data-aos="fade-left" data-aos-once="false"  sx={{ fontFamily: 'Alexandria', fontWeight: '300', color: '#676767', fontSize: {sm:'18px',xs:'15px'}, marginTop: '20px' }}>
                         How the notifications are crucial? They can be consumed to create deals and configure emails/sms content.
 
                         </Typography>
-                        <Typography data-aos="fade-left" data-aos-once="false"  sx={{ fontFamily: 'Alexandria', fontWeight: '300', color: '#676767', fontSize: '18px', marginTop: '20px' }}>
+                        <Typography data-aos="fade-left" data-aos-once="false"  sx={{ fontFamily: 'Alexandria', fontWeight: '300', color: '#676767', fontSize: {sm:'18px',xs:'15px'}, marginTop: '20px' }}>
                         The preserved data can be used for analytics. It supports frameworks- Quote Agent, Dyna Price and Com (TP Integrator).
 
                         </Typography>

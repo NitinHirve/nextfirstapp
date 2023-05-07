@@ -25,6 +25,9 @@ export default function SwiperApp() {
         <>
             <div className="myContainer">
                 <Swiper
+                style={{
+                      "--swiper-navigation-size": "30px",  //font-size: var(--swiper-navigation-size);
+                    }}
                     navigation={true}
                     effect={"coverflow"}
                     centeredSlides={true}

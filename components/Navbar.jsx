@@ -47,7 +47,7 @@ function Navbar(props) {
             // if(router.asPath =='/'){
             // (  this.scrollY > 160) ? navElement.classList.add(styles.navOnScroll) :navElement.classList.remove(styles.navOnScroll)
             // }
-            console.log("Scroll Y : ", this.scrollY)
+            // console.log("Scroll Y : ", this.scrollY)
         }
 
         addEventListener("scroll", changeCss, false);

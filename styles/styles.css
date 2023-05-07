@@ -35,3 +35,9 @@
   display: block;
 }
 
+@media (max-width: 768px) 	{
+  .myContainer{
+    width: 100vw;
+  }
+}
+

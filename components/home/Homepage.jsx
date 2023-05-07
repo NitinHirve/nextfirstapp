@@ -44,7 +44,7 @@ const Homepage = () => {
             <Stack
                 className={styles.myBG}
                 direction={{ xs: 'column', sm: 'row' }}
-                sx={{ height: { xs: '100vh', sm: '100vh' }}}
+                sx={{ height: { xs: '80vh', sm: '100vh' }}}
             >
                 <Box sx={{ position: 'relative', width: { xs: '100%', sm: '50%' }, height: { xs: 'auto', sm: '100%' } }}>
                     <Box sx={{ position: 'absolute', right: '20px', top: {xs:'45px',sm:'145px'},marginLeft:{xs:'50px'}  }}>
@@ -76,7 +76,7 @@ const Homepage = () => {
                 <Whyus />
             </Box>
 
-            <Box sx={{ height: '500px' }} >
+            <Box sx={{ height: {sm:'500px',xs:'auto'} }} >
                 <TrustedBestHeading />
                 <TrustedBy />
             </Box>

@@ -19,12 +19,12 @@ const TrustedBestHeading = () => {
     return (
         <>
             <StyledBox >
-                <Box sx={{marginTop:'-50px'}} >
+                <Box sx={{marginTop:{sm:'-50px'}}} >
                     <Box  data-aos="fade-right">
-                        <Typography  sx={{ fontFamily: 'Alexandria', fontWeight: 100, fontSize: '65px', color: '#bdbdbd' }}>Trusted By</Typography>
+                        <Typography  sx={{ fontFamily: 'Alexandria', fontWeight: 100, fontSize: {sm:'65px',xs:'50px'}, color: '#bdbdbd' }}>Trusted By</Typography>
                     </Box>
                     <Box data-aos="fade-left">
-                        <Typography sx={{ fontFamily: 'Alexandria',marginLeft:'40px', fontWeight: 300, color: '#1e8be1', textAlign: 'center', fontSize: '7vw', marginTop: '-60px' }}>The Best</Typography>
+                        <Typography sx={{ fontFamily: 'Alexandria',marginLeft:'40px', fontWeight: 300, color: '#1e8be1', textAlign: 'center', fontSize: {sm:'105px',xs:'60px'}, marginTop: {sm:'-60px',xs:'-40px'} }}>The Best</Typography>
                     </Box>
                 </Box>
             </StyledBox>

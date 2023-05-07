@@ -10,9 +10,9 @@ import SwiperApp from './SwiperApp'
 const TrustedBy = () => {
     return (
         <>
-            <Box sx={{ display: 'flex' }}>
+            <Box sx={{ display: 'flex',flexDirection:{sm:'row',xs:'column'} }}>
                 <Box data-aos="zoom-in-up"
-                sx={{ height: '250px', width: '600px', boxShadow: 3, backgroundColor: '#fff', marginLeft: '150px', zIndex: 2 }}>
+                sx={{ height: '250px', width: {sm:'600px',xs:'100vw'},margin:{xs:'15px'}, boxShadow: 3, backgroundColor: '#fff', marginLeft: {sm:'150px'}, zIndex: 2 }}>
                     <Stack direction="row" justifyContent="space-around">
                         <img src='/home/images/TrustedBy/onTab3logo.png' style={{ width: '130px' }} />
                         <img src='/home/images/TrustedBy/CDlogo.png' style={{ width: '130px' }} />
@@ -23,8 +23,8 @@ const TrustedBy = () => {
                         <img src='/home/images/TrustedBy/ItzCash.png' style={{ width: '130px' }} />
                     </Stack>
                 </Box>
-                <Box data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-offset="0" data-aos-duration="800"
-                    sx={{ height: '400px', width: '600px', marginTop: '-70px', marginLeft: '-50px', }}>
+                <Box   data-aos-easing="ease-in-back" data-aos-offset="0" data-aos-duration="800"
+                    sx={{ width: {sm:'600px',xs:'100vw'}, marginTop: {sm:'-70px',xs:'60px'},marginBottom: {xs:'60px'}, marginLeft: {sm:'-50px'} }}>
                     <SwiperApp />
                 </Box>
             </Box>

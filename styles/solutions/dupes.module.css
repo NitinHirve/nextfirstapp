@@ -99,6 +99,40 @@
 
 }
 
+.dupesblobImg{
+    width: 650px;
+}
+
+@media (max-width: 768px){
+    .dupesblobImg{
+        width: 140%;
+    }
+}
+
+.configpayblobImg{
+    width: 800px;
+    margin-left: -100px;
+    margin-top: -30px;
+}
+
+@media (max-width: 768px){
+    .configpayblobImg{
+        width: 160%;
+        margin-left: -19%;
+        margin-top: -30px;
+    }
+}
+
+.remitanceblobImg{
+    width: 730px;
+}
+
+@media (max-width: 768px){
+    .remitanceblobImg{
+        width: 150%;
+    }
+}
+
 .remitanceblob:before{
 
     content: '3';

@@ -18,8 +18,6 @@ const HomeServices = () => {
             <Services section={'section2'} title ={'Retail'} desc={desc[2]} />
             <Services section={'section3'} title ={'Financial Institution '} desc={desc[3]} />
             <Services section={'section4'} title ={'Fintech Start-Ups'} desc={desc[1]} />
-
-
         </>
     )
 }
