@@ -13,7 +13,8 @@ const Footer = () => {
                 backgroundRepeat: 'no-repeat',
                 color: 'white',
                 display: 'flex',
-                alignItems:'center'
+                alignItems:'center',
+                marginTop:'70px'
             }}>
                 <Box sx={{width:'100%',color:'#cccccc'}} >
                     <Stack

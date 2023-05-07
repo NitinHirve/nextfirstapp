@@ -155,14 +155,10 @@
 }
 
 .card_outer {
-    width: 280px;
-    height: 230px;
     /* border-radius: 20px; */
     background-color: pink;
     position: relative;
     border-bottom-left-radius: 30px;
-
-
 }
 
 .card {
@@ -482,3 +478,4 @@
     /* transform: skewY(15deg); */
     border-radius: 55% 45% 62% 38% / 39% 50% 50% 61%;
 }
+

@@ -32,34 +32,33 @@ const desc = [
 const ProcessorSolutions = () => {
     return (
         <>
-            <StyledBox >
+            <Box sx={{ display: 'flex', justifyContent: 'start', marginTop: '50px', marginBottom: '50px', height: { sm: '180px', xs: '85px' }, paddingLeft: { sm: '80px', xs: '20px' }, }} >
                 <Box  >
                     <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1100" data-aos-offset="100">
-                        <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: '100px', color: '#fbdcfc' }}>PROCESSOR</Typography>
+                        <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: { sm: '100px', xs: '50px' }, color: '#fbdcfc' }}>PROCESSOR</Typography>
                     </Box>
                     <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1500" data-aos-offset="100">
-                        <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, color: '#1e8be1', textAlign: 'center', fontSize: '6vw', marginTop: '-90px' }}>Solutions</Typography>
+                        <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, color: '#1e8be1', textAlign: 'center', fontSize: { sm: '6vw', xs: '40px' }, marginTop: { sm: '-90px', xs: '-45px' } }}>Solutions</Typography>
                     </Box>
                 </Box>
-            </StyledBox>
-            <div  style={{ height: '500px', border: '1px solid #dde3ee',borderRight:'0px', borderLeft: 'none', display: 'flex', marginRight: '40px',marginBottom:'40px' }}>
-                <div data-aos="fade-right" className={styles.ProcessorBG} style={{ width: '40%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                    <Typography  sx={{ fontFamily: 'Alexandria', paddingLeft: '25px', fontWeight: 300, fontSize: '22px', color: 'white', maxWidth: '400px', borderLeft: '5px solid yellow' }}>
+            </Box>
+
+            <Box sx={{ height: {sm:'500px',xs:'auto'}, border: {sm:'1px solid #dde3ee',xs:'none'}, borderRight: '0px', borderLeft: 'none', display: 'flex', flexDirection:{sm:'row',xs:'column'}, marginRight: {sm:'40px',xs:'0px'}, marginBottom: '40px' }}>
+                <Box data-aos="fade-right" className={styles.ProcessorBG} sx={{ width: {sm:'40%',xs:'100%'}, display: 'flex', alignItems: 'center', justifyContent: 'center',padding:{sm:0,xs:'30px 20px'} }}>
+                    <Typography sx={{ fontFamily: 'Alexandria', paddingLeft: '25px', fontWeight: 300, fontSize: '22px', color: 'white', maxWidth: '400px', borderLeft: '5px solid yellow' }}>
                         Digital payments are convenient and preferred, yet, they demand safety and security in terms of transactions. We at BNT build secure and tech-advanced processor solutions for e-commerce, in-stores or retail, along with, both offline and online solutions for your business goals.                    </Typography>
-                </div>
-                <div  style={{ width: '60%', backgroundColor: '#FBFBFB', display: 'flex', }}>
+                </Box>
+                <Box sx={{ width: {sm:'60%',xs:'100%'}, backgroundColor: '#FBFBFB', display: 'flex', flexDirection:{sm:'row',xs:'column'}, }}>
                     {headings.map((heading, i) => (<>
-                        <div className={styles.processsorElement} style={{ width: '25%', padding: '20px', paddingTop: '40px', borderRight: '1px solid #dde3ee' }}>
-                            <Box  data-aos="fade-right" data-aos-delay={ 200 * i } >
+                        <Box className={styles.processsorElement} sx={{ width: {sm:'25%',xs:'100%'}, padding: '20px', paddingTop: {sm:'40px',xs:'20px'}, borderRight: '1px solid #dde3ee' }}>
+                            <Box data-aos="fade-right" data-aos-delay={200 * i} sx={{backgroundColor:{xs:'#f2f5f3',sm:'#FBFBFB'},padding:{xs:'10px',sm:0},borderRadius:{sm:0,xs:'7px'}}}>
                                 <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 400, color: '#502f73', fontSize: '20px' }}>{heading}</Typography>
                                 <p style={{ fontFamily: 'Alexandria', color: '#424242', fontWeight: 300, fontSize: '14px', lineHeight: '21px', }}>{desc[i]}</p>
                             </Box>
-                        </div>
-
+                        </Box>
                     </>))}
-
-                </div>
-            </div>
+                </Box>
+            </Box>
         </>
     )
 }
