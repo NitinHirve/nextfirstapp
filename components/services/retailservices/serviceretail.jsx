@@ -119,183 +119,211 @@ const enterpriseSolutionsDetails = [
 const serviceretail = () => {
     return (
         <>
-            <Stack className={styles.myBG} direction="row" >
-                <Box sx={{ position: 'relative', width: '50%', height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                    <Box sx={{ position: 'absolute', marginTop: '-60px' }}>
-                        {/* <Typography data-aos="fade-right" style={{ fontFamily: 'Alexandria', fontWeight: '300', color: '#1a237e', fontSize: '60px' }}>Next-Gen</Typography> */}
-                        <Typography data-aos="fade-down" style={{ fontFamily: 'Alexandria', fontWeight: '400', color: '#53bd5f', fontSize: '75px', marginTop: '-10px', }}>
+          
+            <Stack className={styles.myBG} direction="row" sx={{ height: { sm: '90vh', xs: 'auto' } }} >
+                <Box sx={{ width: { sm: '50%', xs: '100%' }, display: 'flex', alignItems: { sm: 'center', xs: 'start' }, justifyContent: 'center', padding: { sm: 0, xs: '20px' } }}>
+                    <Box >
+                        <Typography data-aos="fade-down" sx={{ fontFamily: 'Alexandria', fontWeight: '400', color: '#53bd5f', fontSize: { sm: '75px', xs: '55px' } }}>
                             Retail
                         </Typography>
-                        <Typography data-aos="fade-up" sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: '22px', color: '#535151', maxWidth: '400px' }}>
+                        <Typography data-aos="fade-up" sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: { sm: '22px', xs: '18px' }, color: '#535151', maxWidth: '400px', padding: { sm: 0, xs: '10px' } }}>
                             With an increasing focus on customer experience, it is imperative to offer an elevated and competitive shopping experience for consumers. Thus, it is optimum to strengthen your retail in-store operations.
                         </Typography>
                     </Box>
                 </Box>
-                <StyledBox sx={{ position: 'relative' }}>
-                    <Box data-aos="zoom-out" sx={{ position: 'relative' }}>
-                        <figure >
-                            <img className={styles.floatingImg} style={{ width: '500px' }} src="/services/images/retail.png" alt="abutImg"></img>
-                        </figure>
-                    </Box>
-                </StyledBox>
-            </Stack>
-
-            
-            <StyledBoxHeading >
-                <Box  >
-                    <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1100" data-aos-offset="100">
-                        <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: '64px', color: '#b4fabc' }}>IN-STORE OPERATIONS</Typography>
-                    </Box>
-                    <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1500" data-aos-offset="100">
-                        <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, color: '#1e8be1', textAlign: 'center', fontSize: '5vw', marginTop: '-60px' }}>POS Solutions</Typography>
+                <Box sx={{ width: '50%', display: { sm: 'flex', xs: 'none' }, alignItems: 'center', justifyContent: 'center' }}>
+                    <Box data-aos="zoom-out" >
+                        <img className={styles.floatingImg} style={{ width: '500px' }} src="/services/images/retail.png" alt="abutImg"></img>
                     </Box>
                 </Box>
-            </StyledBoxHeading>
+            </Stack>
 
-            <Grid sx={{ padding: '0px 170px' }} container spacing={2} >
+
+
+
+            
+            <Box sx={{ display: 'flex',justifyContent: 'end', marginTop: '50px',marginBottom: '50px', height: {sm:'180px',xs:'85px'},paddingRight: {sm:'40px',xs:'20px'},}} >
+                <Box  >
+                    <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1100" data-aos-offset="100">
+                        <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: {sm:'64px',xs:'28px'}, color: '#b4fabc' }}>IN-STORE OPERATIONS</Typography>
+                    </Box>
+                    <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1500" data-aos-offset="100">
+                        <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, color: '#1e8be1', textAlign: 'center', fontSize: {sm:'5vw',xs:'35px'}, marginTop: {sm:'-60px',xs:'-26px'} }}>POS Solutions</Typography>
+                    </Box>
+                </Box>
+            </Box>
+
+            {/* my above */}
+
+ {/* my below */}
+
+            {/* <Grid  sx={{ padding: {sm:'30px 70px',xs:'20px 20px'} }} container spacing={2} >
                 {headings.map((item, i) => (<>
                     <Grid item xs={12} sm={4} md={4} >
-                        <div data-aos="fade-left" data-aos-delay={i <= 3 ? 300 * i : 300 * (i - 4)} className={stylesPayment.card_outer}>
-                            <div className={stylesPayment.card}>
+                        <Box data-aos="fade-left" data-aos-delay={i <= 3 ? 300 * i : 300 * (i - 4)} className={stylesPayment.card_outer}>
+                            <Box className={stylesPayment.card}>
                                 <Typography style={{ fontFamily: 'Alexandria', fontWeight: 400, fontSize: '24px' }} >{item}</Typography>
-                            </div>
-                            <div className={stylesPayment.car_footer} style={{ backgroundColor: '#37b345' }} >
+                            </Box>
+                            <Box className={stylesPayment.car_footer} style={{ backgroundColor: '#37b345' }} >
                                 <MdKeyboardArrowUp />
                                 <Typography className={stylesPayment.car_footer_readMore} > Read More</Typography>
                                 <p className={stylesPayment.card_desc}>{desc[i]}</p>
-                            </div>
-                        </div>
+                            </Box>
+                        </Box>
                     </Grid>
                 </>))}
-            </Grid>
+            </Grid> */}
 
-            <StyledBoxHeading2 >
+            <Box sx={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
+                <Grid sx={{ padding: { sm: '30px 70px', xs: '20px 20px' }, width: {sm:'80%',xs:'100%'} }} container spacing={2} >
+                    {headings.map((item, i) => (<>
+                        <Grid item xs={12} sm={4} md={4} >
+                            <Box data-aos="fade-left" data-aos-delay={i <= 3 ? 300 * i : 300 * (i - 4)} className={stylesPayment.card_outer} sx={{ width: { sm: '280px', xs: '100%' }, height: { sm: '230px', xs: '230px' }, marginBottom: '30px' }}>
+                                <Box className={stylesPayment.card}>
+                                    <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 400, fontSize: '24px' }} >{item}</Typography>
+                                </Box>
+                                <Box className={stylesPayment.car_footer} sx={{ backgroundColor: '#37b345!important' }}>
+                                    <MdKeyboardArrowUp />
+                                    <Typography className={stylesPayment.car_footer_readMore} > Read More</Typography>
+                                    <p className={stylesPayment.card_desc}>{desc[i]}</p>
+                                </Box>
+                            </Box>
+                        </Grid>
+                    </>))}
+                </Grid>
+            </Box>
+
+
+            <Box sx={{ display: 'flex',justifyContent: 'start', marginTop: '110px',marginBottom: '50px', height: {sm:'180px',xs:'85px'},paddingLeft: {sm:'80px',xs:'20px'},}} >
                 <Box  >
                     <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1100" data-aos-offset="100">
-                        <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: '64px', color: '#b4fabc' }}>IN-STORE OPERATIONS</Typography>
+                        <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: {sm:'64px',xs:'28px'}, color: '#b4fabc' }}>IN-STORE OPERATIONS</Typography>
                     </Box>
                     <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1500" data-aos-offset="100">
-                        <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, color: '#1e8be1', textAlign: 'center', fontSize: '5vw', marginTop: '-60px' }}>Back Office</Typography>
+                        <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, color: '#1e8be1', textAlign: 'center', fontSize: {sm:'5vw',xs:'35px'}, marginTop: {sm:'-60px',xs:'-26px'} }}>Back Office</Typography>
                     </Box>
                 </Box>
-            </StyledBoxHeading2>
+            </Box>
 
-            <div style={{ height: '500px', border: '1px solid #dde3ee', borderRight: '0px', borderLeft: 'none', display: 'flex', marginRight: '40px', marginBottom: '40px' }}>
-                <div data-aos="fade-right" className={styles.backOfficeBG} style={{ width: '40%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+{/* Back Office */}
+
+            <Box sx={{ height: {sm:'500px',xs:'auto'}, border: {sm:'1px solid #dde3ee',xs:'none'}, borderRight: '0px', borderLeft: 'none', display: 'flex', flexDirection:{sm:'row',xs:'column'}, marginRight: {sm:'40px',xs:'0px'}, marginBottom: '40px' }}>
+                <Box data-aos="fade-right" className={styles.backOfficeBG} sx={{ width: {sm:'40%',xs:'100%'}, display: 'flex', alignItems: 'center', justifyContent: 'center',padding:{sm:0,xs:'30px 20px'} }}>
                     <Typography sx={{ fontFamily: 'Alexandria', paddingLeft: '25px', fontWeight: 300, fontSize: '22px', color: 'white', maxWidth: '400px', borderLeft: '5px solid yellow' }}>
-                        With an increasing focus on customer experience, it is imperative to offer an elevated and competitive shopping experience for consumers. Thus, it is optimum to strengthen your retail in-store operations.</Typography>
-                </div>
-                <div style={{ width: '60%', backgroundColor: '#FBFBFB', display: 'flex', }}>
+                    With an increasing focus on customer experience, it is imperative to offer an elevated and competitive shopping experience for consumers. Thus, it is optimum to strengthen your retail in-store operations.</Typography>
+                </Box>
+                <Box sx={{ width: {sm:'60%',xs:'100%'}, backgroundColor: '#FBFBFB', display: 'flex', flexDirection:{sm:'row',xs:'column'}, }}>
                     {headingsBackOffice.map((heading, i) => (<>
-                        <div className={stylesPayment.processsorElement} style={{ width: '25%', padding: '20px', paddingTop: '40px', borderRight: '1px solid #dde3ee' }}>
-                            <Box data-aos="fade-right" data-aos-delay={200 * i} >
+                        <Box className={styles.processsorElement} sx={{ width: {sm:'25%',xs:'100%'}, padding: '20px', paddingTop: {sm:'40px',xs:'20px'}, borderRight: '1px solid #dde3ee' }}>
+                            <Box data-aos="fade-right" data-aos-delay={200 * i} sx={{backgroundColor:{xs:'#f2f5f3',sm:'#FBFBFB'},padding:{xs:'10px',sm:0},borderRadius:{sm:0,xs:'7px'}}}>
                                 <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 400, color: '#144719', fontSize: '20px' }}>{heading}</Typography>
                                 <p style={{ fontFamily: 'Alexandria', color: '#424242', fontWeight: 300, fontSize: '14px', lineHeight: '21px', }}>{descBackOffice[i]}</p>
                             </Box>
-                        </div>
-
+                        </Box>
                     </>))}
-
-                </div>
-            </div>
+                </Box>
+            </Box>
 
             {/* E-Commerce Solution> */}
 
-            <div style={{ height: '1000px', backgroundColor: '#eff0f4', position: 'relative', paddingTop: '100px' }}>
-                <StyledBoxHeadingECommerce >
+            <Box sx={{ height: {sm:'1000px',xs:'auto'}, backgroundColor: '#eff0f4', position: 'relative', paddingTop: '100px',display:{sm:'block',xs:'flex'},flexDirection:{xs:'column'},paddingBottom:{sm:0,xs:'80px'}}}>
+                <Box sx={{height: '180px',display: 'flex',justifyContent: 'start',paddingRight: '40px',position: 'absolute',top: {sm:360,xs:0},left:{sm: 200,xs:'30px'}}} >
                     <Box  >
                         <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1100" data-aos-offset="100">
                             <Typography sx={{
-                                fontFamily: 'Alexandria', fontWeight: 300, fontSize: '110px', color: '#d4d4d6', color: '#eff0f4',
+                                fontFamily: 'Alexandria', fontWeight: 300, fontSize: {sm:'110px',xs:'70px'}, color: '#d4d4d6', color: '#eff0f4',
                                 textShadow: '0 13.36px 8.896px #c4b59d,0 -2px 1px #fff'
                             }}>E</Typography>
                         </Box>
                         <Box data-aos="fade-right" data-aos-once="false" data-aos-duration="1500" data-aos-offset="100">
-                            <Typography className={stylesPayment.walletHead} sx={{ fontFamily: 'Alexandria', fontWeight: 300, color: '#1e8be1', textAlign: 'center', fontSize: '8vw', marginTop: '-90px', marginLeft: '-60px' }}>Commerce</Typography>
+                            <Typography className={stylesPayment.walletHead} sx={{ fontFamily: 'Alexandria', fontWeight: 300, color: '#1e8be1', textAlign: 'center', fontSize: {sm:'8vw',xs:'50px'}, marginTop: {sm:'-60px',xs:'-54px'},marginLeft: {sm:'-60px',xs:'-10px'} }}>Commerce</Typography>
                         </Box>
                     </Box>
-                </StyledBoxHeadingECommerce>
-                <div data-aos="zoom-out" style={{ position: 'absolute', top: 50, right: 600 }}>
-                    <div className={stylesPayment.drop}>
-                        <div className={stylesPayment.content}>
+                </Box>
+
+
+                <Box data-aos="zoom-out" sx={{ position: {sm:'absolute',xs:'static'}, top: 50, right: 600,display:{sm:'block',xs:'flex'},justifyContent:{xs:'center'} ,marginTop:{sm:0,xs:'80px'}}}>
+                    <Box className={stylesPayment.drop}>
+                        <Box className={stylesPayment.content}>
                             <h2 style={{ color: '#298f33' }}>01</h2>
-                            <h1 >Quick Online Checkout</h1>
+                            <h1 >Cloud Based Payment</h1>
                             <a style={{ backgroundColor: '#02690d' }} >Read more</a>
-                        </div>
-                        <div className={stylesPayment.contentDesc}>
-                            <p style={{ textAlign: 'center' }}>Increasing market visibility and traction, social media is an effective and powerful medium to engage and redirect audience to online store.</p>
-                        </div>
-                    </div>
-                </div>
-                <div data-aos="zoom-out" data-aos-delay="300" style={{ position: 'absolute', top: 120, right: 250 }}>
-                    <div className={stylesPayment.drop} style={{ borderRadius: '61% 39% 50% 50% / 41% 52% 48% 59% ' }}>
-                        <div className={stylesPayment.content}>
+                        </Box>
+                        <Box className={stylesPayment.contentDesc}>
+                            <p style={{ textAlign: 'center' }}>Redefining payment systems, we guarantee to transform your payment experience with our cloud based payment solutions. Offering flexibility and no latency, our cloud platforms are secure and efficient.</p>
+                        </Box>
+                    </Box>
+                </Box>
+                <Box data-aos="zoom-out" data-aos-delay="300" sx={{ position: {sm:'absolute',xs:'static'}, top: 120, right: 250 , display:{sm:'block',xs:'flex'},justifyContent:{xs:'center'},marginTop:{sm:0,xs:'50px'}}}>
+                    <Box className={stylesPayment.drop} style={{ borderRadius: '61% 39% 50% 50% / 41% 52% 48% 59% ' }}>
+                        <Box className={stylesPayment.content}>
                             <h2 style={{ color: '#298f33' }}>02</h2>
-                            <h1 >Social Media Commerce</h1>
-                            <a style={{ backgroundColor: '#02690d' }}>Read more</a>
-                        </div>
-                        <div className={stylesPayment.contentDesc}>
+                            <h1 >Cross Border Payment</h1>
+                            <a style={{ backgroundColor: '#02690d' }} >Read more</a>
+                        </Box>
+                        <Box className={stylesPayment.contentDesc}>
                             <p style={{ textAlign: 'center' }}>
-                                Increasing market visibility and traction, social media is an effective and powerful medium to engage and redirect audience to online store.
+                                Refining payment systems, we also empower individuals, corporations, settlement institutions and central banks with convenient and flexible payment processes.
                             </p>
-                        </div>
-                    </div>
-                </div>
-                <div data-aos="zoom-out" style={{ position: 'absolute', top: 460, right: 250 }}>
-                    <div className={stylesPayment.drop} style={{ borderRadius: '56% 44% 71% 29% / 50% 54% 46% 50% ' }}>
-                        <div className={stylesPayment.content}>
+                        </Box>
+                    </Box>
+                </Box>
+                <Box data-aos="zoom-out" sx={{ position: {sm:'absolute',xs:'static'}, top: 460, right: 250, display:{sm:'block',xs:'flex'},justifyContent:{xs:'center'},marginTop:{sm:0,xs:'50px'} }}>
+                    <Box className={stylesPayment.drop} style={{ borderRadius: '56% 44% 71% 29% / 50% 54% 46% 50% ' }}>
+                        <Box className={stylesPayment.content}>
                             <h2 style={{ color: '#298f33' }}>03</h2>
-                            <h1 >SAAS Solutions</h1>
-                            <a style={{ backgroundColor: '#02690d' }}>Read more</a>
-                        </div>
-                        <div className={stylesPayment.contentDesc}>
+                            <h1 >Crypto Currencies</h1>
+                            <a style={{ backgroundColor: '#02690d' }} >Read more</a>
+                        </Box>
+                        <Box className={stylesPayment.contentDesc}>
                             <p style={{ textAlign: 'center' }}>
-                                Utilizing advanced and latest technology, we develop and provide latest SaaS ecommerce solutions. Providing cloud based hosting systems, they can be accessed by any web user on the internet.
+                                We evolve and provide trending market suitable solutions to all your payment process. We build and provide digital currency with cutting edge encryption techniques utilizing latest Bitcoin and ETH methods.
                             </p>
-                        </div>
-                    </div>
-                </div>
-                <div data-aos="zoom-out" style={{ position: 'absolute', top: 650, right: 600 }}>
-                    <div className={stylesPayment.drop} style={{ borderRadius: '55% 45% 33% 67% / 35% 31% 69% 65% ' }}>
-                        <div className={stylesPayment.content}>
+                        </Box>
+                    </Box>
+                </Box>
+                <Box data-aos="zoom-out" sx={{ position: {sm:'absolute',xs:'static'}, top: 650, right: 600 , display:{sm:'block',xs:'flex'},justifyContent:{xs:'center'},marginTop:{sm:0,xs:'50px'} }}>
+                    <Box className={stylesPayment.drop} style={{ borderRadius: '55% 45% 33% 67% / 35% 31% 69% 65% ' }}>
+                        <Box className={stylesPayment.content}>
                             <h2 style={{ color: '#298f33' }}>04</h2>
-                            <h1 >Web Design And Development</h1>
-                            <a style={{ backgroundColor: '#02690d' }}>Read more</a>
-                        </div>
-                        <div className={stylesPayment.contentDesc}>
+                            <h1 >Payment With Social Media</h1>
+                            <a style={{ backgroundColor: '#02690d' }} >Read more</a>
+                        </Box>
+                        <Box className={stylesPayment.contentDesc}>
                             <p style={{ textAlign: 'center' }}>
-                                Variants of portals include mashups and intranet ``dashboards`` for executives and managers.
+                                Facilitating payment collection across all platforms, our e-wallets are flexible and can be integrated with all social media platforms for any payment requirement.
                             </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                        </Box>
+                    </Box>
+                </Box>
+            </Box>
 
             {/* ENTERPRISE SOLUTIONS */}
 
-            <StyledBoxHeading sx={{marginBottom:'-60px'}} >
+
+            <Box sx={{ display: 'flex',justifyContent: 'end', marginTop: '50px',marginBottom: '50px', height: {sm:'180px',xs:'85px'},paddingRight: {sm:'40px',xs:'20px'},}} >
                 <Box  >
                     <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1100" data-aos-offset="100">
-                        <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: '100px', color: '#b4fabc' }}>ENTERPRISE</Typography>
+                        <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: {sm:'100px',xs:'50px'}, color: '#b4fabc' }}>ENTERPRISE</Typography>
                     </Box>
                     <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1500" data-aos-offset="100">
-                        <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, color: '#1e8be1', textAlign: 'center', fontSize: '6vw', marginTop: '-90px' }}>Solutions</Typography>
+                        <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, color: '#1e8be1', textAlign: 'center', fontSize: {sm:'6vw',xs:'40px'}, marginTop: {sm:'-90px',xs:'-45px'} }}>Solutions</Typography>
                     </Box>
                 </Box>
-            </StyledBoxHeading>
+            </Box>
 
 
-            <div style={{ margin: '100px 0px 100px 0px', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '30px' }}>
+            <Box sx={{ margin: {sm:'100px 0px 100px 0px',xs:'20px'}, display: 'flex',flexDirection:{sm:'row',xs:'column'}, alignItems: 'center', justifyContent: 'center', gap: '30px' }}>
                 {enterpriseSolutionsDetails.map(item => (<>
-                    <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-offset="0" data-aos-duration="800">
-                        <div className={stylesPayment.mobile_card} >
-                            <div className={stylesPayment.mobile__card_logo}>{item.logo}</div>
+                    <Box data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-offset="0" data-aos-duration="800">
+                        <Box className={stylesPayment.mobile_card} >
+                            <Box className={stylesPayment.mobile__card_logo}>{item.logo}</Box>
                             <h3>{item.title}</h3>
                             <p>{item.desc}.</p>
-                        </div>
-                    </div>
+                        </Box>
+                    </Box>
                 </>))}
-            </div>
+            </Box>
         </>
     )
 }

@@ -14,7 +14,6 @@ const Footer = () => {
                 color: 'white',
                 display: 'flex',
                 alignItems:'center',
-                marginTop:'70px'
             }}>
                 <Box sx={{width:'100%',color:'#cccccc'}} >
                     <Stack
