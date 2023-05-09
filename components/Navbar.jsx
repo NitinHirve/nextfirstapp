@@ -68,10 +68,15 @@ function Navbar(props) {
             </Typography>
             <Divider />
             <List>
-                {navItems.map((item) => (
+                {navItems.map((item,i) => (
                     <ListItem key={item} disablePadding>
                         <ListItemButton sx={{ textAlign: 'center' }}>
-                            <ListItemText primary={item} />
+                        <Link href={item === 'Services' ? '' : navItemsNav[i]}>
+                                            
+                        <ListItemText primary={item} />
+                                         
+                                        </Link>
+                            
                         </ListItemButton>
                     </ListItem>
                 ))}

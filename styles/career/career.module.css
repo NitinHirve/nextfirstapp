@@ -1,0 +1,7 @@
+.myBG {
+    background-image: url('../../public/career/images/careerBG.jpg');
+    background: linear-gradient(rgba(30, 9, 87, 0.6),rgba(30, 9, 87, 0.6)), url('../../public/career/images/careerBG.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+}
