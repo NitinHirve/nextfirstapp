@@ -21,7 +21,17 @@ const Ourmission = () => {
                             <Box onClick={() => { setTabOn('2') }} sx={{ fontFamily: 'Alexandria', fontSize: '13px', cursor: 'pointer', flex: 1, backgroundColor: tabOn == '2' ? '#fff' : '#7e16f5', color: tabOn == '2' ? 'black' : '#fff', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', clipPath: 'polygon(8% 0%, 100% 0%, 92% 100%, 0% 100%)' }}>Our Vision</Box>
                             <Box onClick={() => { setTabOn('3') }} sx={{ fontFamily: 'Alexandria', fontSize: '13px', cursor: 'pointer', flex: 1, backgroundColor: tabOn == '3' ? '#fff' : '#7e16f5', color: tabOn == '3' ? 'black' : '#fff', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', clipPath: 'polygon(8% 0%, 100% 0%, 100% 100%, 0% 100%)' }}>Our History</Box>
                         </Box>
-                        <Box sx={{ height: {sm:'170px',xs:'400px'}, backgroundColor: 'white', width: {sm:'700px',xs:'93%'}, position: 'relative', zIndex: 1,marginBottom:{sm:0,xs:'20px'} }}>
+                        <Box sx={{ height: { sm: '170px', xs: '400px' }, backgroundColor: 'white', width: { sm: '750px', xs: '93%' }, position: 'relative', zIndex: 1, marginBottom: { sm: 0, xs: '20px' }, padding: '20px' }}>
+                           
+                            <Box sx={{display:'flex',height:'100%',flexDirection:{sm:'row',xs:'column-reverse'}}}>
+                               
+                            <Typography sx={{ fontFamily: 'Alexandria', paddingRight: {sm:'10px',xs:0}, margin: '0!important', fontSize: '15px', color: '#6f6675',width:{sm:'70%',xs:'100%'},fontWeight:300,height:{sm:'100%',xs:'65%'},paddingTop:{sm:0,xs:'10px'} }}>
+                                {tabOn == '1' && '\"We envision revolutionizing the payment solutions industry by delivering customized solutions that meet the unique needs of businesses worldwide. We strive to be the leading provider of tailored payment solutions, offering exceptional customer service and expertise to our clients.\"'}
+                                {tabOn == '2' && '\"We believe in fostering strong partnerships with our clients as technology and product agnostics. Our goal is to make payment processing simple and easy, so that businesses can focus on what they do best - growing their businesses.\"'}
+                                {tabOn == '3' && '\"Established a decade ago, we are passionate about helping businesses succeed, and we are dedicated to providing exceptional service and support to our clients. Our tech experts with the latest markets and industry trends provide the best-customised payment solutions that meet their business goals.\"'}
+                            </Typography>
+                             <Box className={styles.ourMission} sx={{width:{sm:'30%',xs:'100%'},padding:'10px!important',height:{sm:'100%',xs:'35%'},backgroundImage: tabOn == '1'? 'url(/aboutus/images/ourmission/ourmission.jpg)':(tabOn == '2' ? 'url(/aboutus/images/ourmission/ourvison.jpg)':'url(/aboutus/images/ourmission/ourhistory.jpg)')}}></Box>
+                            </Box>
 
                         </Box>
                     </Box>

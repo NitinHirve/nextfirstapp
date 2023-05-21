@@ -67,7 +67,7 @@ const cardDetails = [
 const Blogs = () => {
     return (
         <>
-            <Box className={styles.myBG} sx={{ height: '93vh', }}>
+            <Box className={styles.myBG} sx={{ height: '400px', }}>
                 <Box >
                     <Typography data-aos="fade-down" style={{ fontFamily: 'Alexandria', fontWeight: '600', color: '#fff', fontSize: '100px', textAlign: 'center' }}>
                         Blogs

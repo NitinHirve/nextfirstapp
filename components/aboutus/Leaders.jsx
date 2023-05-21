@@ -1,5 +1,6 @@
 import { Box, Grid, Typography, useMediaQuery } from '@mui/material'
 import React from 'react'
+import Link from 'next/link'
 import styles from '../../styles/aboutus/aboutus.module.css'
 
 
@@ -8,47 +9,47 @@ const leadersDetail = [
   {
     name: 'Shekhar Khakurdikar',
     desgn: 'CTO & Co-Founder',
-    profilePic: 'leader1'
+    profilePic: 'ShekharSir'
   },
   {
     name: 'Sachin Gurav',
     desgn: 'CEO & Co-Founder',
-    profilePic: 'leader2'
+    profilePic: 'SachinSir'
   },
   {
     name: 'Nilesh Varma',
     desgn: 'VP-Payment & Co-Founder',
-    profilePic: 'leader3'
+    profilePic: 'NileshSir'
   },
   {
     name: 'Gitanjali Mudaliar',
     desgn: 'HR Manager',
-    profilePic: 'leader4'
+    profilePic: 'GitanjaliMam'
   },
   {
     name: 'Girish Shahpurkar',
     desgn: 'CFO',
-    profilePic: 'leader1'
+    profilePic: 'GirishSir'
   },
   {
     name: 'Rajagopalan Nelliyodan',
     desgn: 'Operations Head',
-    profilePic: 'leader2'
+    profilePic: 'RajSir'
   },
   {
     name: 'Bhavik Vasa',
     desgn: 'Executive Director',
-    profilePic: 'leader1'
+    profilePic: 'Bhavik'
   },
   {
     name: 'David True',
     desgn: 'Advisory Board',
-    profilePic: 'leader2'
+    profilePic: 'David'
   },
   {
     name: 'Arcady Lapiro',
     desgn: 'Advisory Board',
-    profilePic: 'leader3'
+    profilePic: 'Arcady'
   }
 ]
 
@@ -103,7 +104,11 @@ const Leaders = () => {
         </Box>
         <Box sx={{ marginTop: '-191px', width: '100vw', height: '100%', display: 'flex', justifyContent: 'end' }}>
           <Box className={styles.joinUs} sx={{ display: 'grid', placeContent: 'center', width: '63%', clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%,33% 100%,20% 62%,20% 39%)' }}>
-            <Box sx={{ cursor: 'pointer', fontFamily: 'Alexandria', display: 'grid', placeContent: 'center', color: 'white', height: { sm: '40px', xs: '33px' }, width: { sm: '158px', xs: '100px' }, background: ' linear-gradient(90deg, rgba(126,22,245,1) 0%, rgba(192,144,247,1) 71%)', marginLeft: { sm: 0, xs: '53px' } }}>Join Us</Box>
+            <Link href={'/career'}>
+              <Box sx={{ cursor: 'pointer', fontFamily: 'Alexandria', display: 'grid', placeContent: 'center', color: 'white', height: { sm: '40px', xs: '33px' }, width: { sm: '158px', xs: '100px' }, background: ' linear-gradient(90deg, rgba(126,22,245,1) 0%, rgba(192,144,247,1) 71%)', marginLeft: { sm: 0, xs: '53px' } }}>
+                Join Us
+              </Box>
+            </Link>
           </Box>
         </Box>
       </Box>

@@ -73,3 +73,9 @@
     background-repeat: no-repeat;
     filter: blur(1px);
   }
+
+  .ourMission{
+    /* background-image: url('../../public/aboutus/images/ourmission/ourmission.jpg'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+}

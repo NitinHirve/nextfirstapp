@@ -95,6 +95,7 @@ function Navbar(props) {
     };
     const handleClose = () => {
         setAnchorEl(null);
+        setCurrentItem('')
     };
 
     return (
@@ -150,6 +151,7 @@ function Navbar(props) {
                                 anchorEl={anchorEl}
                                 open={open}
                                 onClose={handleClose}
+                                onMouseLeave={handleClose}
                                 MenuListProps={{
                                     'aria-labelledby': 'basic-button',
                                 }}
