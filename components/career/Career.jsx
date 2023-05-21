@@ -4,6 +4,7 @@ import React from 'react'
 import { Box, Stack, Typography, styled, alpha, InputBase, MenuItem, TextField, Grid, Button, Modal } from '@mui/material'
 import style from '../.././styles/career/career.module.css'
 import CircleIcon from '@mui/icons-material/Circle';
+import ConnectForm from './CareerForm'
 
 import SearchIcon from '@mui/icons-material/Search';
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
@@ -140,9 +141,9 @@ const Career = () => {
 
     return (
         <>
-            <Box className={style.myBG} sx={{ height: {sm:'500px',xs:'auto'} }}>
-                <Box sx={{ height: '100%', maxWidth: {sm:'800px',xs:'100%'}, marginLeft: {sm:'80px',xs:'20px'}, paddingTop: {sm:'110px',xs:'40px'} }}>
-                    <Typography sx={{ fontFamily: 'Alexandria', padding: 0, margin: '0!important', color: 'white', fontSize: '40px', fontWeight: 600 ,lineHeight:{xs:'45px',sm:1.5}}}>
+            <Box className={style.myBG} sx={{ height: { sm: '500px', xs: 'auto' } }}>
+                <Box sx={{ height: '100%', maxWidth: { sm: '800px', xs: '100%' }, marginLeft: { sm: '80px', xs: '20px' }, paddingTop: { sm: '110px', xs: '40px' } }}>
+                    <Typography sx={{ fontFamily: 'Alexandria', padding: 0, margin: '0!important', color: 'white', fontSize: '40px', fontWeight: 600, lineHeight: { xs: '45px', sm: 1.5 } }}>
                         Let’s Grow Together And Join Us To<br></br> Spread The Power Of Technology!
                     </Typography>
                     <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: { sm: '19px', xs: '18px' }, color: '#fff', padding: { sm: 0, xs: '10px' }, marginTop: '40px' }}>
@@ -153,10 +154,10 @@ const Career = () => {
                 </Box>
             </Box>
 
-            <Box sx={{ padding: {sm:'100px',xs:'20px'} }}>
+            <Box sx={{ padding: { sm: '100px', xs: '20px' } }}>
 
-                <Box sx={{ display: 'flex',flexDirection:{sm:'row',xs:'column'} ,gap: '15px' }}>
-                    <Search sx={{ width: {sm:'70%' ,xs:'100%'}}}>
+                <Box sx={{ display: 'flex', flexDirection: { sm: 'row', xs: 'column' }, gap: '15px' }}>
+                    <Search sx={{ width: { sm: '70%', xs: '100%' } }}>
                         <SearchIconWrapper>
                             <SearchIcon sx={{ color: '#d9dbde' }} />
                         </SearchIconWrapper>
@@ -166,41 +167,41 @@ const Career = () => {
                         />
                     </Search>
 
-                    <Box sx={{display: 'flex',gap: '15px'}}>
-                    <Box >
-                        <TextField
-                            id="outlined-select-currency"
-                            select
-                            // label="Select"
-                            defaultValue="All Job Type"
-                            // helperText="Please select your currency"
+                    <Box sx={{ display: 'flex', gap: '15px' }}>
+                        <Box >
+                            <TextField
+                                id="outlined-select-currency"
+                                select
+                                // label="Select"
+                                defaultValue="All Job Type"
+                                // helperText="Please select your currency"
 
-                            InputProps={{ style: { height: '50px',color:'#858585'} }}
-                        >
-                            {currencies.map((option) => (
-                                <MenuItem key={option.value} value={option.value}>
-                                    {option.label}
-                                </MenuItem>
-                            ))}
-                        </TextField>
-                    </Box>
+                                InputProps={{ style: { height: '50px', color: '#858585' } }}
+                            >
+                                {currencies.map((option) => (
+                                    <MenuItem key={option.value} value={option.value}>
+                                        {option.label}
+                                    </MenuItem>
+                                ))}
+                            </TextField>
+                        </Box>
 
-                    <Box >
-                        <TextField
-                            id="outlined-select-currency"
-                            select
-                            // label="Select"
-                            defaultValue="All Job Locations"
-                            // helperText="Please select your currency"
-                            InputProps={{ style: { height: '50px',color:'#858585' } }}
-                        >
-                            {jobLocations.map((option) => (
-                                <MenuItem key={option.value} value={option.value}>
-                                    {option.label}
-                                </MenuItem>
-                            ))}
-                        </TextField>
-                    </Box>
+                        <Box >
+                            <TextField
+                                id="outlined-select-currency"
+                                select
+                                // label="Select"
+                                defaultValue="All Job Locations"
+                                // helperText="Please select your currency"
+                                InputProps={{ style: { height: '50px', color: '#858585' } }}
+                            >
+                                {jobLocations.map((option) => (
+                                    <MenuItem key={option.value} value={option.value}>
+                                        {option.label}
+                                    </MenuItem>
+                                ))}
+                            </TextField>
+                        </Box>
                     </Box>
                 </Box>
 
@@ -210,10 +211,10 @@ const Career = () => {
                         {jobVacencies.map((job, i) => (<>
                             <Grid item xs={12} sm={4} md={4} >
                                 <Box sx={{ width: { sm: '320px', xs: '100%' }, height: { sm: '110px', xs: '110' }, marginBottom: '30px', border: '1px solid #d9dbde', borderRadius: '5px', padding: '10px' }}>
-                                    <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: '18px' , color: '#414242', padding: { sm: 0, xs: '10px' } }}>
+                                    <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: '18px', color: '#414242', padding: { sm: 0, xs: '10px' } }}>
                                         {job.title}
                                     </Typography>
-                                    <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: { sm: '13px' }, color: '#8c8c8c', padding: { sm: 0, xs: '10px' }, marginTop: {sm:'5px',xs:0} }}>
+                                    <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: { sm: '13px' }, color: '#8c8c8c', padding: { sm: 0, xs: '10px' }, marginTop: { sm: '5px', xs: 0 } }}>
                                         {job.location}&nbsp; <CircleIcon sx={{ fontSize: '6px', color: '#a8a7a7' }} />&nbsp;   {job.experiance}&nbsp;  <CircleIcon sx={{ fontSize: '6px', color: '#a8a7a7' }} />&nbsp;  {job.type}
                                     </Typography>
                                     <Button onClick={handleOpen} sx={{ textTransform: 'none', fontFamily: 'Alexandria', fontWeight: 400, }}>Details&nbsp; <KeyboardDoubleArrowRightIcon sx={{ fontSize: '16px' }} /></Button>
@@ -237,25 +238,79 @@ const Career = () => {
                     top: '50%',
                     left: '50%',
                     transform: 'translate(-50%, -50%)',
-                    width: {sm:900,xs:'90%'},
+                    width: { sm: 900, xs: '90%' },
                     height: '90%',
                     bgcolor: 'background.paper',
                     // border: '2px solid #000',
                     boxShadow: 24,
                     p: 4,
+                    overflowY: 'auto',
+                    padding:{sm:'32px',xs:'20px'},
                 }}>
-                    <Box sx={{ border: '1px solid #2973f2', height: '40%' }}>
                         <Box sx={{ height: '80px', padding: '10px', width: '100%', backgroundColor: '#2973f2' }}>
-                            <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 400, fontSize: { sm: '24px' }, color: '#fff', padding: { sm: 0, xs: '10px' } }}>
+                            <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 400, fontSize: { sm: '24px' }, color: '#fff'}}>
                                 Java Developer
                             </Typography>
-                            <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: { sm: '13px' }, color: '#fff', padding: { sm: 0, xs: '10px' }, }}>
+                            <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: '13px', color: '#fff' }}>
                                 Pune&nbsp; <CircleIcon sx={{ fontSize: '6px', color: '#fff' }} />&nbsp;   5+ years&nbsp;  <CircleIcon sx={{ fontSize: '6px', color: '#fff' }} />&nbsp;  Full Time
                             </Typography>
-
                         </Box>
-                    </Box>
 
+                        <Box sx={{ width: { sm: '100%', xs: '100%' }, height: { sm: '200px', xs: '110' }, border: '1px solid #d9dbde',  padding: '10px' }}>
+                            <table className={style.table}>
+                                <tr>
+                                    <td className={style.titleTh} >Technologies: </td>
+                                    <td>
+                                        <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: '13px', color: '#6a6b6a', padding: '0 0 5px 5px', marginTop: { sm: '5px', xs: 0 }, marginTop: 0 }}>
+                                        J2EE, Core Java [ Multithreading, Collections, Exception Handling, Serialization, Singleton], J2EE [good to know MVC, Hibernate, Struts2.0, Spring 3]
+                                        </Typography>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td className={style.titleTh} >Opening :</td>
+                                    <td>
+                                        <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: '13px', color: '#6a6b6a', padding: '0 0 5px 5px', marginTop: { sm: '5px', xs: 0 }, marginTop: 0 }}>
+                                            2
+                                        </Typography>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td className={style.titleTh} >Experiance: </td>
+                                    <td>
+                                        <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: '13px', color: '#6a6b6a', padding: '0 0 5px 5px', marginTop: { sm: '5px', xs: 0 }, marginTop: 0 }}>
+                                        2-4 Years
+                                        </Typography>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td className={style.titleTh} >Job Type: </td>
+                                    <td>
+                                        <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: '13px', color: '#6a6b6a', padding: '0 0 5px 5px', marginTop: { sm: '5px', xs: 0 }, marginTop: 0 }}>
+                                        Full Time
+                                        </Typography>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td className={style.titleTh}>Job Location:  </td>
+                                    <td>
+                                        <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: '13px', color: '#6a6b6a', padding: '0 0 5px 5px', marginTop: { sm: '5px', xs: 0 }, marginTop: 0 }}>
+                                        Pune
+                                        </Typography>
+                                    </td>
+                                </tr>
+                            </table>
+                        </Box>
+
+                       
+                            <Typography sx={{textAlign:'center',padding:'10px', width: '100%', backgroundColor: '#c1def5', fontFamily: 'Alexandria', fontWeight: 400, fontSize: { sm: '20px' }, color: '#4d4e4f' }}>
+                            Apply for this position
+                            </Typography>
+                            
+                            <Box sx={{width:'100%', border: '1px solid #d9dbde',backgroundColor: '#fafafa',paddingTop:'40px',display:'flex',justifyContent:'center'}}>
+                            <ConnectForm />
+
+                            </Box>
+                    
                 </Box>
             </Modal>
 

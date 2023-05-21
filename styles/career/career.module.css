@@ -5,3 +5,15 @@
     background-repeat: no-repeat;
     /* background-attachment: fixed; */
 }
+
+.table td {
+    vertical-align: top;
+    /* text-align: right; */
+  }
+
+.titleTh{
+    text-align:right;
+    font-family: 'Alexandria';
+    font-size: 14px;
+    color: #616060;
+}  
