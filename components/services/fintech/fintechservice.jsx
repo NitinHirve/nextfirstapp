@@ -173,26 +173,6 @@ const fintechservice = () => {
                 </Box>
             </Box>
 
-            
-
-
-            {/* <div style={{ height: '400px', border: '1px solid #dde3ee', borderRight: '0px', borderLeft: 'none', display: 'flex', marginRight: '40px', marginBottom: '40px' }}>
-                <div data-aos="fade-right" className={styles.backOfficeBG} style={{ width: '40%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                    <Typography sx={{ fontFamily: 'Alexandria', paddingLeft: '25px', fontWeight: 300, fontSize: '22px', color: 'white', maxWidth: '400px', borderLeft: '5px solid yellow' }}>
-                        Schematic Design Phase. The primary purpose is to define and describe all important aspects of the project. </Typography>
-                </div>
-                <div style={{ width: '60%', backgroundColor: '#FBFBFB', display: 'flex', }}>
-                    {architectureHeading.map((heading, i) => (<>
-                        <div className={stylesPayment.processsorElement} style={{ width: '25%', padding: '20px', paddingTop: '40px', borderRight: '1px solid #dde3ee' }}>
-                            <Box data-aos="fade-right" data-aos-delay={200 * i} >
-                                <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 400, color: '#144719', fontSize: '20px' }}>{heading}</Typography>
-                                <p style={{ fontFamily: 'Alexandria', color: '#424242', fontWeight: 300, fontSize: '14px', lineHeight: '21px', }}>{architecturDesc[i]}</p>
-                            </Box>
-                        </div>
-
-                    </>))}
-                </div>
-            </div> */}
 
             <Box sx={{ height: {sm:'400px',xs:'auto'}, border: {sm:'1px solid #dde3ee',xs:'none'}, borderRight: '0px', borderLeft: 'none', display: 'flex', flexDirection:{sm:'row',xs:'column'}, marginRight: {sm:'40px',xs:'0px'}, marginBottom: '40px' }}>
                 <Box data-aos="fade-right" className={styles.backOfficeBG} sx={{ width: {sm:'40%',xs:'100%'}, display: 'flex', alignItems: 'center', justifyContent: 'center',padding:{sm:0,xs:'30px 20px'} }}>
@@ -210,82 +190,7 @@ const fintechservice = () => {
                     </>))}
                 </Box>
             </Box>
-
-
-            {/* Independant testing services */}
-
-            {/* <div style={{ height: '1000px', backgroundColor: '#eff0f4', position: 'relative', paddingTop: '100px' }}>
-                <StyledBoxHeadingECommerce >
-                    <Box  >
-                        <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1100" data-aos-offset="100">
-                            <Typography sx={{
-                                fontFamily: 'Alexandria', fontWeight: 300, fontSize: '50px', color: '#d4d4d6', color: '#eff0f4',
-                                textShadow: '0 13.36px 8.896px #c4b59d,0 -2px 1px #fff',
-                                marginTop: '40px'
-                            }}>Independent Testing</Typography>
-                        </Box>
-                        <Box data-aos="fade-right" data-aos-once="false" data-aos-duration="1500" data-aos-offset="100">
-                            <Typography className={stylesPayment.walletHead} sx={{ fontFamily: 'Alexandria', fontWeight: 300, color: '#1e8be1', textAlign: 'center', fontSize: '8vw', marginTop: '-40px', marginLeft: '-60px' }}>Services</Typography>
-                        </Box>
-                    </Box>
-                </StyledBoxHeadingECommerce>
-                <div data-aos="zoom-out" style={{ position: 'absolute', top: 50, right: 600 }}>
-                    <div className={stylesPayment.drop}>
-                        <div className={stylesPayment.content}>
-                            <h2 style={{ color: '#2d6beb' }}>01</h2>
-                            <h1 >Plan Testing Strategy</h1>
-                            <a style={{ backgroundColor: '#2d6beb' }} >Read more</a>
-                        </div>
-                        <div className={stylesPayment.contentDesc}>
-                            <p style={{ textAlign: 'center' }}>
-                                Defines testing approach to achieve testing objectives. The Test Strategy is normally derived from the Business Requirements.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div data-aos="zoom-out" data-aos-delay="300" style={{ position: 'absolute', top: 120, right: 250 }}>
-                    <div className={stylesPayment.drop} style={{ borderRadius: '61% 39% 50% 50% / 41% 52% 48% 59% ' }}>
-                        <div className={stylesPayment.content}>
-                            <h2 style={{ color: '#2d6beb' }}>02</h2>
-                            <h1 >Test Script Preparation</h1>
-                            <a style={{ backgroundColor: '#2d6beb' }}>Read more</a>
-                        </div>
-                        <div className={stylesPayment.contentDesc}>
-                            <p style={{ textAlign: 'center' }}>
-                                Testing a set of instructions on a system under test to verify that the system performs as expected.                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div data-aos="zoom-out" style={{ position: 'absolute', top: 460, right: 250 }}>
-                    <div className={stylesPayment.drop} style={{ borderRadius: '56% 44% 71% 29% / 50% 54% 46% 50% ' }}>
-                        <div className={stylesPayment.content}>
-                            <h2 style={{ color: '#2d6beb' }}>03</h2>
-                            <h1 >Test Case Documentation</h1>
-                            <a style={{ backgroundColor: '#2d6beb' }}>Read more</a>
-                        </div>
-                        <div className={stylesPayment.contentDesc}>
-                            <p style={{ textAlign: 'center' }}>
-                                Test inputs, execution conditions, and expected results developed for a particular objectives studied and recorded with high accuracy.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div data-aos="zoom-out" style={{ position: 'absolute', top: 650, right: 600 }}>
-                    <div className={stylesPayment.drop} style={{ borderRadius: '55% 45% 33% 67% / 35% 31% 69% 65% ' }}>
-                        <div className={stylesPayment.content}>
-                            <h2 style={{ color: '#2d6beb' }}>04</h2>
-                            <h1 >Functional Testing</h1>
-                            <a style={{ backgroundColor: '#2d6beb' }}>Read more</a>
-                        </div>
-                        <div className={stylesPayment.contentDesc}>
-                            <p style={{ textAlign: 'center' }}>
-                                Fool proof systematic checks of each and every component of your product to figure out whether it is working for you or not.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div> */}
-
+       
 
 
 {/* Mine below */}

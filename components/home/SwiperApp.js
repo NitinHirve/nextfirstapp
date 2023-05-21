@@ -3,16 +3,18 @@ import "swiper/swiper.min.css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import "swiper/css/autoplay";
 import SwiperCore, {
     EffectCoverflow,
     Pagination,
-    Navigation
+    Navigation,
+    Autoplay
 } from "swiper/core";
 import ReviewCard from './ReviewCard'
 
 
 
-SwiperCore.use([EffectCoverflow, Pagination, Navigation]);
+SwiperCore.use([EffectCoverflow, Pagination, Navigation,Autoplay]);
 
 const comments = [
     'Currencies Direct and BNT have been working together for over 5 years now. Our experience has been excellent. We have achieved a lot together in terms of technical capabilities, professionalism, domain knowledge',
@@ -33,6 +35,7 @@ export default function SwiperApp() {
                     centeredSlides={true}
                     slidesPerView={window.innerWidth < 768 ? 1 : "auto"}
                     loop={true}
+                    autoplay={{ delay: 3000, disableOnInteraction: false }}
                     coverflowEffect={{
                         rotate: 50,
                         stretch: 0,

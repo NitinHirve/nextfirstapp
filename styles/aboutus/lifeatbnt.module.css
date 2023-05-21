@@ -1,0 +1,13 @@
+.myBG {
+    /* background-image: url('../../public/aboutus/images/lifeatbntBg.jpg'); */
+    background: linear-gradient(rgba(30, 9, 87, 0.6),rgba(30, 9, 87, 0.6)), url('../../public/career/images/careerBG.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+}
+
+.textShadow {
+      text-shadow: 0 13.36px 8.896px #2c482e, 0 -2px 1px #fff;
+    letter-spacing: -4px;
+    color: #fff;
+}

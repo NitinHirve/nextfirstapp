@@ -56,6 +56,7 @@ function Navbar(props) {
 
     const { window } = props;
     const [mobileOpen, setMobileOpen] = React.useState(false);
+    const [curNavItem, setCurrentItem] = React.useState('')
 
     const handleDrawerToggle = () => {
         setMobileOpen(!mobileOpen);
@@ -88,8 +89,9 @@ function Navbar(props) {
 
     const [anchorEl, setAnchorEl] = React.useState(null);
     const open = Boolean(anchorEl);
-    const handleClick = (event) => {
+    const handleClick = (event,item) => {
         setAnchorEl(event.currentTarget);
+        setCurrentItem(item)
     };
     const handleClose = () => {
         setAnchorEl(null);
@@ -125,11 +127,11 @@ function Navbar(props) {
 
 
                                     return (
-                                        <Link href={item === 'Services' ? '' : navItemsNav[i]}>
+                                        <Link href={item === 'Services' || item=== 'About Us' ? '' : navItemsNav[i]}>
                                             <button
                                                 key={item}
                                                 className={`raise ${router.asPath == navItemsNav[i] ? styles.navActive : styles.navList}`}
-                                                onClick={item === 'Services' ? handleClick : ''}
+                                                onMouseEnter={item === 'Services' || item=== 'About Us' ? (e)=>{setAnchorEl(null);handleClick(e,item)} : ''}
                                                 id="basic-button"
                                                 aria-controls={open ? 'basic-menu' : undefined}
                                                 aria-haspopup="true"
@@ -152,21 +154,46 @@ function Navbar(props) {
                                     'aria-labelledby': 'basic-button',
                                 }}
                             >
-                                <MenuItem onClick={handleClose}>
+                            {curNavItem ==='Services' && <>
+                            <MenuItem onClick={handleClose}>
                                     <Link href={'/services/payments'}>
                                         Payments
                                     </Link>
                                 </MenuItem>
                                 <MenuItem onClick={handleClose}>
                                     <Link href={'/services/retail'}>
-                                        Retail
+                                            Retail
+                                        </Link>
+                                    </MenuItem>
+                                    <MenuItem onClick={handleClose}>
+                                        <Link href={'/services/fintech'}>
+                                            Fintech Startup
+                                        </Link>
+                                    </MenuItem>
+                                    <MenuItem onClick={handleClose}>
+                                        <Link href={'/services/subservices'}>
+                                            Sub services
+                                        </Link>
+                                    </MenuItem>
+                                    <MenuItem onClick={handleClose}>
+                                        <Link href={'/services/newtechnologies'}>
+                                             New Technologies
+                                        </Link>
+                                    </MenuItem>
+                            </>}
+                            {curNavItem ==='About Us' && <>
+                            <MenuItem onClick={handleClose}>
+                                    <Link href={'/aboutus/aboutus'}>
+                                        About BNT
                                     </Link>
                                 </MenuItem>
                                 <MenuItem onClick={handleClose}>
-                                    <Link href={'/services/fintech'}>
-                                        Fintech Startup
+                                    <Link href={'/aboutus/lifeatBNT'}>
+                                        Life at BNT
                                     </Link>
                                 </MenuItem>
+                            </>}
+                               
                             </Menu>
                             <Box sx={{ flexGrow: 1, }}></Box>
                         </Toolbar>
