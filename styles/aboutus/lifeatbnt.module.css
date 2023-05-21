@@ -6,6 +6,23 @@
     /* background-attachment: fixed; */
 }
 
+.photoGridImgBack {
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: 0.4s ease;
+    overflow: hidden;
+    
+}
+
+.photoGridImgBack img{
+    transition: 0.4s ease;
+}
+
+.photoGridImgBack img:hover{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+}
+
 .textShadow {
       text-shadow: 0 13.36px 8.896px #2c482e, 0 -2px 1px #fff;
     letter-spacing: -4px;
