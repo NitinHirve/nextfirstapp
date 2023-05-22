@@ -27,7 +27,7 @@ export default function SwiperPhotos() {
     return (
         <>
             <div style={{
-  height: '300px!important',
+  height: '150px!important',
   width: '100%',
   backgroundColor: '#fff',
   display: 'block',
