@@ -1,10 +1,12 @@
-import React from 'react'
+// import React from 'react'
+// import Payments from '../components/services/servicepayments'
 
-const Services = () => {
-    return (
-        <>
-        </>
-    )
-}
+// const Services = () => {
+//     return (
+//         <>
+//             <Payments />
+//         </>
+//     )
+// }
 
-export default Services
+// export default Services

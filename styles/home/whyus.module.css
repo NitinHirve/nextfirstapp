@@ -24,6 +24,13 @@
 
   .circles3{
     animation: moveAround 5s linear infinite;
+    display:block;
+  }
+
+  @media (max-width:768px){
+    .circles3{
+    display:none;
+    }
   }
 
 

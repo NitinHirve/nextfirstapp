@@ -1,0 +1,81 @@
+.leaders {
+    position: relative;
+    /* background-image: url('../../public/aboutus/images/leaders/leader1.jpg'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+.leaders:before {
+    content: '';
+    position: absolute;
+    top: 13px;
+    right: 13px;
+    width: 100%;
+    height: 100%;
+    border:1px solid rgb(199, 134, 243);
+    background-color: white;
+    z-index: -99;
+}
+
+
+
+/* .leader3BG:before {
+    content: '';
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    width: 100%;
+    height: 100%;
+    border:1px solid rgb(199, 134, 243);
+    z-index: -99;
+} */
+
+
+.OurmissionLeftSection{
+    position: relative;
+    background-image: url('../../public/aboutus/images/ourmission/leftSectionOurMission.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.OurmissionRightSection{
+    position: relative;
+    background-image: url('../../public/aboutus/images/ourmission/rightSectionOurMission.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.aboutBnt{
+    position: relative;
+    background-image: url('../../public/aboutus/images/aboutBnt/aboutBnt.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.joinUs{
+    position: relative;
+    z-index: 1;
+}
+
+.joinUs::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../../public/aboutus/images/joinUs4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(1px);
+  }
+
+  .ourMission{
+    /* background-image: url('../../public/aboutus/images/ourmission/ourmission.jpg'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+}

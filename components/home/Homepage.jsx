@@ -14,12 +14,6 @@ import TrustedBestHeading from './TrustedBestHeading'
 import TrustedBy from './TrustedBy'
 import Footer from '../Footer'
 
-const StyledBox = styled(Box)({
-    width: '50%',
-    height: '650px',
-
-    // border: '1px solid black',
-})
 
 const Homepage = () => {
 
@@ -47,13 +41,17 @@ const Homepage = () => {
 
     return (
         <>
-            <Stack className={styles.myBG} direction="row" >
-                <StyledBox sx={{ position: 'relative' }}>
-                    <Box sx={{ position: 'absolute', right: '20px', top: '200px' }}>
+            <Stack
+                className={styles.myBG}
+                direction={{ xs: 'column', sm: 'row' }}
+                sx={{ height: { xs: '80vh', sm: '100vh' }}}
+            >
+                <Box sx={{ position: 'relative', width: { xs: '100%', sm: '50%' }, height: { xs: 'auto', sm: '100%' } }}>
+                    <Box sx={{ position: 'absolute', right: '20px', top: {xs:'45px',sm:'145px'},marginLeft:{xs:'50px'}  }}>
                         <Typography data-aos="fade-down" sx={{ color: '#424242', fontFamily: 'Alexandria', fontWeight: '200', fontSize: '35px' }}>
                             Building and Integrating
                         </Typography>
-                        <Typography  className={stylesWhyus.headingH1} data-aos="fade-right" style={{ fontFamily: 'Alexandria', fontWeight: '300', color: '#1a237e', fontSize: '60px' }}>Next-Gen</Typography>
+                        <Typography className={stylesWhyus.headingH1} data-aos="fade-right" style={{ fontFamily: 'Alexandria', fontWeight: '300', color: '#1a237e', fontSize: '60px' }}>Next-Gen</Typography>
                         <Typography data-aos="fade-right" style={{ fontFamily: 'Alexandria', fontWeight: '300', color: '#1a237e', fontSize: '60px', marginTop: '-10px', }}>
                             Payment Solutions
                         </Typography>
@@ -61,15 +59,15 @@ const Homepage = () => {
                             Fuelled with technology, expertise,<br /> and experiences.
                         </Typography>
                     </Box>
-                </StyledBox>
-                <StyledBox sx={{ position: 'relative' }}>
-                    <Box data-aos="zoom-out" sx={{ position: 'relative', top: '150px' }}>
+                </Box>
+                <Box sx={{ position: 'relative',display:{xs: 'none', sm: 'block' }, width: '50%', height: { xs: 'auto', sm: '100%' }  }}>
+                    <Box data-aos="zoom-out" sx={{ position: 'relative', top: '95px' }}>
                         <figure className={`moving-image ${styles.artbox}`}>
                             <img className={`movable-image ${styles.box_image} ${styles.floatingImg}`} style={{ width: '550px' }} src="/home/images/homePayment.png" alt="abutImg"></img>
                         </figure>
                     </Box>
 
-                </StyledBox>
+                </Box>
             </Stack>
             <HomeServicesHeading />
             <HomeServices />
@@ -78,7 +76,7 @@ const Homepage = () => {
                 <Whyus />
             </Box>
 
-            <Box sx={{ height: '500px' }} >
+            <Box sx={{ height: {sm:'500px',xs:'auto'} }} >
                 <TrustedBestHeading />
                 <TrustedBy />
             </Box>

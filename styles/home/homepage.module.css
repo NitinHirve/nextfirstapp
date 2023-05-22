@@ -1,3 +1,5 @@
+
+
 .slide_bottom {
 	-webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -102,5 +104,13 @@
     transform: translate(0px,0px);
   }
 }
+
+
   
+
+
+/* Media query changes starts : */
+
+
+
   
