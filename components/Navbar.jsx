@@ -5,8 +5,8 @@ import PropTypes from 'prop-types';
 import { useEffect } from 'react'
 import MenuIcon from '@mui/icons-material/Menu';
 import styles from '../styles/bntnavbar.module.css';
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
+// import Menu from '@mui/material/Menu';
+// import MenuItem from '@mui/material/MenuItem';
 import {
     AppBar, Divider, Drawer, Box, IconButton, useScrollTrigger, List, ListItem, ListItemButton,
     ListItemText, Toolbar, Typography, Button, Slide, Stack
@@ -56,7 +56,6 @@ function Navbar(props) {
 
     const { window } = props;
     const [mobileOpen, setMobileOpen] = React.useState(false);
-    const [curNavItem, setCurrentItem] = React.useState('')
 
     const handleDrawerToggle = () => {
         setMobileOpen(!mobileOpen);
@@ -87,17 +86,6 @@ function Navbar(props) {
 
     const container = window !== undefined ? () => window().document.body : undefined;
 
-    const [anchorEl, setAnchorEl] = React.useState(null);
-    const open = Boolean(anchorEl);
-    const handleClick = (event,item) => {
-        setAnchorEl(event.currentTarget);
-        setCurrentItem(item)
-    };
-    const handleClose = () => {
-        setAnchorEl(null);
-        setCurrentItem('')
-    };
-
     return (
         <>
             <Box sx={{ display: 'flex', }} >
@@ -124,79 +112,61 @@ function Navbar(props) {
 
                             </Box>
                             <Box sx={{ flexGrow: 1, justifyContent: 'space-between', display: { xs: 'none', sm: 'flex' } }}>
-                                {navItems.map((item, i) => {
-
-
-                                    return (
-                                        <Link href={item === 'Services' || item=== 'About Us' ? '' : navItemsNav[i]}>
+                                
+                                        <Link href='/'>
                                             <button
-                                                key={item}
-                                                className={`raise ${router.asPath == navItemsNav[i] ? styles.navActive : styles.navList}`}
-                                                onMouseEnter={item === 'Services' || item=== 'About Us' ? (e)=>{setAnchorEl(null);handleClick(e,item)} : ''}
-                                                id="basic-button"
-                                                aria-controls={open ? 'basic-menu' : undefined}
-                                                aria-haspopup="true"
-                                                aria-expanded={open ? 'true' : undefined}
+                                                className={`raise ${router.asPath == '/'? styles.navActive : styles.navList}`}
                                             >
-                                                {item}
+                                                Home
                                             </button>
                                         </Link>
-                                    )
-                                })
-
-                                }
+                                        <Link  href='/aboutus'>
+                                            <button
+                                                className={`raise ${router.asPath == '/aboutus' ? styles.navActive : styles.navList}`}
+                                                
+                                            >
+                                                About Us
+                                            </button>
+                                        </Link>
+                                        <Link href='services'>
+                                            <button
+                                                className={`raise ${router.asPath == '/services' ? styles.navActive : styles.navList}`}
+                                            >
+                                               Services
+                                            </button>
+                                        </Link>
+                                        <Link href='/solutions'>
+                                            <button
+                                                className={`raise ${router.asPath == '/solutions' ? styles.navActive : styles.navList}`}
+                                            >
+                                                Solutions
+                                            </button>
+                                        </Link>
+                                        <Link href='/blogs'>
+                                            <button
+                                                className={`raise ${router.asPath == '/blogs' ? styles.navActive : styles.navList}`}
+                                            >
+                                                Blogs
+                                            </button>
+                                        </Link>
+                                        <Link href='/career'>
+                                            <button
+                                                className={`raise ${router.asPath == '/career' ? styles.navActive : styles.navList}`}
+                                            >
+                                                Career
+                                            </button>
+                                        </Link>
+                                        <Link href='/buildwithus'>
+                                            <button
+                                                className={`raise ${router.asPath == '/buildwithus' ? styles.navActive : styles.navList}`}
+                                            >
+                                                Build With Us
+                                            </button>
+                                        </Link>
+                                       
                             </Box>
-                            <Menu
-                                id="basic-menu"
-                                anchorEl={anchorEl}
-                                open={open}
-                                onClose={handleClose}
-                                onMouseLeave={handleClose}
-                                MenuListProps={{
-                                    'aria-labelledby': 'basic-button',
-                                }}
-                            >
-                            {curNavItem ==='Services' && <>
-                            <MenuItem onClick={handleClose}>
-                                    <Link href={'/services/payments'}>
-                                        Payments
-                                    </Link>
-                                </MenuItem>
-                                <MenuItem onClick={handleClose}>
-                                    <Link href={'/services/retail'}>
-                                            Retail
-                                        </Link>
-                                    </MenuItem>
-                                    <MenuItem onClick={handleClose}>
-                                        <Link href={'/services/fintech'}>
-                                            Fintech Startup
-                                        </Link>
-                                    </MenuItem>
-                                    <MenuItem onClick={handleClose}>
-                                        <Link href={'/services/subservices'}>
-                                            Sub services
-                                        </Link>
-                                    </MenuItem>
-                                    <MenuItem onClick={handleClose}>
-                                        <Link href={'/services/newtechnologies'}>
-                                             New Technologies
-                                        </Link>
-                                    </MenuItem>
-                            </>}
-                            {curNavItem ==='About Us' && <>
-                            <MenuItem onClick={handleClose}>
-                                    <Link href={'/aboutus/aboutus'}>
-                                        About BNT
-                                    </Link>
-                                </MenuItem>
-                                <MenuItem onClick={handleClose}>
-                                    <Link href={'/aboutus/lifeatBNT'}>
-                                        Life at BNT
-                                    </Link>
-                                </MenuItem>
-                            </>}
-                               
-                            </Menu>
+                           
+                           
                             <Box sx={{ flexGrow: 1, }}></Box>
                         </Toolbar>
                     </AppBar>
@@ -244,7 +214,6 @@ function Navbar(props) {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 
                 `}
             </style>
