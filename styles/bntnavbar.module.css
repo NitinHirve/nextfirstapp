@@ -15,7 +15,7 @@
     font-size: 14px!important;
     color:#2196f3!important;
     /* padding-bottom:3px; */
-    border-bottom: 1px solid #2196f3!important;
+    /* border-bottom: 1px solid #2196f3!important; */
 }
 
 
@@ -86,6 +86,7 @@
     border-bottom-right-radius: 3px;
     z-index: 111;
     transition: 0.4s all;
+    border-top: 2px solid #1b89f7;
   }
   .navbarlinks li.navbardropdown .dropdown a {
     padding-top: 10px;

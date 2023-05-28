@@ -18,6 +18,12 @@ body {
   height: 100%;
   /* padding-top: 55px; */
 }
+@media (max-width: 768px) {
+  body{
+    padding-top: 55px;
+  }
+
+}
 
 a {
   color: inherit;

@@ -10,7 +10,7 @@ import SwiperApp from './SwiperApp'
 const TrustedBy = () => {
     return (
         <>
-            <Box sx={{ display: 'flex',flexDirection:{sm:'row',xs:'column'} }}>
+            <Box sx={{ display: 'flex',flexDirection:{sm:'row',xs:'column'}, transform:{xs:'scale(0.8)',sm:'scale(1)'},margin:{xs:'-70px 0 0 -20px',sm:0} }}>
                 <Box data-aos="zoom-in-up"
                 sx={{ height: '250px', width: {sm:'600px',xs:'100vw'},margin:{xs:'15px'}, boxShadow: 3, backgroundColor: '#fff', marginLeft: {sm:'150px'}, zIndex: 2 }}>
                     <Stack direction="row" justifyContent="space-around">
@@ -24,7 +24,7 @@ const TrustedBy = () => {
                     </Stack>
                 </Box>
                 <Box   data-aos-easing="ease-in-back" data-aos-offset="0" data-aos-duration="800"
-                    sx={{ width: {sm:'600px',xs:'100vw'}, marginTop: {sm:'-70px',xs:'60px'},marginBottom: {xs:'60px'}, marginLeft: {sm:'-50px'} }}>
+                    sx={{ width: {sm:'600px',xs:'100%'}, marginTop: {sm:'-70px',xs:'60px'},marginBottom: {xs:'60px'}, marginLeft: {sm:'-50px',xs:0 } ,display:'flex',justifyContent:'center' }}>
                     <SwiperApp />
                 </Box>
             </Box>

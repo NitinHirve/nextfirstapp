@@ -10,7 +10,7 @@ const HomeServicesHeading = () => {
 
 
     return (
-        <><Box sx={{position:'relative' }}>
+        <><Box sx={{position:'relative',marginTop:{xs:'40px'} }}>
             <img className={styles.rotatePoly} src="/home/images/svgani/poligon11.svg" style={{ width: '160px',position:'absolute',zIndex:1,top:'60px'  }} />
             <img  src="/home/images/svgani/poligon3.svg" style={{ width: '370px',position:'absolute',left:'20px'  }} />
             <Box sx={{ height: {xs:'100px',sm:'180px'}, display: 'flex',justifyContent: 'center'}} >
