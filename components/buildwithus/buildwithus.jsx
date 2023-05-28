@@ -71,18 +71,18 @@ const BuildWithUs = () => {
         <Grid sx={{ width: '100%' }} container spacing={2} >
           {BNTaddresses.map((BNTaddress, i) => (<>
             <Grid item xs={12} sm={6} md={6} sx={{display:'flex',justifyContent:'center'}} >
-              <Box sx={{ width: { sm: '520px', xs: '100%' }, height: { sm: '200px', xs: '110' }, marginBottom: '30px', border: '1px solid #d9dbde', borderRadius: '5px', padding: '10px' }}>
-                <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 400, fontSize: '19px', color: '#414242' }}>
+              <Box sx={{ width: { sm: '520px', xs: '100%' }, height: { sm: '220px', xs: '110' }, marginBottom: '30px', border: '1px solid #d9dbde', borderRadius: '5px', padding: '15px' }}>
+                <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 400, fontSize: '20px', color: '#414242' }}>
                   {BNTaddress.country}
                 </Typography>
-                <Typography sx={{ margin: '10px 0 10px 0', fontFamily: 'Alexandria', fontWeight: 300, fontSize: '16px', color: '#1e8be1', }}>
+                <Typography sx={{ margin: '10px 0 10px 0', fontFamily: 'Alexandria', fontWeight: 300, fontSize: '17px', color: '#1e8be1', }}>
                   {BNTaddress.officeName}
                 </Typography>
                 <table className={style.table}>
                   <tr>
                     <td><LocationOnIcon sx={{ fontSize: '20px', color: '#a8a7a7' }} /></td>
                     <td>
-                      <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize:  '13px', color: '#6a6b6a', padding:'0 0 5px 5px', marginTop: { sm: '5px', xs: 0 }, marginTop: 0 }}>
+                      <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize:  '14px', color: '#6a6b6a', padding:'0 0 5px 5px', marginTop: { sm: '5px', xs: 0 }, marginTop: 0 }}>
                       {BNTaddress.address}
                       </Typography>
                     </td>
@@ -90,7 +90,7 @@ const BuildWithUs = () => {
                   <tr>
                     <td><PhoneIcon sx={{ fontSize: '20px', color: '#a8a7a7' }} /></td>
                     <td>
-                      <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: '13px' , color: '#6a6b6a', padding:'0 0 5px 5px', marginTop: { sm: '5px', xs: 0 }, marginTop: 0 }}>
+                      <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: '14px' , color: '#6a6b6a', padding:'0 0 5px 5px', marginTop: { sm: '5px', xs: 0 }, marginTop: 0 }}>
                         {BNTaddress.phone}
                       </Typography>
                     </td>
@@ -98,7 +98,7 @@ const BuildWithUs = () => {
                   <tr>
                     <td><EmailIcon sx={{ fontSize: '20px', color: '#a8a7a7' }} /></td>
                     <td>
-                      <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: '13px', color: '#6a6b6a', padding:'0 0 5px 5px', marginTop: { sm: '5px', xs: 0 }, marginTop: 0 }}>
+                      <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: '14px', color: '#6a6b6a', padding:'0 0 5px 5px', marginTop: { sm: '5px', xs: 0 }, marginTop: 0 }}>
                         {BNTaddress.email}
                       </Typography>
                     </td>

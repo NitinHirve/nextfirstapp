@@ -123,7 +123,7 @@ const serviceretail = () => {
             <Stack className={styles.myBG} direction="row" sx={{ height: { sm: '90vh', xs: 'auto' } }} >
                 <Box sx={{ width: { sm: '50%', xs: '100%' }, display: 'flex', alignItems: { sm: 'center', xs: 'start' }, justifyContent: 'center', padding: { sm: 0, xs: '20px' } }}>
                     <Box >
-                        <Typography data-aos="fade-down" sx={{ fontFamily: 'Alexandria', fontWeight: '400', color: '#53bd5f', fontSize: { sm: '75px', xs: '55px' } }}>
+                        <Typography data-aos="fade-down" sx={{ fontFamily: 'Alexandria', fontWeight: '400', color: '#0d47a1', fontSize: { sm: '75px', xs: '55px' } }}>
                             Retail
                         </Typography>
                         <Typography data-aos="fade-up" sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: { sm: '22px', xs: '18px' }, color: '#535151', maxWidth: '400px', padding: { sm: 0, xs: '10px' } }}>
@@ -145,7 +145,7 @@ const serviceretail = () => {
             <Box sx={{ display: 'flex',justifyContent: 'end', marginTop: '50px',marginBottom: '50px', height: {sm:'180px',xs:'85px'},paddingRight: {sm:'40px',xs:'20px'},}} >
                 <Box  >
                     <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1100" data-aos-offset="100">
-                        <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: {sm:'64px',xs:'28px'}, color: '#b4fabc' }}>IN-STORE OPERATIONS</Typography>
+                        <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: {sm:'64px',xs:'28px'}, color: '#e8e8e8' }}>IN-STORE OPERATIONS</Typography>
                     </Box>
                     <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1500" data-aos-offset="100">
                         <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, color: '#1e8be1', textAlign: 'center', fontSize: {sm:'5vw',xs:'35px'}, marginTop: {sm:'-60px',xs:'-26px'} }}>POS Solutions</Typography>
@@ -153,26 +153,6 @@ const serviceretail = () => {
                 </Box>
             </Box>
 
-            {/* my above */}
-
- {/* my below */}
-
-            {/* <Grid  sx={{ padding: {sm:'30px 70px',xs:'20px 20px'} }} container spacing={2} >
-                {headings.map((item, i) => (<>
-                    <Grid item xs={12} sm={4} md={4} >
-                        <Box data-aos="fade-left" data-aos-delay={i <= 3 ? 300 * i : 300 * (i - 4)} className={stylesPayment.card_outer}>
-                            <Box className={stylesPayment.card}>
-                                <Typography style={{ fontFamily: 'Alexandria', fontWeight: 400, fontSize: '24px' }} >{item}</Typography>
-                            </Box>
-                            <Box className={stylesPayment.car_footer} style={{ backgroundColor: '#37b345' }} >
-                                <MdKeyboardArrowUp />
-                                <Typography className={stylesPayment.car_footer_readMore} > Read More</Typography>
-                                <p className={stylesPayment.card_desc}>{desc[i]}</p>
-                            </Box>
-                        </Box>
-                    </Grid>
-                </>))}
-            </Grid> */}
 
             <Box sx={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
                 <Grid sx={{ padding: { sm: '30px 70px', xs: '20px 20px' }, width: {sm:'80%',xs:'100%'} }} container spacing={2} >
@@ -182,7 +162,7 @@ const serviceretail = () => {
                                 <Box className={stylesPayment.card}>
                                     <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 400, fontSize: '24px' }} >{item}</Typography>
                                 </Box>
-                                <Box className={stylesPayment.car_footer} sx={{ backgroundColor: '#37b345!important' }}>
+                                <Box className={stylesPayment.car_footer} sx={{ backgroundColor: '#1e88e5!important' }}>
                                     <MdKeyboardArrowUp />
                                     <Typography className={stylesPayment.car_footer_readMore} > Read More</Typography>
                                     <p className={stylesPayment.card_desc}>{desc[i]}</p>
@@ -197,7 +177,7 @@ const serviceretail = () => {
             <Box sx={{ display: 'flex',justifyContent: 'start', marginTop: '110px',marginBottom: '50px', height: {sm:'180px',xs:'85px'},paddingLeft: {sm:'80px',xs:'20px'},}} >
                 <Box  >
                     <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1100" data-aos-offset="100">
-                        <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: {sm:'64px',xs:'28px'}, color: '#b4fabc' }}>IN-STORE OPERATIONS</Typography>
+                        <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: {sm:'64px',xs:'28px'}, color: '#e8e8e8' }}>IN-STORE OPERATIONS</Typography>
                     </Box>
                     <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1500" data-aos-offset="100">
                         <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, color: '#1e8be1', textAlign: 'center', fontSize: {sm:'5vw',xs:'35px'}, marginTop: {sm:'-60px',xs:'-26px'} }}>Back Office</Typography>
@@ -216,7 +196,7 @@ const serviceretail = () => {
                     {headingsBackOffice.map((heading, i) => (<>
                         <Box className={styles.processsorElement} sx={{ width: {sm:'25%',xs:'100%'}, padding: '20px', paddingTop: {sm:'40px',xs:'20px'}, borderRight: '1px solid #dde3ee' }}>
                             <Box data-aos="fade-right" data-aos-delay={200 * i} sx={{backgroundColor:{xs:'#f2f5f3',sm:'#FBFBFB'},padding:{xs:'10px',sm:0},borderRadius:{sm:0,xs:'7px'}}}>
-                                <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 400, color: '#144719', fontSize: '20px' }}>{heading}</Typography>
+                                <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 400, color: '#0d47a1', fontSize: '20px' }}>{heading}</Typography>
                                 <p style={{ fontFamily: 'Alexandria', color: '#424242', fontWeight: 300, fontSize: '14px', lineHeight: '21px', }}>{descBackOffice[i]}</p>
                             </Box>
                         </Box>
@@ -245,9 +225,9 @@ const serviceretail = () => {
                 <Box data-aos="zoom-out" sx={{ position: {sm:'absolute',xs:'static'}, top: 50, right: 600,display:{sm:'block',xs:'flex'},justifyContent:{xs:'center'} ,marginTop:{sm:0,xs:'80px'}}}>
                     <Box className={stylesPayment.drop}>
                         <Box className={stylesPayment.content}>
-                            <h2 style={{ color: '#298f33' }}>01</h2>
+                            <h2 >01</h2>
                             <h1 >Cloud Based Payment</h1>
-                            <a style={{ backgroundColor: '#02690d' }} >Read more</a>
+                            <a  >Read more</a>
                         </Box>
                         <Box className={stylesPayment.contentDesc}>
                             <p style={{ textAlign: 'center' }}>Redefining payment systems, we guarantee to transform your payment experience with our cloud based payment solutions. Offering flexibility and no latency, our cloud platforms are secure and efficient.</p>
@@ -257,9 +237,9 @@ const serviceretail = () => {
                 <Box data-aos="zoom-out" data-aos-delay="300" sx={{ position: {sm:'absolute',xs:'static'}, top: 120, right: 250 , display:{sm:'block',xs:'flex'},justifyContent:{xs:'center'},marginTop:{sm:0,xs:'50px'}}}>
                     <Box className={stylesPayment.drop} style={{ borderRadius: '61% 39% 50% 50% / 41% 52% 48% 59% ' }}>
                         <Box className={stylesPayment.content}>
-                            <h2 style={{ color: '#298f33' }}>02</h2>
+                            <h2 >02</h2>
                             <h1 >Cross Border Payment</h1>
-                            <a style={{ backgroundColor: '#02690d' }} >Read more</a>
+                            <a  >Read more</a>
                         </Box>
                         <Box className={stylesPayment.contentDesc}>
                             <p style={{ textAlign: 'center' }}>
@@ -271,9 +251,9 @@ const serviceretail = () => {
                 <Box data-aos="zoom-out" sx={{ position: {sm:'absolute',xs:'static'}, top: 460, right: 250, display:{sm:'block',xs:'flex'},justifyContent:{xs:'center'},marginTop:{sm:0,xs:'50px'} }}>
                     <Box className={stylesPayment.drop} style={{ borderRadius: '56% 44% 71% 29% / 50% 54% 46% 50% ' }}>
                         <Box className={stylesPayment.content}>
-                            <h2 style={{ color: '#298f33' }}>03</h2>
+                            <h2 >03</h2>
                             <h1 >Crypto Currencies</h1>
-                            <a style={{ backgroundColor: '#02690d' }} >Read more</a>
+                            <a  >Read more</a>
                         </Box>
                         <Box className={stylesPayment.contentDesc}>
                             <p style={{ textAlign: 'center' }}>
@@ -285,9 +265,9 @@ const serviceretail = () => {
                 <Box data-aos="zoom-out" sx={{ position: {sm:'absolute',xs:'static'}, top: 650, right: 600 , display:{sm:'block',xs:'flex'},justifyContent:{xs:'center'},marginTop:{sm:0,xs:'50px'} }}>
                     <Box className={stylesPayment.drop} style={{ borderRadius: '55% 45% 33% 67% / 35% 31% 69% 65% ' }}>
                         <Box className={stylesPayment.content}>
-                            <h2 style={{ color: '#298f33' }}>04</h2>
+                            <h2 >04</h2>
                             <h1 >Payment With Social Media</h1>
-                            <a style={{ backgroundColor: '#02690d' }} >Read more</a>
+                            <a  >Read more</a>
                         </Box>
                         <Box className={stylesPayment.contentDesc}>
                             <p style={{ textAlign: 'center' }}>
@@ -304,7 +284,7 @@ const serviceretail = () => {
             <Box sx={{ display: 'flex',justifyContent: 'end', marginTop: '50px',marginBottom: '50px', height: {sm:'180px',xs:'85px'},paddingRight: {sm:'40px',xs:'20px'},}} >
                 <Box  >
                     <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1100" data-aos-offset="100">
-                        <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: {sm:'100px',xs:'50px'}, color: '#b4fabc' }}>ENTERPRISE</Typography>
+                        <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: {sm:'100px',xs:'50px'}, color: '#e8e8e8' }}>ENTERPRISE</Typography>
                     </Box>
                     <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1500" data-aos-offset="100">
                         <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, color: '#1e8be1', textAlign: 'center', fontSize: {sm:'6vw',xs:'40px'}, marginTop: {sm:'-90px',xs:'-45px'} }}>Solutions</Typography>
