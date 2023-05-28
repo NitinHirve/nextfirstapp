@@ -20,7 +20,7 @@ const TrustedBy = () => {
                     </Stack>
                     <Stack direction="row" justifyContent="space-around" sx={{ marginTop: '-30px', padding: '0px 80px 0 80px' }}>
                         <img src='/home/images/TrustedBy/poyntLogo2.png' style={{ width: '70px', height: '90px', marginTop: '20px' }} />
-                        <img src='/home/images/TrustedBy/ItzCash.png' style={{ width: '130px' }} />
+                        <img src='/home/images/TrustedBy/agoraLogo.png' style={{ width: '130px' }} />
                     </Stack>
                 </Box>
                 <Box   data-aos-easing="ease-in-back" data-aos-offset="0" data-aos-duration="800"
