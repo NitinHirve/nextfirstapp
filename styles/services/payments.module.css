@@ -354,7 +354,7 @@
     align-items: center;
     justify-content: center;
     z-index: 3;
-    background-color: #fdcccc;
+    background-color: #bbdefb;
     padding: 40px;
     border-radius: 50%;
 }
@@ -385,13 +385,14 @@
     align-items: center;
     justify-content: center;
     font-size: 2em;
+    color: #1e88e5;
 }
 
 .drop .content a {
 
     position: relative;
     padding: 10px 25px;
-    background-color: #ff0f5b;
+    background-color: #1e88e5;
     text-decoration: none;
     color: #fff;
     border-radius: 25px;
@@ -471,7 +472,7 @@
 .actualLogo {
     height: 40px;
     width: 40px;
-    color: #c241d9;
+    color: #1976d2;
 }
 
 .mobile__card_logo::before {

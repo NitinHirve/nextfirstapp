@@ -3,13 +3,14 @@ import '../styles/globals.css';
 import '../styles/styles.css';
 
 import Navbar from '../components/Navbar'
+import Navbar2 from '../components/Navbar2'
 import Footer from '../components/Footer'
 
 import Head from 'next/head';
 import dynamic from 'next/dynamic'
 import Aos from 'aos';
 import 'aos/dist/aos.css'
-import { createTheme, colors, ThemeProvider, Stack, Box } from '@mui/material';
+import { createTheme, colors, ThemeProvider, Stack, Box, useMediaQuery } from '@mui/material';
 import { useEffect } from 'react';
 
 const theme = createTheme({
@@ -26,6 +27,9 @@ function MyApp({ Component, pageProps }) {
     Aos.init({ duration: 1300 });
 
   }, [])
+
+  const isMobile = useMediaQuery((themes) => theme.breakpoints.down('sm'));
+
 
   return <>
     <ThemeProvider theme={theme}>
@@ -45,7 +49,12 @@ function MyApp({ Component, pageProps }) {
         <script defer nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
       </Head>
 
-      <Navbar />
+
+    {isMobile && <Navbar />}  
+      {!isMobile && <>
+        <Navbar2 />
+      <div style={{height:'55px'}}></div>
+      </>}
       <Component {...pageProps} />
       <Footer />
 

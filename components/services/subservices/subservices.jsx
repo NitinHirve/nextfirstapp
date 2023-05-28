@@ -117,7 +117,7 @@ const fintechservice = () => {
                 <Box sx={{ width: {sm:'50%',xs:'100%'},  display: 'flex', alignItems: {sm:'center',xs:'start'}, justifyContent: 'center',padding:{sm:0,xs:'20px'} }}>
                     <Box >
                         <Typography data-aos="fade-down" sx={{ fontFamily: 'Alexandria', fontWeight: '400', color: '#1039a1', fontSize: {sm:'75px',xs:'46px'}, lineHeight: {sm:'74px',xs:'48px'} }}>
-                        Sub<br></br> Services
+                        Custom<br></br> Services
                         </Typography>
                         <Typography data-aos="fade-up" sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: {sm:'22px',xs:'18px'}, color: '#535151', maxWidth: '400px',padding:{sm:0,xs:'10px'},marginTop:{sm:'30px',xs:'5px'} }}>
                         Our award-winning services are the most efficient way to bring your ideas to life.                         </Typography>

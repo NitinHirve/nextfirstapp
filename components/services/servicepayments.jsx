@@ -50,7 +50,7 @@ const payments = () => {
             <Stack className={styles.myBG} direction="row" sx={{height: {sm:'90vh',xs:'auto'}}} >
                 <Box sx={{ width: {sm:'50%',xs:'100%'},  display: 'flex', alignItems: {sm:'center',xs:'start'}, justifyContent: 'center',padding:{sm:0,xs:'20px'} }}>
                     <Box >
-                        <Typography data-aos="fade-down" sx={{ fontFamily: 'Alexandria', fontWeight: '300', color: '#8f1e9e', fontSize: {sm:'75px',xs:'55px'} }}>
+                        <Typography data-aos="fade-down" sx={{ fontFamily: 'Alexandria', fontWeight: '300', color: '#303f9f', fontSize: {sm:'75px',xs:'55px'} }}>
                             Payments
                         </Typography>
                         <Typography data-aos="fade-up" sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: {sm:'22px',xs:'18px'}, color: '#535151', maxWidth: '400px',padding:{sm:0,xs:'10px'} }}>
@@ -69,7 +69,7 @@ const payments = () => {
             <Box sx={{ display: 'flex',justifyContent: 'end', marginTop: '50px',marginBottom: '50px', height: {sm:'180px',xs:'85px'},paddingRight: {sm:'40px',xs:'20px'},}} >
                 <Box  >
                     <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1100" data-aos-offset="100">
-                        <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: {sm:'100px',xs:'50px'}, color: '#fbdcfc' }}>ACQUIRING</Typography>
+                        <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: {sm:'100px',xs:'50px'}, color: '#e8e8e8' }}>ACQUIRING</Typography>
                     </Box>
                     <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1500" data-aos-offset="100">
                         <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, color: '#1e8be1', textAlign: 'center', fontSize: {sm:'6vw',xs:'40px'}, marginTop: {sm:'-90px',xs:'-45px'} }}>Solutions</Typography>
@@ -85,7 +85,7 @@ const payments = () => {
                             <div className={styles.card}>
                                 <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 400, fontSize: '24px' }} >{item}</Typography>
                             </div>
-                            <div className={styles.car_footer}>
+                            <div className={styles.car_footer} style={{backgroundColor:'#64b5f6'}}>
                                 <MdKeyboardArrowUp />
                                 <Typography className={styles.car_footer_readMore} > Read More</Typography>
                                 <p className={styles.card_desc}>{desc[i]}</p>

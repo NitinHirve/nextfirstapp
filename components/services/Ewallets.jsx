@@ -37,9 +37,9 @@ const Ewallets = () => {
                 <Box data-aos="zoom-out" sx={{ position: {sm:'absolute',xs:'static'}, top: 50, right: 600,display:{sm:'block',xs:'flex'},justifyContent:{xs:'center'} ,marginTop:{sm:0,xs:'80px'}}}>
                     <Box className={styles.drop}>
                         <Box className={styles.content}>
-                            <h2 style={{ color: '#ff0f5b' }}>01</h2>
+                            <h2 style={{ color: '#1e88e5' }}>01</h2>
                             <h1 >Cloud Based Payment</h1>
-                            <a >Read more</a>
+                            <a style={{backgroundColor:'#1e88e5'}} >Read more</a>
                         </Box>
                         <Box className={styles.contentDesc}>
                             <p style={{ textAlign: 'center' }}>Redefining payment systems, we guarantee to transform your payment experience with our cloud based payment solutions. Offering flexibility and no latency, our cloud platforms are secure and efficient.</p>
@@ -49,7 +49,7 @@ const Ewallets = () => {
                 <Box data-aos="zoom-out" data-aos-delay="300" sx={{ position: {sm:'absolute',xs:'static'}, top: 120, right: 250 , display:{sm:'block',xs:'flex'},justifyContent:{xs:'center'},marginTop:{sm:0,xs:'50px'}}}>
                     <Box className={styles.drop} style={{ borderRadius: '61% 39% 50% 50% / 41% 52% 48% 59% ' }}>
                         <Box className={styles.content}>
-                            <h2 style={{ color: '#ff0f5b' }}>02</h2>
+                            <h2 style={{ color: '#1e88e5' }}>02</h2>
                             <h1 >Cross Border Payment</h1>
                             <a >Read more</a>
                         </Box>
@@ -63,7 +63,7 @@ const Ewallets = () => {
                 <Box data-aos="zoom-out" sx={{ position: {sm:'absolute',xs:'static'}, top: 460, right: 250, display:{sm:'block',xs:'flex'},justifyContent:{xs:'center'},marginTop:{sm:0,xs:'50px'} }}>
                     <Box className={styles.drop} style={{ borderRadius: '56% 44% 71% 29% / 50% 54% 46% 50% ' }}>
                         <Box className={styles.content}>
-                            <h2 style={{ color: '#ff0f5b' }}>03</h2>
+                            <h2 style={{ color: '#1e88e5' }}>03</h2>
                             <h1 >Crypto Currencies</h1>
                             <a >Read more</a>
                         </Box>
@@ -77,7 +77,7 @@ const Ewallets = () => {
                 <Box data-aos="zoom-out" sx={{ position: {sm:'absolute',xs:'static'}, top: 650, right: 600 , display:{sm:'block',xs:'flex'},justifyContent:{xs:'center'},marginTop:{sm:0,xs:'50px'} }}>
                     <Box className={styles.drop} style={{ borderRadius: '55% 45% 33% 67% / 35% 31% 69% 65% ' }}>
                         <Box className={styles.content}>
-                            <h2 style={{ color: '#ff0f5b' }}>04</h2>
+                            <h2 style={{ color: '#1e88e5' }}>04</h2>
                             <h1 >Payment With Social Media</h1>
                             <a >Read more</a>
                         </Box>

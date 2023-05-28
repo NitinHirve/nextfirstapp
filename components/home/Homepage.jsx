@@ -47,7 +47,7 @@ const Homepage = () => {
                 sx={{ height: { xs: '80vh', sm: '100vh' }}}
             >
                 <Box sx={{ position: 'relative', width: { xs: '100%', sm: '50%' }, height: { xs: 'auto', sm: '100%' } }}>
-                    <Box sx={{ position: 'absolute', right: '20px', top: {xs:'45px',sm:'145px'},marginLeft:{xs:'50px'}  }}>
+                    <Box sx={{ position: 'absolute', right: '20px', top: {xs:'45px',sm:'145px'},marginLeft:{xs:'30px'}  }}>
                         <Typography data-aos="fade-down" sx={{ color: '#424242', fontFamily: 'Alexandria', fontWeight: '200', fontSize: '35px' }}>
                             Building and Integrating
                         </Typography>

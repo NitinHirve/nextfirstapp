@@ -36,11 +36,11 @@ const leadersDetail = [
     desgn: 'Operations Head',
     profilePic: 'RajSir'
   },
-  {
-    name: 'Bhavik Vasa',
-    desgn: 'Executive Director',
-    profilePic: 'Bhavik'
-  },
+  // {
+  //   name: 'Bhavik Vasa',
+  //   desgn: 'Executive Director',
+  //   profilePic: 'Bhavik'
+  // },
   {
     name: 'David True',
     desgn: 'Advisory Board',
@@ -77,11 +77,11 @@ const Leaders = () => {
               <Grid
 
                 item xs={12} sm={6} md={4}
-              // data-aos={
-              //   ((index == 0 || index == 3 || index == 6) && 'zoom-out-right') ||
-              //   ((index == 1 || index == 4 || index == 7) && 'zoom-out') ||
-              //   ((index == 2 || index == 5 || index == 8) && 'zoom-out-left')
-              // }
+              data-aos={
+                ((index == 0  ) && "zoom-out-right data-aos-once='true' ") ||
+                ((index == 1 ) && "zoom-out data-aos-once='true' ") ||
+                ((index == 2  ) && "zoom-out-left data-aos-once='true' ")
+              }
               >
                 <Box className={styles.leaders} sx={{ height: { xs: '340px', sm: '310px', backgroundImage: `url(/aboutus/images/leaders/${leader.profilePic}.jpg)` } }}></Box>
                 <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '35px' }}>
