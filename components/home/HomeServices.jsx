@@ -1,6 +1,6 @@
 import { Box, Typography } from '@mui/material'
 import React from 'react'
-import style from '../../styles/home/services.module.css'
+import styles from '../../styles/home/services.module.css'
 import Services from './Services'
 
 const desc = [
