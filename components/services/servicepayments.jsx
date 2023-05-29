@@ -9,38 +9,47 @@ import Ewallets from './Ewallets'
 import MobilePayments from './MobilePayments'
 
 
-
-
-
-// const StyledBox = styled(Box)({
-   
-//     // border: '1px solid black',
-//     display: 'flex',
-//     justifyContent: 'end',
-//     marginTop: '50px',
-//     marginBottom: '50px'
-// })
-
-const headings = [
-    'Mobile Payment Solutions',
-    'Terminal Management System',
-    'Payment Terminal Applications',
-    'Acquiring Authorization',
-    'Fx Solutions',
-    'Biometric And Nfc',
-    'Building Open Apis',
-    'Merchant Management System'
-]
-
-const desc = [
-    'As payment landscapes have evolved with mobile phones, accepting credit card payments is a must for businesses.',
-    'Our team offers Terminal Management Systems that syncs automatically and updates your terminal swiftly.',
-    'Our experts with years of market experience design and develop smart solutions for various payment terminals.',
-    'BNT’s experienced team has developed a real-time switching and authorization system designed to support the evolving payment standards for channels, schemes and card products.',
-    'While foreign exchange can be tricky and complicated, we build global decentralized and over the counter market for exchanging or trading currencies.',
-    'Utilizing latest technology of biometric and NFC ability we enable contactless payments.',
-    'We build open API for businesses that allows to share data and functionality with other developers and business',
-    'Gives you the freedom to act independently and provide the best experience'
+const details =[
+    {
+        heading:'Mobile Payment Solutions',
+        desc : 'As payment landscapes have evolved with mobile phones, accepting credit card payments is a must for businesses.',
+        imgBG : 'img1'
+    },
+    {
+        heading:'Terminal Management System',
+        desc : 'Our team offers Terminal Management Systems that syncs automatically and updates your terminal swiftly.',
+        imgBG : 'img2'
+    },
+    {
+        heading: 'Payment Terminal Applications',
+        desc : 'Our experts with years of market experience design and develop smart solutions for various payment terminals.',
+        imgBG : 'img3'
+    },
+    {
+        heading: 'Acquiring Authorization',
+        desc : 'BNT’s experienced team has developed a real-time switching and authorization system designed to support the evolving payment standards for channels, schemes and card products.',
+        imgBG : 'img4'
+    },
+    {
+        heading:'Fx Solutions',
+        desc : 'While foreign exchange can be tricky and complicated, we build global decentralized and over the counter market for exchanging or trading currencies.',
+        imgBG : 'img5'
+    },
+    {
+        heading:'Biometric And Nfc',
+        desc : 'Utilizing latest technology of biometric and NFC ability we enable contactless payments.',
+        imgBG : 'img6'
+    },
+    {
+        heading:'Building Open Apis',
+        desc : 'We build open API for businesses that allows to share data and functionality with other developers and business',
+        imgBG : 'img7'
+    },
+    {
+        heading:'Merchant Management System',
+        desc : 'Gives you the freedom to act independently and provide the best experience',
+        imgBG : 'img8'
+    },
 ]
 
 const payments = () => {
@@ -79,16 +88,16 @@ const payments = () => {
 
 
             <Grid sx={{ padding: {sm:'30px 70px',xs:'20px 20px'} }} container spacing={2} >
-                {headings.map((item, i) => (<>
+                {details.map((detail, i) => (<>
                     <Grid item xs={12} sm={4} md={3} >
                         <Box data-aos="fade-left" data-aos-delay={i <= 3 ? 300 * i : 300 * (i - 4)} className={styles.card_outer} sx={{  width: {sm:'280px',xs:'100%'},height: {sm:'230px',xs:'230px'},marginBottom:'30px'}}>
-                            <div className={styles.card}>
-                                <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 400, fontSize: '24px' }} >{item}</Typography>
+                            <div className={styles.card} style={{    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/services/images/payments/${detail.imgBG}.jpg')`}}>
+                                <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 400, fontSize: '24px' }} >{detail.heading}</Typography>
                             </div>
-                            <div className={styles.car_footer} style={{backgroundColor:'#64b5f6'}}>
+                            <div className={styles.car_footer} style={{backgroundColor:'#2d6beb'}}>
                                 <MdKeyboardArrowUp />
                                 <Typography className={styles.car_footer_readMore} > Read More</Typography>
-                                <p className={styles.card_desc}>{desc[i]}</p>
+                                <p className={styles.card_desc}>{detail.desc}</p>
                             </div>
                         </Box>
                     </Grid>

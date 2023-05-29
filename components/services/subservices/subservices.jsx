@@ -52,22 +52,56 @@ const StyledBoxHeadingECommerce = styled(Box)({
     left: 200
 })
 
-const headings = [
-    'Bi And Analytics',
-    'Web Enabled Applications',
-    'Cloud & Mobile Based Solutions',
-    'Retail Management',
-    'Payment Processing',
-    'MOBILE APPLICATION'
-]
+// const headings = [
+//     'Bi And Analytics',
+//     'Web Enabled Applications',
+//     'Cloud & Mobile Based Solutions',
+//     'Retail Management',
+//     'Payment Processing',
+//     'MOBILE APPLICATION'
+// ]
 
-const desc = [
-    'Our skills, technologies, practices for continuous iterative exploration and investigation of your business.',
-    "Portals include mashups and intranet 'dashboards' for executives and managers.",
-    'Gives you the freedom to act independently and provide the best experience',
-    'A framework which can easily accommodate and provide solutions for your retail needs',
-    'Processes all payment modes for online and traditional brick and mortar stores',
-    'Built new age mobile applications with our local and global banks and wallet APIs.'
+// const desc = [
+//     'Our skills, technologies, practices for continuous iterative exploration and investigation of your business.',
+//     "Portals include mashups and intranet 'dashboards' for executives and managers.",
+//     'Gives you the freedom to act independently and provide the best experience',
+//     'A framework which can easily accommodate and provide solutions for your retail needs',
+//     'Processes all payment modes for online and traditional brick and mortar stores',
+//     'Built new age mobile applications with our local and global banks and wallet APIs.'
+// ]
+
+const customDetails =[
+    {
+        heading:'Bi And Analytics',
+        desc : 'Our skills, technologies, practices for continuous iterative exploration and investigation of your business.',
+        imgBG : 'img1'
+    },
+    {
+        heading:'Web Enabled Applications',
+        desc : "Portals include mashups and intranet 'dashboards' for executives and managers.",
+        imgBG : 'img2'
+    },
+    {
+        heading: 'Cloud & Mobile Based Solutions',
+        desc : 'Gives you the freedom to act independently and provide the best experience',
+        imgBG : 'img3'
+    },
+    {
+        heading: 'Retail Management',
+        desc : 'A framework which can easily accommodate and provide solutions for your retail needs',
+        imgBG : 'img4'
+    },
+    {
+        heading:'Payment Processing',
+        desc :  'Processes all payment modes for online and traditional brick and mortar stores',
+        imgBG : 'img5'
+    },
+    {
+        heading:'Mobile Application',
+        desc :  'Built new age mobile applications with our local and global banks and wallet APIs.',
+        imgBG : 'img6'
+    },
+   
 ]
 
 const architectureHeading = [
@@ -145,16 +179,16 @@ const fintechservice = () => {
 
             <Box sx={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
                 <Grid sx={{ padding: { sm: '30px 70px', xs: '20px 20px' }, width: {sm:'85%',xs:'100%'} }} container spacing={2} >
-                    {headings.map((item, i) => (<>
+                    {customDetails.map((customDetail, i) => (<>
                         <Grid item xs={12} sm={4} md={4} >
                             <Box data-aos="fade-left" data-aos-delay={i <= 3 ? 300 * i : 300 * (i - 4)} className={stylesPayment.card_outer} sx={{ width: { sm: '280px', xs: '100%' }, height: { sm: '230px', xs: '230px' }, marginBottom: '30px' }}>
-                                <Box className={stylesPayment.card}>
-                                    <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 400, fontSize: '24px' }} >{item}</Typography>
+                                <Box className={stylesPayment.card} style={{    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/services/images/payments/${customDetail.imgBG}.jpg')`}} >
+                                    <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 400, fontSize: '24px' }} >{customDetail.heading}</Typography>
                                 </Box>
                                 <Box className={stylesPayment.car_footer} sx={{ backgroundColor: '#2d6beb!important' }}>
                                     <MdKeyboardArrowUp />
                                     <Typography className={stylesPayment.car_footer_readMore} > Read More</Typography>
-                                    <p className={stylesPayment.card_desc}>{desc[i]}</p>
+                                    <p className={stylesPayment.card_desc}>{customDetail.desc}</p>
                                 </Box>
                             </Box>
                         </Grid>

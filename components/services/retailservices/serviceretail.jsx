@@ -54,20 +54,49 @@ const StyledBoxHeadingECommerce = styled(Box)({
     left: 200
 })
 
-const headings = [
-    'Pos And Payment Peripherals',
-    'Kiosk And Self Checkout',
-    'Mobile/ Tablet Applications',
-    'Gift & Loyalty Application',
-    'Credit/ Debit Card Applications',
-]
+// const headings = [
+//     'Pos And Payment Peripherals',
+//     'Kiosk And Self Checkout',
+//     'Mobile/ Tablet Applications',
+//     'Gift & Loyalty Application',
+//     'Credit/ Debit Card Applications',
+// ]
 
-const desc = [
-    'Integrate with Pin Pads, Barcode readers, ECRs, Bluetooth Printers, Biometric readers under one platform for flawless operation facility.',
-    'Automating retail experience with DIY ability and enabling users to scan goods and pay through your own choice of digital medium.',
-    'Building responsive applications across all digital mediums, appropriate for mobiles and tablets.',
-    'Offering rewards from all major brands, it works across a number of retailers.',
-    'Accepts all credit and debit cards across all banks.'
+// const desc = [
+//     'Integrate with Pin Pads, Barcode readers, ECRs, Bluetooth Printers, Biometric readers under one platform for flawless operation facility.',
+//     'Automating retail experience with DIY ability and enabling users to scan goods and pay through your own choice of digital medium.',
+//     'Building responsive applications across all digital mediums, appropriate for mobiles and tablets.',
+//     'Offering rewards from all major brands, it works across a number of retailers.',
+//     'Accepts all credit and debit cards across all banks.'
+// ]
+
+const POSSolutionDetails =[
+    {
+        heading:'Pos And Payment Peripherals',
+        desc : 'Integrate with Pin Pads, Barcode readers, ECRs, Bluetooth Printers, Biometric readers under one platform for flawless operation facility.',
+        imgBG : 'img1'
+    },
+    {
+        heading:'Kiosk And Self Checkout',
+        desc : 'Automating retail experience with DIY ability and enabling users to scan goods and pay through your own choice of digital medium.',
+        imgBG : 'img2'
+    },
+    {
+        heading: 'Mobile/ Tablet Applications',
+        desc : 'Building responsive applications across all digital mediums, appropriate for mobiles and tablets.',
+        imgBG : 'img3'
+    },
+    {
+        heading: 'Gift & Loyalty Application',
+        desc : 'Offering rewards from all major brands, it works across a number of retailers.',
+        imgBG : 'img4'
+    },
+    {
+        heading:'Credit/ Debit Card Applications',
+        desc :  'Accepts all credit and debit cards across all banks.',
+        imgBG : 'img5'
+    },
+   
 ]
 
 const headingsBackOffice = [
@@ -156,16 +185,16 @@ const serviceretail = () => {
 
             <Box sx={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
                 <Grid sx={{ padding: { sm: '30px 70px', xs: '20px 20px' }, width: {sm:'80%',xs:'100%'} }} container spacing={2} >
-                    {headings.map((item, i) => (<>
+                    {POSSolutionDetails.map((POSSolutionDetail, i) => (<>
                         <Grid item xs={12} sm={4} md={4} >
                             <Box data-aos="fade-left" data-aos-delay={i <= 3 ? 300 * i : 300 * (i - 4)} className={stylesPayment.card_outer} sx={{ width: { sm: '280px', xs: '100%' }, height: { sm: '230px', xs: '230px' }, marginBottom: '30px' }}>
-                                <Box className={stylesPayment.card}>
-                                    <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 400, fontSize: '24px' }} >{item}</Typography>
+                                <Box className={stylesPayment.card} style={{    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/services/images/payments/${POSSolutionDetail.imgBG}.jpg')`}} >
+                                    <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 400, fontSize: '24px' }} >{POSSolutionDetail.heading}</Typography>
                                 </Box>
                                 <Box className={stylesPayment.car_footer} sx={{ backgroundColor: '#1e88e5!important' }}>
                                     <MdKeyboardArrowUp />
                                     <Typography className={stylesPayment.car_footer_readMore} > Read More</Typography>
-                                    <p className={stylesPayment.card_desc}>{desc[i]}</p>
+                                    <p className={stylesPayment.card_desc}>{POSSolutionDetail.desc}</p>
                                 </Box>
                             </Box>
                         </Grid>
