@@ -220,9 +220,9 @@ function Navbar(props) {
                                 aria-label="open drawer"
                                 edge="start"
                                 onClick={handleDrawerToggle}
-                                sx={{ mr: 2, display: { sm: 'none' }, position: 'absolute', right: 0 }}
+                                sx={{ mr: 2, display: { sm: 'none' }, position: 'absolute', right: 0, }}
                             >
-                                <MenuIcon />
+                                <MenuIcon sx={{color:'blue'}} />
                             </IconButton>
                             <Box
                                 variant="h6"
