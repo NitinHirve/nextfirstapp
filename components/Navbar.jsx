@@ -6,8 +6,8 @@ import { useEffect } from 'react'
 import MenuIcon from '@mui/icons-material/Menu';
 import styles from '../styles/bntnavbar.module.css';
 
-import { IoIosArrowForward } from 'react-icons/Io';
-import { IoIosArrowDown } from 'react-icons/Io';
+import { IoIosArrowForward } from 'react-icons/io';
+import { IoIosArrowDown } from 'react-icons/io';
 
 
 
