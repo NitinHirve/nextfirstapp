@@ -23,7 +23,7 @@ const UsCard = ({ title, cardImage, desc }) => {
   transform: scale(1);`}}
           component="img"
           height="160"
-          image={`/home/images/whyus/${cardImage}.jpg`}
+          image={`/home/images/whyus/${cardImage}.webp`}
           alt="green iguana"
         />
         <CardContent elevation={0}>
