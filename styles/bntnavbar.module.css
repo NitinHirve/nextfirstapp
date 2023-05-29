@@ -100,3 +100,21 @@
     color: blue;
   }
   
+
+  @keyframes animateVertical {
+    0% {
+      transform: scaleY(0);
+      visibility: hidden;
+    }
+    100% {
+      transform: scaleY(1);
+      visibility: visible;
+    }
+  }
+  
+  /* Apply the animation to the div */
+  .mobileNavbarDropdow {
+    animation-name: animateVertical;
+    animation-duration: 0.3s; /* Adjust the duration as needed */
+    animation-timing-function: ease-in-out; /* Adjust the timing function as needed */
+  }
