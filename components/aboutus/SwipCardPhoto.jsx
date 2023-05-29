@@ -5,7 +5,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 
-const SwipCardPhoto = ({ title, cardImage, desc }) => {
+const SwipCardPhoto = ({ imageIndex }) => {
   return (
     <Card sx={{ maxWidth: {sm:270,xs:'100vw'}, borderRadius: 0 }} elevation={0}>
       <CardActionArea elevation={0}>
@@ -23,7 +23,7 @@ const SwipCardPhoto = ({ title, cardImage, desc }) => {
   transform: scale(1);`}}
           component="img"
           height="160"
-          image={`/home/images/whyus/customer.jpg`}
+          image={`/aboutus/lifeatBnt/images/swiperImages/img${imageIndex}.jpg`}
           alt="green iguana"
         />
       </CardActionArea>
