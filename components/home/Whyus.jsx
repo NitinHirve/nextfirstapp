@@ -20,16 +20,16 @@ const Whyus = () => {
             <img className={stylesWhyus.circles2} src="/home/images/svgani/circle2.svg" style={{ width: '250px',position:'absolute',right:'100px',top:'-50px'  }} />
                 <Stack direction={{sm:'row',xs:'column'}} spacing={6}>
                     <Box data-aos="flip-down" data-aos-once="false"  >
-                        <UsCard  title={'Customer Centric'} cardImage={'customer'} desc={desc[0]} />
+                        <UsCard  title={'Customer Centric'} cardImage={'customerMin'} desc={desc[0]} />
                     </Box>
                     <Box data-aos="flip-down" data-aos-delay="150" data-aos-once="false" sx={{ marginTop: {sm:'50px!important',xs:'50px!important'} }}>
-                        <UsCard title={'Flexible Development'} cardImage={'development'} desc={desc[1]} />
+                        <UsCard title={'Flexible Development'} cardImage={'developmentMin'} desc={desc[1]} />
                     </Box>
                     <Box data-aos="flip-down" data-aos-delay="300" data-aos-once="false" sx={{ marginTop: {sm:'100px!important',xs:'50px!important'} }}>
-                        <UsCard title={'Optimizing Technology'} cardImage={'technology'} desc={desc[2]} />
+                        <UsCard title={'Optimizing Technology'} cardImage={'technologyMin'} desc={desc[2]} />
                     </Box>
                     <Box  data-aos="flip-down" data-aos-delay="450" data-aos-once="false" sx={{ marginTop: {sm:'150px!important',xs:'50px!important'} }}>
-                        <UsCard title={'Domain Expert'} cardImage={'expert'} desc={desc[3]} />
+                        <UsCard title={'Domain Expert'} cardImage={'expertWhyUsMin'} desc={desc[3]} />
                     </Box>
                 </Stack>
                 <img className={stylesWhyus.circles3} src="/home/images/svgani/circle3.svg" style={{ width: '250px',position:'absolute',bottom:'0px'  }} />
