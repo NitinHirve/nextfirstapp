@@ -49,7 +49,7 @@ const Ourmission = () => {
                         <p style={{ margin: 0, padding: 0, fontFamily: 'Alexandria', fontSize: '13px', color: '#6f6675', letterSpacing: '10px' }}>WHO WE ARE</p>
                         <Typography sx={{ fontFamily: 'Alexandria', padding: 0, marginTop: '10px', color: 'black', fontSize: '45px', lineHeight: '52px' }}>Smart<br style={{ width: '5px' }}></br>Platform<br></br>Integration</Typography>
                         <Typography sx={{ marginTop: '20px' }}>
-                            We at <span style={{ fontFamily: 'Alexandria', color: '#1e8be1' }}>BNT- "Bits and Thoughts"</span> have been providing services for more than a decade now.
+                            We at <span style={{ fontFamily: 'Alexandria', color: '#1e8be1' }}>BNT- Bits and Thoughts</span> have been providing services for more than a decade now.
                             Accelerated with innovative goals, we envision our services with no compromise on
                             quality. We are committed to high quality performance along with integrity &
                             client satisfaction.
