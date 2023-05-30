@@ -9,32 +9,32 @@ const leadersDetail = [
   {
     name: 'Shekhar Khakurdikar',
     desgn: 'CTO & Co-Founder',
-    profilePic: 'ShekharSir'
+    profilePic: 'ShekharSirMin.webp'
   },
   {
     name: 'Sachin Gurav',
     desgn: 'CEO & Co-Founder',
-    profilePic: 'SachinSir'
+    profilePic: 'SachinSirMin.webp'
   },
   {
     name: 'Nilesh Varma',
     desgn: 'VP-Payment & Co-Founder',
-    profilePic: 'NileshSir'
+    profilePic: 'NileshSirMin.webp'
   },
   {
     name: 'Gitanjali Mudaliar',
     desgn: 'HR Manager',
-    profilePic: 'GitanjaliMam'
+    profilePic: 'GitanjaliMam.webp'
   },
   {
     name: 'Girish Shahpurkar',
     desgn: 'CFO',
-    profilePic: 'GirishSir'
+    profilePic: 'GirishSir.webp'
   },
   {
     name: 'Rajagopalan Nelliyodan',
     desgn: 'Operations Head',
-    profilePic: 'RajSir'
+    profilePic: 'RajSir.webp'
   },
   // {
   //   name: 'Bhavik Vasa',
@@ -44,12 +44,12 @@ const leadersDetail = [
   {
     name: 'David True',
     desgn: 'Advisory Board',
-    profilePic: 'David'
+    profilePic: 'David.webp'
   },
   {
     name: 'Arcady Lapiro',
     desgn: 'Advisory Board',
-    profilePic: 'Arcady'
+    profilePic: 'Arcady.webp'
   }
 ]
 
@@ -78,12 +78,12 @@ const Leaders = () => {
 
                 item xs={12} sm={6} md={4}
               data-aos={
-                ((index == 0  ) && "zoom-out-right data-aos-once='true' ") ||
-                ((index == 1 ) && "zoom-out data-aos-once='true' ") ||
-                ((index == 2  ) && "zoom-out-left data-aos-once='true' ")
+                ((index == 0 || index == 3 || index == 6 ) && "zoom-out-right data-aos-once='true' ") ||
+                ((index == 1 || index == 4 || index == 7 ) && "zoom-out data-aos-once='true' ") ||
+                ((index == 2 || index == 5 ) && "zoom-out-left data-aos-once='true' ")
               }
               >
-                <Box className={styles.leaders} sx={{ height: { xs: '340px', sm: '310px', backgroundImage: `url(/aboutus/images/leaders/${leader.profilePic}.jpg)` } }}></Box>
+                <Box className={styles.leaders} sx={{ height: { xs: '340px', sm: '310px', backgroundImage: `url(/aboutus/images/leaders/${leader.profilePic})` } }}></Box>
                 <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '35px' }}>
                   <p style={{ margin: 0, padding: 0, fontFamily: 'Alexandria', fontSize: '11px', color: '#6f6675' }}>{leader.desgn}</p>
                   <Typography sx={{ fontFamily: 'Alexandria', padding: 0, margin: '0!important' }}>{leader.name}</Typography>
