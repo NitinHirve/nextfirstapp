@@ -43,9 +43,9 @@ const Navbar2 = (props) => {
 
                         </li>
                         <li className={styles.navbardropdown}>
-                            <Link className={`${router.asPath.includes('/aboutus')? styles.navActive : ''}`} href=''>About Us</Link>
+                            <Link className={`${router.asPath.includes('/aboutus')? styles.navActive : ''}`} href=''>Who we are</Link>
                             <div className={styles.dropdown}>
-                                <Link href={'/aboutus/aboutus'}>Who we are</Link>
+                                <Link href={'/aboutus/aboutus'}>About Us</Link>
                                 <Link href={'/aboutus/lifeatBNT'}>Life at BNT</Link>
                             </div>
                         </li>

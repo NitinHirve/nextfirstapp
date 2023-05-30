@@ -95,7 +95,7 @@ function Navbar(props) {
                     <Link   onClick={(e) => {e.stopPropagation(); pageRoute==='/aboutus'? setPageRoute(''): setPageRoute('/aboutus') }} href={''}>
                         <ListItem sx={{...(pageRoute ==='/aboutus' &&  {backgroundColor:'#dbdbd9'})}} key={'About Us'} disablePadding>
                             <ListItemButton className={`${router.asPath.includes('/aboutus')? styles.navActive : ''}`} sx={{ textAlign: 'center' }}>
-                                <ListItemText primary={'About Us'} /> { pageRoute ==='/aboutus' ? <IoIosArrowDown />: <IoIosArrowForward />}
+                                <ListItemText primary={'Who we are'} /> { pageRoute ==='/aboutus' ? <IoIosArrowDown />: <IoIosArrowForward />}
                             </ListItemButton>
                         </ListItem>
                     </Link>
@@ -104,7 +104,7 @@ function Navbar(props) {
                             <Link onClick={()=>{setPageRoute('')}} href={'/aboutus/aboutus'}>
                                 <ListItem key={'About Us'} disablePadding>
                                     <ListItemButton sx={{ textAlign: 'center' }}>
-                                        <ListItemText primary={'Who we are'} />
+                                        <ListItemText primary={'About Us'} />
                                     </ListItemButton>
                                 </ListItem>
                             </Link>
