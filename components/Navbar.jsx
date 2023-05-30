@@ -104,7 +104,7 @@ function Navbar(props) {
                             <Link onClick={()=>{setPageRoute('')}} href={'/aboutus/aboutus'}>
                                 <ListItem key={'About Us'} disablePadding>
                                     <ListItemButton sx={{ textAlign: 'center' }}>
-                                        <ListItemText primary={'About BNT'} />
+                                        <ListItemText primary={'Who we are'} />
                                     </ListItemButton>
                                 </ListItem>
                             </Link>

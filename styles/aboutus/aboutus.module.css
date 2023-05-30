@@ -43,14 +43,14 @@
 
 .OurmissionRightSection{
     position: relative;
-    background-image: url('../../public/aboutus/images/ourmission/rightSectionOurMission.jpg');
+    background-image: url('../../public/aboutus/images/ourmission/rightSectionOurMissionMin.webp');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .aboutBnt{
     position: relative;
-    background-image: url('../../public/aboutus/images/aboutBnt/aboutBnt.jpg');
+    background-image: url('../../public/aboutus/images/aboutBnt/aboutBntMin.webp');
     background-size: cover;
     background-repeat: no-repeat;
 }
