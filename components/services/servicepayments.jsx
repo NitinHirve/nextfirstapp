@@ -55,7 +55,7 @@ const details =[
     },
 ]
 
-const payments = () => {
+const Payments = () => {
 
     const isMobile = useMediaQuery((theme) => theme.breakpoints.down('sm'));
 
@@ -172,4 +172,4 @@ const payments = () => {
     )
 }
 
-export default payments
+export default Payments

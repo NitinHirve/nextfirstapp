@@ -147,7 +147,7 @@ const enterpriseSolutionsDetails = [
     }
 ]
 
-const serviceretail = () => {
+const Serviceretail = () => {
 
     const isMobile = useMediaQuery((theme) => theme.breakpoints.down('sm'));
 
@@ -362,4 +362,4 @@ const serviceretail = () => {
     )
 }
 
-export default serviceretail
+export default Serviceretail
