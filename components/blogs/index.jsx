@@ -36,27 +36,27 @@ const cardDetails = [
         image: 'topPaymentsBlog'
     },
     {
-        heading: 'Blockchain',
+        heading: 'Blockchain Revolution or Evolution?',
         desc: 'Blockchain technology seems to be a complicated concept associated with cryptocurrency Bitcoin.',
         image: 'blockchainBlog'
     },
     {
-        heading: 'Open Banks',
+        heading: 'Fostering Innovation and Competition',
         desc: 'With recent digital transformations, even banks are moving towards digitizing and innovation.',
         image: 'openBanksBlog'
     },
     {
-        heading: 'Fintech Industry',
+        heading: 'How AI is transforming the Fintech industry',
         desc: 'When we talk about finance, the first thing that pops into our head is ‘information’. More so, it relates to essential and subtle information.',
         image: 'fintechBlog'
     },
     {
-        heading: 'Human Touch',
+        heading: 'Does the evolving payment system still require a human touch?',
         desc: 'As times have transcended the core payment process to online, digital transformation has amalgamated payment systems to be digitally flexible.',
         image: 'humanTouchBlog'
     },
     {
-        heading: 'Contactless Payment',
+        heading: 'The New Social Payment Phenomena',
         desc: 'As social distancing is the new wave, A global study suggests that, “79% of respondents are now tapping into contactless payments”.',
         image: 'contactlessPyamentBlog'
     }
@@ -78,7 +78,7 @@ const Blogs = () => {
                 </Box>
             </Box>
             <Box sx={{ width: '100vw', display: 'flex', justifyContent: 'center', margin: '100px 0px' }}>
-                <Grid container spacing={4} sx={{ width: '90vw' }}>
+                <Grid container spacing={4} sx={{ width: {sm:'90vw',xs:'100vw'} }}>
                     {cardDetails.map(cardDetail => (<>
                         <Grid item xs={12} sm={6} md={4}>
                             <BlogCard title={cardDetail.heading} cardImage={cardDetail.image} desc={cardDetail.desc} />

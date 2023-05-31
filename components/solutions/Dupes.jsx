@@ -24,15 +24,14 @@ const Dupes = () => {
 
 
             <Stack className={styles.myBG} direction="row" >
-                <Box sx={{ position: 'relative', width: {sm:'50%',xs:'100vw'}, height: {sm:'100vh',xs:'80vh'}, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-                    <Box sx={{ position: 'absolute',margin:{xs:'-130px 15px 0 15px',sm:'-60px 0px 0 0px'}  }}>
+                <Box sx={{ position: 'relative', width: {sm:'50%',xs:'100vw'}, height: {sm:'100vh',xs:'50vh'}, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+                    <Box sx={{ position: 'absolute',margin:{xs:'0 15px 0 15px',sm:'-60px 0px 0 0px'}  }}>
                         {/* <Typography data-aos="fade-right" style={{ fontFamily: 'Alexandria', fontWeight: '300', color: '#1a237e', fontSize: '60px' }}>Next-Gen</Typography> */}
                         <Typography fontSize={{sm:'75px',xs:'55px'}} data-aos="fade-down" style={{ fontFamily: 'Alexandria', fontWeight: '400', color: '#0328a3', marginTop: '-10px' }}>
                             Solutions
                         </Typography>
-                        <Typography fontSize={{sm:'22px',xs:'19px'}} data-aos="fade-up" sx={{ fontFamily: 'Alexandria', fontWeight: 300, color: '#535151', maxWidth: '400px' }}>
-                            With an increasing focus on customer experience, it is imperative to offer an elevated and competitive shopping experience for consumers. Thus, it is optimum to strengthen your retail in-store operations.
-                        </Typography>
+                        <Typography fontSize={{ sm: '22px', xs: '19px' }} data-aos="fade-up" sx={{ fontFamily: 'Alexandria', fontWeight: 300, color: '#535151', maxWidth: '400px' }}>
+                            Realising how redundant tasks can lead to delayed outputs, our custom-made solutions enable you to transform your business into a digitally-efficient model, accelerating growth and outcome.                         </Typography>
                     </Box>
                 </Box>
                 {/* <StyledBox sx={{ position: 'relative' }}>
@@ -45,9 +44,9 @@ const Dupes = () => {
             </Stack>
 
 
-            <Stack direction={{sm:"row",xs:'column',height: {sm:'595px',xs:'auto'}}} >
+            <Stack id="targetDivDupesPreventer" direction={{sm:"row",xs:'column',height: {sm:'595px',xs:'auto'}}} >
                 <Box  sx={{ position: 'relative', width: {sm:'40%',xs:'100%'},  }}>
-                    <Box className={styles.dupesblob} data-aos="zoom-out" sx={{ position: 'relative', top: '95px',left:{xs:'-80px',sm:0} }}>
+                    <Box className={styles.dupesblob} data-aos="zoom-out" sx={{ position: 'relative', top: {sm:'95px',xs:'50px'},left:{xs:'-80px',sm:0} }}>
                         <img className={styles.dupesblobImg}   src="/solutions/Dupes/blobdupes.svg" ></img>
                         {/* <img style={{ width: '650px' }} src="/solutions/Dupes/dot-hori.svg" ></img> */}
                         <Box sx={{ marginTop: '-50px', position: 'absolute', top: 165, left: 140 }} >
@@ -86,7 +85,7 @@ const Dupes = () => {
 
 
 
-            <Stack direction={{sm:"row",xs:'column-reverse',height: {sm:'695px',xs:'auto'}}} >
+            <Stack id="targetDivConfigPay" direction={{sm:"row",xs:'column-reverse',height: {sm:'695px',xs:'auto'}}} >
                 <Box style={{ width: {sm:'60%',xs:'100%'},  display: 'flex', alignItems: 'center', justifyContent: 'center' ,marginTop:{sm:'0px',xs:'70px'}}}>
                     <Box sx={{ backgroundColor: '#fcfcfc', borderRadius: '10px', width: '95%', height: '80%', padding: {sm:'30px',xs:'15px'},marginTop:{sm:0,xs:'70px'} }}>
                         <Typography data-aos="fade-left" data-aos-once="false" sx={{ fontFamily: 'Alexandria', fontWeight: '300', color: '#676767',fontSize: {sm:'18px',xs:'15px'}}}>
@@ -222,7 +221,7 @@ const Dupes = () => {
             </Box> */}
 
 
-            <Stack direction={{sm:"row",xs:'column',height: {sm:'595px',xs:'auto'}}} >
+            <Stack id="targetDivRemittanceFramework" direction={{sm:"row",xs:'column',height: {sm:'595px',xs:'auto'}}} >
                 <Box sx={{ position: 'relative', width: {sm:'40%',xs:'100%'} }}>
                     <Box data-aos="zoom-out" className={styles.remitanceblob} sx={{ position: 'relative', top: '22px',left:'-100px' }}>
                         <img className={styles.remitanceblobImg}  src="/solutions/Configpay/blobRemitance.svg" ></img>

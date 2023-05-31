@@ -143,7 +143,7 @@ const Blockchain = () => {
                 </Box>
             </Box>
 
-            <Stack direction={{ sm: "row", xs: 'column', height: { sm: 'auto', xs: 'auto' } }} >
+            <Stack id="targetDivBlockchain" direction={{ sm: "row", xs: 'column', height: { sm: 'auto', xs: 'auto' } }} >
                 <Box className={style.blockchainBG} sx={{ position: 'relative', width: { sm: '40%', xs: '100%' }, display: 'grid', placeItems: 'center', height: { sm: 'auto', xs: '200px' } }}>
                     <Typography sx={{ fontFamily: 'Alexandria', fontWeight: '500', color: '#fff', fontSize: { sm: '75px', xs: '40px' } }}>
                         Blockchain
@@ -191,7 +191,7 @@ const Blockchain = () => {
 
             {/* AI below  */}
 
-            <Stack direction={{ sm: "row", xs: 'column-reverse', height: { sm: 'auto', xs: 'auto' } }} >
+            <Stack id="targetDivAI" direction={{ sm: "row", xs: 'column-reverse', height: { sm: 'auto', xs: 'auto' } }} >
 
                 <Box sx={{ width: { sm: '60%', xs: '100%' }, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                     <Box padding={{ sm: '30px', xs: '15px' }} sx={{ backgroundColor: '#fcfcfc', borderRadius: '10px' }}>
@@ -239,7 +239,7 @@ const Blockchain = () => {
             {/* Big data below  */}
 
 
-            <Stack direction={{ sm: "row", xs: 'column', height: { sm: 'auto', xs: 'auto' } }} >
+            <Stack id="targetDivBigData" direction={{ sm: "row", xs: 'column', height: { sm: 'auto', xs: 'auto' } }} >
                 <Box className={style.bigDataBg} sx={{ position: 'relative', width: { sm: '40%', xs: '100%' }, display: 'grid', placeItems: 'center', height: { sm: 'auto', xs: '200px' } }}>
                     <Typography sx={{ fontFamily: 'Alexandria', fontWeight: '500', color: '#fff', fontSize: { sm: '75px', xs: '40px' }, textAlign: 'center', lineHeight: '70px' }}>
                         Big <br></br>Data
@@ -285,7 +285,7 @@ const Blockchain = () => {
             {/* API development */}
 
 
-            <Stack direction={{ sm: "row", xs: 'column-reverse', height: { sm: 'auto', xs: 'auto' } }} >
+            <Stack id="targetDivAPIDevelopment" direction={{ sm: "row", xs: 'column-reverse', height: { sm: 'auto', xs: 'auto' } }} >
 
                 <Box sx={{ width: { sm: '60%', xs: '100%' }, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                     <Box padding={{ sm: '30px', xs: '15px' }} sx={{ backgroundColor: '#fcfcfc', borderRadius: '10px' }}>

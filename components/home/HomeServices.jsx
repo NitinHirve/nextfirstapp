@@ -14,10 +14,10 @@ const desc = [
 const HomeServices = () => {
     return (
         <>
-            <Services section={'section1'} title ={'Payments'} desc={desc[0]} />
-            <Services section={'section2'} title ={'Retail'} desc={desc[2]} />
-            <Services section={'section3'} title ={'Financial Institution '} desc={desc[3]} />
-            <Services section={'section4'} title ={'Fintech Start-Ups'} desc={desc[1]} />
+            <Services section={'section1'} title ={'Payments'} linkRoute={'/services/payments'} desc={desc[0]} />
+            <Services section={'section2'} title ={'Retail'} linkRoute={'/services/retail'} desc={desc[2]} />
+            <Services section={'section3'} title ={'Financial Institution '} linkRoute={'/services/subservices'} desc={desc[3]} />
+            <Services section={'section4'} title ={'Fintech Start-Ups'} linkRoute={'/services/fintech'} desc={desc[1]} />
         </>
     )
 }
