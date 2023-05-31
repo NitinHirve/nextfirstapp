@@ -3,9 +3,12 @@ import { Stack, Box, styled, Typography } from '@mui/material';
 import Image from 'next/image'
 import styles from '../../styles/home/homepage.module.css';
 import stylesWhyus from '../../styles/home/whyus.module.css';
+import stylesServices from '../../styles/home/services.module.css'
+
 
 import dynamic from 'next/dynamic'
 import { useEffect } from 'react'
+import Link from 'next/link'
 import HomeServicesHeading from './HomeServicesHeading'
 import Whyus from './Whyus'
 import HomeServices from './HomeServices'
@@ -44,10 +47,10 @@ const Homepage = () => {
             <Stack
                 className={styles.myBG}
                 direction={{ xs: 'column', sm: 'row' }}
-                sx={{ height: { xs: '80vh', sm: '100vh' }}}
+                sx={{ height: { xs: '100vh', sm: '100vh' }}}
             >
                 <Box sx={{ position: 'relative', width: { xs: '100%', sm: '50%' }, height: { xs: 'auto', sm: '100%' } }}>
-                    <Box sx={{ position: 'absolute', right: '20px', top: {xs:'45px',sm:'145px'},marginLeft:{xs:'30px'}  }}>
+                    <Box sx={{ position: 'absolute', right: '20px', top: {xs:'45px',sm:'120px'},marginLeft:{xs:'30px'}  }}>
                         <Typography data-aos="fade-down" sx={{ color: '#424242', fontFamily: 'Alexandria', fontWeight: '200', fontSize: '35px' }}>
                             Building and Integrating
                         </Typography>
@@ -58,6 +61,10 @@ const Homepage = () => {
                         <Typography data-aos="fade-up" sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: '22px', color: '#535151' }}>
                             Fuelled with technology, expertise,<br /> and experiences.
                         </Typography>
+                        <Link href={'/aboutus/aboutus'}>
+                            <button className={`${stylesServices.btn} ${stylesServices.fourth}`}>Know more</button>
+                        </Link>
+
                     </Box>
                 </Box>
                 <Box sx={{ position: 'relative',display:{xs: 'none', sm: 'block' }, width: '50%', height: { xs: 'auto', sm: '100%' }  }}>

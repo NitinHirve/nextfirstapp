@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from '../styles/footer.module.css';
 import { Stack, Box, Typography, List, ListItem } from '@mui/material';
+import Link from 'next/link';
 
 
 const Footer = () => {
@@ -33,30 +34,34 @@ const Footer = () => {
                         </Box>
                         <Box sx={{display:'flex',justifyContent:{xs:'center',sm:'space-evenly'}}} > 
                             <List>
-                                <ListItem sx={{fontSize:'22px',color:'#fff'}}>Services</ListItem>
-                                <ListItem>Payments</ListItem>
-                                <ListItem>Retail</ListItem>
-                                <ListItem>Fintech Startup</ListItem>
-                                <ListItem>Salesforce</ListItem>
-                                <ListItem>Certifications</ListItem>
+                                <ListItem sx={{fontSize:'20px!important',color:'#fff'}}>Services</ListItem>
+                                <Link href={'/services/payments'}><ListItem>Payments</ListItem></Link>
+                                <Link href={'/services/retail'}><ListItem>Retail</ListItem></Link>
+                                <Link href={'/services/fintech'}><ListItem>Fintech Startup</ListItem></Link>
+                                <Link href={'/services/subservices#targetDivSalesforce'}><ListItem>Salesforce</ListItem></Link>
+                                <Link href={'/services/subservices#targetDivCerifications  '}><ListItem>Certifications</ListItem></Link>
                             </List>
                         </Box>
                         <Box sx={{display:'flex',justifyContent:{xs:'center',sm:'space-evenly'}}}>
                             <List>
-                                <ListItem sx={{fontSize:'22px',color:'#fff'}}>Solutions</ListItem>
-                                <ListItem >Dupes Preventer</ListItem>
-                                <ListItem >Configpay</ListItem>
-                                <ListItem>Remittance Framework</ListItem>
-                                <ListItem></ListItem>
-                                <ListItem></ListItem>
+                                <ListItem sx={{fontSize:'20px!important',color:'#fff'}}>Solutions</ListItem>
+                                <Link href={'/solutions#targetDivDupesPreventer'}><ListItem>Dupes Preventer</ListItem></Link>
+                                <Link href={'/solutions#targetDivConfigPay'}><ListItem>Configpay</ListItem></Link>
+                                <Link href={'/solutions#targetDivRemittanceFramework'}><ListItem>Remittance Framework</ListItem></Link>
+                                <ListItem sx={{fontSize:'20px!important',color:'#fff'}}>New Technologies</ListItem>
+                                <Link href={'/services/newtechnologies#targetDivBlockchain'}><ListItem>BlockChain</ListItem></Link>
+                                <Link href={'/services/newtechnologies#targetDivAI'}><ListItem>Artificial Intelligence</ListItem></Link>
+                                <Link href={'/services/newtechnologies#targetDivBigData'}><ListItem>Big Data</ListItem></Link>
+                                <Link href={'/services/newtechnologies#targetDivAPIDevelopment'}><ListItem>API Development</ListItem></Link>
                             </List>
                         </Box>
                         <Box sx={{display:'flex',justifyContent:{xs:'center',sm:'space-evenly'}}}>
                             <List>
-                                <ListItem sx={{fontSize:'22px',color:'#fff'}}>New Technologies</ListItem>
-                                <ListItem>BlockChain</ListItem>
-                                <ListItem>Big Data</ListItem>
-                                <ListItem>API Development</ListItem>
+                                <ListItem sx={{fontSize:'20px!important',color:'#fff'}}>New Technologies</ListItem>
+                                <Link href={'/services/newtechnologies#targetDivBlockchain'}><ListItem>BlockChain</ListItem></Link>
+                                <Link href={'/services/newtechnologies#targetDivAI'}><ListItem>Artificial Intelligence</ListItem></Link>
+                                <Link href={'/services/newtechnologies#targetDivBigData'}><ListItem>Big Data</ListItem></Link>
+                                <Link href={'/services/newtechnologies#targetDivAPIDevelopment'}><ListItem>API Development</ListItem></Link>
                             </List>
                         </Box>
 

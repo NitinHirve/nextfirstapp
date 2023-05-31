@@ -1,12 +1,15 @@
 import React from 'react'
 import { MdKeyboardArrowUp } from 'react-icons/md';
 
-import { Box, Stack, styled, Typography, Grid } from '@mui/material'
+import { Box, Stack, styled, Typography, Grid, useMediaQuery } from '@mui/material'
 import styles from '../../styles/services/payments.module.css'
+import style from '../../styles/services/newtechnologies.module.css';
 import AcquiringPayments from './AcquiringPayments';
 import ProcessorSolutions from './ProcessorSolutions'
 import Ewallets from './Ewallets'
 import MobilePayments from './MobilePayments'
+import Link from 'next/link'
+
 
 
 const details =[
@@ -53,6 +56,10 @@ const details =[
 ]
 
 const payments = () => {
+
+    const isMobile = useMediaQuery((theme) => theme.breakpoints.down('sm'));
+
+
     return (
 
         <>
@@ -107,6 +114,26 @@ const payments = () => {
             <ProcessorSolutions />
             <Ewallets />
             <MobilePayments />
+
+             {/* contact us  */}
+
+             <Box sx={{ height: '190px' }}>
+                <Box sx={{ width: '100vw', height: '100%', marginTop: '100px', display: 'flex' }}>
+                    <Box sx={{ display: 'flex', alignItems: 'center', width: '60%', backgroundColor: '#7e16f5', clipPath: 'polygon(0% 0%, 55% 0%,80% 45%,80% 65%, 92% 100%, 0% 100%)' }}>
+                        {!isMobile && <Typography sx={{ marginLeft: { sm: '200px', xs: '20px' }, lineHeight: '32px', fontFamily: 'Alexandria', color: 'white', fontSize: { sm: '30px', xs: '19px' } }}>Collaborate with the <br></br> &nbsp;&nbsp;Right Technology Partner  </Typography>}
+                        {isMobile && <Typography sx={{ marginLeft: { sm: '200px', xs: '20px' }, lineHeight: '32px', fontFamily: 'Alexandria', color: 'white', fontSize: { sm: '30px', xs: '19px' } }}>Collaborate  <br></br> with <br></br>the Right <br></br> Technology <br></br>Partner.</Typography>}
+                    </Box>
+                </Box>
+                <Box sx={{ marginTop: '-191px', width: '100vw', height: '100%', display: 'flex', justifyContent: 'end' }}>
+                    <Box className={style.joinUs} sx={{ display: 'grid', placeContent: 'center', width: '63%', clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%,33% 100%,20% 62%,20% 39%)' }}>
+                        <Link href={'/buildwithus'}>
+                            <Box sx={{ cursor: 'pointer', fontFamily: 'Alexandria', display: 'grid', placeContent: 'center', color: 'white', height: { sm: '40px', xs: '33px' }, width: { sm: '158px', xs: '100px' }, background: ' linear-gradient(90deg, rgba(126,22,245,1) 0%, rgba(192,144,247,1) 71%)', marginLeft: { sm: 0, xs: '53px' } }}>
+                                Contact Us
+                            </Box>
+                        </Link>
+                    </Box>
+                </Box>
+            </Box>
 
 
 
