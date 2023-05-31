@@ -145,7 +145,7 @@ const reEngineeringDetails = [
 
 ]
 
-const fintechservice = () => {
+const Fintechservice = () => {
 
     const isMobile = useMediaQuery((theme) => theme.breakpoints.down('sm'));
 
@@ -358,4 +358,4 @@ const fintechservice = () => {
     )
 }
 
-export default fintechservice
+export default Fintechservice
