@@ -2,6 +2,8 @@ import { Box, Grid, Typography, useMediaQuery } from '@mui/material'
 import React from 'react'
 import Link from 'next/link'
 import styles from '../../styles/aboutus/aboutus.module.css'
+import { TiSocialLinkedinCircular } from 'react-icons/ti';
+
 
 
 
@@ -9,47 +11,50 @@ const leadersDetail = [
   {
     name: 'Shekhar Khakurdikar',
     desgn: 'CTO & Co-Founder',
-    profilePic: 'ShekharSirMin.webp'
+    profilePic: 'ShekharSirMin.webp',
+    linkedinURL: 'https://www.linkedin.com/in/shekharkhakurdikar/'
   },
   {
     name: 'Sachin Gurav',
     desgn: 'CEO & Co-Founder',
-    profilePic: 'SachinSirMin.webp'
+    profilePic: 'SachinSirMin.webp',
+    linkedinURL: 'https://www.linkedin.com/in/sachin-gurav-62b5b4/'
   },
   {
     name: 'Nilesh Varma',
     desgn: 'VP-Payment & Co-Founder',
-    profilePic: 'NileshSirMin.webp'
+    profilePic: 'NileshSirMin.webp',
+    linkedinURL: 'https://www.linkedin.com/in/nileshvarma/'
   },
   {
     name: 'Gitanjali Mudaliar',
     desgn: 'HR Manager',
-    profilePic: 'GitanjaliMam.webp'
+    profilePic: 'GitanjaliMam2.jpg',
+    linkedinURL: 'https://www.linkedin.com/in/gitanjali-mudaliar-15721664/'
   },
   {
     name: 'Girish Shahpurkar',
     desgn: 'CFO',
-    profilePic: 'GirishSir.webp'
+    profilePic: 'GirishSir.webp',
+    linkedinURL: 'https://www.linkedin.com/in/girish-shahapurkar-574a1a8/'
   },
   {
     name: 'Rajagopalan Nelliyodan',
     desgn: 'Operations Head',
-    profilePic: 'RajSir.webp'
+    profilePic: 'RajSir.webp',
+    linkedinURL: 'https://www.linkedin.com/in/rajagopalan-n-5b952937/'
   },
-  // {
-  //   name: 'Bhavik Vasa',
-  //   desgn: 'Executive Director',
-  //   profilePic: 'Bhavik'
-  // },
   {
     name: 'David True',
     desgn: 'Advisory Board',
-    profilePic: 'David.webp'
+    profilePic: 'David.webp',
+    linkedinURL: 'https://www.linkedin.com/in/dptrue/ '
   },
   {
     name: 'Arcady Lapiro',
     desgn: 'Advisory Board',
-    profilePic: 'Arcady.webp'
+    profilePic: 'Arcady.webp',
+    linkedinURL: 'https://www.linkedin.com/in/arcadylapiro/'
   }
 ]
 
@@ -83,7 +88,9 @@ const Leaders = () => {
                 ((index == 2 || index == 5 ) && "zoom-out-left data-aos-once='true' ")
               }
               >
-                <Box className={styles.leaders} sx={{ height: { xs: '340px', sm: '310px', backgroundImage: `url(/aboutus/images/leaders/${leader.profilePic})` } }}></Box>
+                <Box className={styles.leaders} sx={{position:'relative', height: { xs: '340px', sm: '310px', backgroundImage: `url(/aboutus/images/leaders/${leader.profilePic})` } }}>
+                  {leader?.linkedinURL &&  <Link href={leader.linkedinURL}><Box className={styles.linkedinBox} > <TiSocialLinkedinCircular style={{color:'#4287f5',fontSize:'36px'}} /></Box></Link>}
+                </Box>
                 <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '35px' }}>
                   <p style={{ margin: 0, padding: 0, fontFamily: 'Alexandria', fontSize: '11px', color: '#6f6675' }}>{leader.desgn}</p>
                   <Typography sx={{ fontFamily: 'Alexandria', padding: 0, margin: '0!important' }}>{leader.name}</Typography>

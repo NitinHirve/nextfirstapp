@@ -34,6 +34,17 @@ const Footer = () => {
                         </Box>
                         <Box sx={{display:'flex',justifyContent:{xs:'center',sm:'space-evenly'}}} > 
                             <List>
+                                {/* <ListItem sx={{fontSize:'20px!important',color:'#fff'}}>Services</ListItem> */}
+                                <Link href={'/'}><ListItem>Home</ListItem></Link>
+                                <Link href={'/aboutus/aboutus'}><ListItem>About Us</ListItem></Link>
+                                <Link href={'/aboutus/lifeatBNT'}><ListItem>Life at BNT</ListItem></Link>
+                                <Link href={'/blogs'}><ListItem>Blogs</ListItem></Link>
+                                <Link href={'/career'}><ListItem>Career</ListItem></Link>
+                                <Link href={'/buildwithus'}><ListItem>Build with Us</ListItem></Link>
+                            </List>
+                        </Box>
+                        <Box sx={{display:'flex',justifyContent:{xs:'center',sm:'space-evenly'}}} > 
+                            <List>
                                 <ListItem sx={{fontSize:'20px!important',color:'#fff'}}>Services</ListItem>
                                 <Link href={'/services/payments'}><ListItem>Payments</ListItem></Link>
                                 <Link href={'/services/retail'}><ListItem>Retail</ListItem></Link>
@@ -48,7 +59,7 @@ const Footer = () => {
                                 <Link href={'/solutions#targetDivDupesPreventer'}><ListItem>Dupes Preventer</ListItem></Link>
                                 <Link href={'/solutions#targetDivConfigPay'}><ListItem>Configpay</ListItem></Link>
                                 <Link href={'/solutions#targetDivRemittanceFramework'}><ListItem>Remittance Framework</ListItem></Link>
-                                <ListItem sx={{fontSize:'20px!important',color:'#fff'}}>New Technologies</ListItem>
+                                <ListItem sx={{fontSize:'20px!important',color:'#fff',marginTop:'10px'}}>New Technologies</ListItem>
                                 <Link href={'/services/newtechnologies#targetDivBlockchain'}><ListItem>BlockChain</ListItem></Link>
                                 <Link href={'/services/newtechnologies#targetDivAI'}><ListItem>Artificial Intelligence</ListItem></Link>
                                 <Link href={'/services/newtechnologies#targetDivBigData'}><ListItem>Big Data</ListItem></Link>

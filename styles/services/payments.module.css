@@ -189,7 +189,7 @@
 .car_footer {
     position: absolute;
     bottom: 0;
-    height: 27%;
+    height: 20%;
     width: 100%;
     /* border-top-left-radius: 30px; */
     /* border-bottom-left-radius: 30px; */
@@ -253,7 +253,7 @@
 .car_footer_readMore {
     text-align: center;
     font-weight: 400;
-    font-size: 17px;
+    font-size: 15px;
     font-family: Alexandria;
     color: white;
 }
@@ -264,7 +264,7 @@
 }
 
 .ProcessorBG {
-    background-image: url('../../public/services/images/processorbg.jpg');
+    background-image: url('../../public/services/images/processorbg2.jpg');
     /* background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../../public/services/images/mobilePayment.webp'); */
     /* background-position: center; */
     background-size: cover;

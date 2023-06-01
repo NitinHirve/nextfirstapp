@@ -50,26 +50,14 @@ export default function SwiperApp() {
                 >
                     <SwiperSlide>
                         {/* <img className="imgNew" src="images/1.jpg" /> */}
-                        <ReviewCard className="reviewCard" imgUrl={'1'} name={'Leo Markides'} desg={'CIO - Currencies Direct'} comment={comments[0]} />
+                        <ReviewCard className="reviewCard" imgUrl={'LeoMarkides.png'} name={'Leo Markides'} desg={'CIO - Currencies Direct'} comment={comments[0]} />
                     </SwiperSlide>
                     <SwiperSlide>
                         {/* <img className="imgNew" src="images/2.jpg" /> */}
                         <ReviewCard className="reviewCard" imgUrl={'2'} name={'Osvaldo Rodriguess'} desg={'CEO - Click a Waiter Inc.'} comment={comments[1]} />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <ReviewCard className="reviewCard" imgUrl={'3'} name={'Dave Ritten'} desg={'CEO - Invenco'} comment={comments[2]} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        {/* <img className="imgNew" src="images/4.jpg" /> */}
-                        <ReviewCard className="reviewCard" imgUrl={'1'} name={'Leo Markides'} desg={'CIO - Currencies Direct'} comment={comments[0]} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        {/* <img className="imgNew" src="images/5.jpg" /> */}
-                        <ReviewCard className="reviewCard" imgUrl={'2'} name={'Osvaldo Rodriguess'} desg={'CEO - Click a Waiter Inc.'} comment={comments[1]} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        {/* <img className="imgNew" src="images/6.jpg" /> */}
-                        <ReviewCard className="reviewCard" imgUrl={'3'} name={'Dave Ritten'} desg={'CEO - Invenco'} comment={comments[2]} />
+                        <ReviewCard className="reviewCard" imgUrl={'DaveRitten.png'} name={'Dave Ritten'} desg={'CEO - Invenco'} comment={comments[2]} />
                     </SwiperSlide>
                 </Swiper>
             </div>
