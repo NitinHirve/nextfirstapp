@@ -76,32 +76,32 @@ const customDetails =[
     {
         heading:'Bi And Analytics',
         desc : 'Our skills, technologies, practices for continuous iterative exploration and investigation of your business.',
-        imgBG : 'img1'
+        imgBG : 'img1-min'
     },
     {
         heading:'Web Enabled Applications',
         desc : "Portals include mashups and intranet 'dashboards' for executives and managers.",
-        imgBG : 'img2'
+        imgBG : 'img2-min'
     },
     {
         heading: 'Cloud & Mobile Based Solutions',
         desc : 'Gives you the freedom to act independently and provide the best experience',
-        imgBG : 'img3'
+        imgBG : 'img3-min'
     },
     {
         heading: 'Retail Management',
         desc : 'A framework which can easily accommodate and provide solutions for your retail needs',
-        imgBG : 'img4'
+        imgBG : 'img4-min'
     },
     {
         heading:'Payment Processing',
         desc :  'Processes all payment modes for online and traditional brick and mortar stores',
-        imgBG : 'img5'
+        imgBG : 'img5-min'
     },
     {
         heading:'Mobile Application',
         desc :  'Built new age mobile applications with our local and global banks and wallet APIs.',
-        imgBG : 'img6'
+        imgBG : 'img6-min'
     },
    
 ]

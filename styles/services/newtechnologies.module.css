@@ -1,6 +1,6 @@
 
 .newtechBg{
-    background-image: url('../../public/services/images/newtechBg.jpg');
+    background-image: url('../../public/services/images/newtechBg-min.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     /* filter: blur(8px);
@@ -8,26 +8,26 @@
 }
 
 .blockchainBG {
-    background-image: url('../../public/services/images/blocktechnology.jpg');
+    background-image: url('../../public/services/images/blocktechnology-min.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .bigDataBg {
-    background-image: url('../../public/services/images/bigDataBg.jpg');
+    background-image: url('../../public/services/images/bigDataBg-min.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .APIdevBG {
-    background-image: url('../../public/services/images/APIdevBG.jpg');
+    background-image: url('../../public/services/images/APIdevBG-min.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 
 .AItechBG {
-    background-image: url('../../public/services/images/AItech.jpg');
+    background-image: url('../../public/services/images/AItech-min.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     /* background-attachment: fixed; */

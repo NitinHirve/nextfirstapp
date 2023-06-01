@@ -76,27 +76,27 @@ const POSSolutionDetails =[
     {
         heading:'Pos And Payment Peripherals',
         desc : 'Integrate with Pin Pads, Barcode readers, ECRs, Bluetooth Printers, Biometric readers under one platform for flawless operation facility.',
-        imgBG : 'img1'
+        imgBG : 'img1-min'
     },
     {
         heading:'Kiosk And Self Checkout',
         desc : 'Automating retail experience with DIY ability and enabling users to scan goods and pay through your own choice of digital medium.',
-        imgBG : 'img2'
+        imgBG : 'img2-min'
     },
     {
         heading: 'Mobile/ Tablet Applications',
         desc : 'Building responsive applications across all digital mediums, appropriate for mobiles and tablets.',
-        imgBG : 'img3'
+        imgBG : 'img3-min'
     },
     {
         heading: 'Gift & Loyalty Application',
         desc : 'Offering rewards from all major brands, it works across a number of retailers.',
-        imgBG : 'img4'
+        imgBG : 'img4-min'
     },
     {
         heading:'Credit/ Debit Card Applications',
         desc :  'Accepts all credit and debit cards across all banks.',
-        imgBG : 'img5'
+        imgBG : 'img5-min'
     },
    
 ]

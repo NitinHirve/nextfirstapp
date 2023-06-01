@@ -24,7 +24,7 @@
 }
 
 .backOfficeBG {
-    background-image: url('../../public/services/images/backOfficeBG.jpg');
+    background-image: url('../../public/services/images/backOfficeBG-min.jpg');
     /* background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../../public/services/images/mobilePayment.webp'); */
     /* background-position: center; */
     background-size: cover;
