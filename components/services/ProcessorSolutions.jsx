@@ -23,10 +23,10 @@ const headings = [
 ]
 
 const desc = [
-    'We at BNT offer the most advanced technology base merchant onboarding solutions. We offer quick and easy, customizable and exceptional branding experience for merchant onboarding. We also take care of KYC underwritings and provide efficient mechanisms with the setup facility.',
+    'We at BNT offer the most advanced technology base merchant onboarding solutions, providing quick and easy, customizable and exceptional branding experience for merchant onboarding. We also take care of KYC underwritings and provide efficient mechanisms with the setup facility.',
     'BNT’s exceptional technology-driven team with the latest payment industry know-how is a perfect pick for building all your switch and routing platforms. We design, develop and support standard and innovative transaction requirements keeping with the new electronic market.',
     'As data is key essential to any business growth, we offer exception skills and utilize best technology practices providing analytics and reporting for enhancing your business growth.',
-    'We develop strong and sound payment gateways, authorizing credit card or direct payments processing for all types of businesses. We guarantee to design and develop secure payment gateways that enable businesses with digital payment processes globally without any glitch.'
+    'We develop strong and sound payment gateways, authorizing credit cards or direct payment processing for all types of businesses. Our secure payment gateways enable businesses to provide digital payment processes globally without any glitch.'
 ]
 
 const ProcessorSolutions = () => {
@@ -43,7 +43,7 @@ const ProcessorSolutions = () => {
                 </Box>
             </Box>
 
-            <Box sx={{ height: {sm:'500px',xs:'auto'}, border: {sm:'1px solid #dde3ee',xs:'none'}, borderRight: '0px', borderLeft: 'none', display: 'flex', flexDirection:{sm:'row',xs:'column'}, marginRight: {sm:'40px',xs:'0px'}, marginBottom: '40px' }}>
+            <Box sx={{ height: {sm:'455px',xs:'auto'}, border: {sm:'1px solid #dde3ee',xs:'none'}, borderRight: '0px', borderLeft: 'none', display: 'flex', flexDirection:{sm:'row',xs:'column'}, marginRight: {sm:'40px',xs:'0px'}, marginBottom: '40px' }}>
                 <Box data-aos="fade-right" className={styles.ProcessorBG} sx={{ width: {sm:'40%',xs:'100%'}, display: 'flex', alignItems: 'center', justifyContent: 'center',padding:{sm:0,xs:'30px 20px'} }}>
                     <Typography sx={{ fontFamily: 'Alexandria', paddingLeft: '25px', fontWeight: 300, fontSize: '22px', color: 'white', maxWidth: '400px', borderLeft: '5px solid yellow' }}>
                         Digital payments are convenient and preferred, yet, they demand safety and security in terms of transactions. We at BNT build secure and tech-advanced processor solutions for e-commerce, in-stores or retail, along with, both offline and online solutions for your business goals.                    </Typography>

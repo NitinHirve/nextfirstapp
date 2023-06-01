@@ -5,6 +5,29 @@
     background-repeat: no-repeat;
 }
 
+.linkedinBox {
+    height: 0px;
+    background-color: rgba(15, 15, 14, 0.15);
+    position: absolute;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    /* display: none; */
+    opacity: 0;
+    width: 100%;
+    cursor:pointer;
+    transition: height 0.4s ease-in-out;
+}
+
+.leaders:hover .linkedinBox {
+    height: 100%;
+    opacity: 1;
+}
+
+
+/* .leaders:hover  */
+
 
 
 
@@ -15,7 +38,7 @@
     right: 13px;
     width: 100%;
     height: 100%;
-    border:1px solid rgb(199, 134, 243);
+    border: 1px solid rgb(199, 134, 243);
     background-color: white;
     z-index: -99;
 }
@@ -34,28 +57,28 @@
 } */
 
 
-.OurmissionLeftSection{
+.OurmissionLeftSection {
     position: relative;
     background-image: url('../../public/aboutus/images/ourmission/leftSectionOurMission.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.OurmissionRightSection{
+.OurmissionRightSection {
     position: relative;
     background-image: url('../../public/aboutus/images/ourmission/rightSectionOurMissionMin.webp');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.aboutBnt{
+.aboutBnt {
     position: relative;
     background-image: url('../../public/aboutus/images/aboutBnt/aboutBntMin.webp');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.joinUs{
+.joinUs {
     position: relative;
     z-index: 1;
 }
@@ -72,9 +95,9 @@
     background-size: cover;
     background-repeat: no-repeat;
     filter: blur(1px);
-  }
+}
 
-  .ourMission{
+.ourMission {
     /* background-image: url('../../public/aboutus/images/ourmission/ourmission.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;

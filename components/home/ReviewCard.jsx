@@ -15,8 +15,8 @@ const ReviewCard = ({imgUrl,name,desg,comment}) => {
                 <CardContent sx={{ display: 'flex', justifyContent: 'center', backgroundColor: '#bbdefb', borderRadius: '20px', borderBottomRightRadius: 0 }} elevation={0}>
                     <Box sx={{ backgroundColor: '#fff', width: 96, height: 96, padding: '3px', borderRadius: '50%' }}>
                         <Avatar
-                            alt="Remy Sharp"
-                            src={`https://mui.com/static/images/avatar/${imgUrl}.jpg`}
+                            alt="O"
+                            src={`/home/images/clients/${imgUrl}`}
                             sx={{ width: 90, height: 90, border: '3px solid #29b6f6' }}
                         />
                     </Box>

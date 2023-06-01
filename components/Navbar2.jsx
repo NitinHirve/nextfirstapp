@@ -33,10 +33,9 @@ const Navbar2 = (props) => {
             <HideOnScroll {...props} >
 
                 <nav className={styles.navbar}>
-                    <a href="#" className={styles.navbarlogo}>
+                    <Link href="/" className={styles.navbarlogo}>
                         <img src="https://bnt-soft.com/wp-content/uploads/2020/05/logoheader.png" alt="BnT Soft" style={{ height: "35px" }} />
-
-                    </a>
+                    </Link>
                     <ul className={styles.navbarlinks} style={{ width: '59vw', marginLeft: '165px', display: 'flex', justifyContent: 'space-between' }}>
                         <li className={ `${styles.navbardropdown} `}>
                             <Link className={`${router.asPath == '/'? styles.navActive : ''}`} href={'/'}>Home</Link>

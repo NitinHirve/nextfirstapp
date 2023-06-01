@@ -51,23 +51,20 @@ const LifeAtBNT = () => {
                         <img style={{ width: '100%', height: '100%' }} src="/aboutus/lifeatBnt/images/boysBNTmin.webp" ></img>
                     </Box>
                     <Box sx={{ width: { sm: '25%', xs: '50%' }, height: { sm: '100%', xs: '170px' }, backgroundColor: '#1e8be1', padding: { sm: '40px', xs: '10px' } }}>
-                        <Typography sx={{ fontFamily: 'Alexandria', fontSize: { sm: '15px', xs: '12px' }, color: '#fff', fontWeight: 400 }}>
-                            We envision revolutionizing the payment solutions industry by delivering customized solutions that meet the unique needs of businesses worldwide.
-                        </Typography>
+                        <Typography sx={{ fontFamily: 'Alexandria', fontSize: { sm: '17px', xs: '14px' }, color: '#fff', fontWeight: 400 }}>
+                        Let loose and groove to the rhythm! Our parties are legendary to unleash your inner dancing diva or disco king!                        </Typography>
                     </Box>
                     <Box className={style.photoGridImgBack} sx={{ width: { sm: '50%', xs: '100%' }, height: { sm: '100%', xs: '170px' }, backgroundImage: 'url(/aboutus/lifeatBnt/images/pawanaback4Min.webp)' }}></Box>
                 </Box>
                 <Box sx={{ width: '100%', height: { sm: '250px', xs: 'auto' }, display: 'flex', flexWrap: 'wrap' }}>
                     <Box sx={{ width: { sm: '25%', xs: '50%' }, height: { sm: '100%', xs: '170px' }, backgroundColor: '#f7f7f7',  padding: { sm: '40px', xs: '10px' }}}>
                         <Typography sx={{ fontFamily: 'Alexandria', fontSize: { sm: '17px', xs: '13px' }, color: 'black', fontWeight: 400 }}>
-                            We believe in fostering strong partnerships with our clients as technology and product agnostics.
-                        </Typography>
+                        {"When it's time to break free from the office walls, we embark on exciting team outings."  }                      </Typography>
                     </Box>
                     <Box className={style.photoGridImgBack} sx={{ width: { sm: '25%', xs: '50%' },height: { sm: '100%', xs: '170px' }, backgroundImage: 'url(/aboutus/lifeatBnt/images/girlsBNTmin.webp)' }}></Box>
                     <Box sx={{ width: { sm: '25%', xs: '50%' }, backgroundColor: '#f7f7f7', padding: '40px',height: { sm: '100%', xs: '170px' },padding: { sm: '40px', xs: '10px' } }}>
                         <Typography sx={{ fontFamily: 'Alexandria', fontSize: { sm: '17px', xs: '13px' }, color: 'black', fontWeight: 400 }}>
-                            We believe in fostering strong partnerships with our clients as technology
-                        </Typography>
+                        Our outings are an opportunity to break free from the usual office dress code and unleash crazy imagination.                        </Typography>
                     </Box>
                     <Box className={style.photoGridImgBack} sx={{ width: { sm: '25%', xs: '50%' },height: { sm: '100%', xs: '170px' }, backgroundImage: 'url(/aboutus/lifeatBnt/images/pawanaBornfire2Min.webp)' }}></Box>
 
@@ -78,8 +75,7 @@ const LifeAtBNT = () => {
 
                     <Box sx={{ width: { sm: '25%', xs: '50%' },height: { sm: '100%', xs: '170px' }, backgroundColor: '#1e8be1', padding: { sm: '40px', xs: '10px' } }}>
                         <Typography sx={{ fontFamily: 'Alexandria', fontSize: { sm: '17px', xs: '14px' }, color: '#fff', fontWeight: 400 }}>
-                            We envision revolutionizing the payment solutions industry by delivering customized solutions.
-                        </Typography>
+                        {"It's not just about winning; it's about the spirit of healthy competition, teamwork, and having a blast on the field."  }                      </Typography>
                     </Box>
                 </Box>
             </Box>

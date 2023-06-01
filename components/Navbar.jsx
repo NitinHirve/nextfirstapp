@@ -71,6 +71,7 @@ function Navbar(props) {
 
     const drawer = (
         <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
+        <Link href={'/'}>
             <Box
                                 variant="h6"
                                 component="div"
@@ -80,7 +81,7 @@ function Navbar(props) {
 
                                 <img src="https://bnt-soft.com/wp-content/uploads/2020/05/logoheader.png" alt="BnT Soft" style={{ height: "35px" }} />
 
-                            </Box>
+                            </Box></Link>
             <Divider />
             <List sx={{}}>
                 <>
@@ -224,6 +225,7 @@ function Navbar(props) {
                             >
                                 <MenuIcon sx={{color:'blue'}} />
                             </IconButton>
+                            <Link href={'/'}>
                             <Box
                                 variant="h6"
                                 component="div"
@@ -234,6 +236,7 @@ function Navbar(props) {
                                 <img src="https://bnt-soft.com/wp-content/uploads/2020/05/logoheader.png" alt="BnT Soft" style={{ height: "35px" }} />
 
                             </Box>
+                            </Link>
                             <Box sx={{ flexGrow: 1, justifyContent: 'space-between', display: { xs: 'none', sm: 'flex' } }}>
 
                                 <Link href='/'>
