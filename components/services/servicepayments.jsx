@@ -16,42 +16,42 @@ const details =[
     {
         heading:'Mobile Payment Solutions',
         desc : 'As payment landscapes have evolved with mobile phones, accepting credit card payments is a must for businesses.',
-        imgBG : 'img1'
+        imgBG : 'img1-min'
     },
     {
         heading:'Terminal Management System',
         desc : 'Our team offers Terminal Management Systems that syncs automatically and updates your terminal swiftly.',
-        imgBG : 'img2'
+        imgBG : 'img2-min'
     },
     {
         heading: 'Payment Terminal Applications',
         desc : 'Our experts with years of market experience design and develop smart solutions for various payment terminals.',
-        imgBG : 'img3'
+        imgBG : 'img3-min'
     },
     {
         heading: 'Acquiring Authorization',
         desc : 'BNT’s experienced team has developed a real-time switching and authorization system designed to support the evolving payment standards for channels, schemes and card products.',
-        imgBG : 'img4'
+        imgBG : 'img4-min'
     },
     {
         heading:'Fx Solutions',
         desc : 'While foreign exchange can be tricky and complicated, we build global decentralized and over the counter market for exchanging or trading currencies.',
-        imgBG : 'img5'
+        imgBG : 'img5-min'
     },
     {
         heading:'Biometric And Nfc',
         desc : 'Utilizing latest technology of biometric and NFC ability we enable contactless payments.',
-        imgBG : 'img6'
+        imgBG : 'img6-min'
     },
     {
         heading:'Building Open Apis',
         desc : 'We build open API for businesses that allows to share data and functionality with other developers and business',
-        imgBG : 'img7'
+        imgBG : 'img7-min'
     },
     {
         heading:'Merchant Management System',
         desc : 'Gives you the freedom to act independently and provide the best experience',
-        imgBG : 'img8'
+        imgBG : 'img8-min'
     },
 ]
 

@@ -15,7 +15,7 @@
 }
 
 .myBG {
-    background-image: url('../../public/solutions/solutionsBG.jpg');
+    background-image: url('../../public/solutions/solutionsBG-min.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     /* background-attachment: fixed; */

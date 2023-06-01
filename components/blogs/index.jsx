@@ -8,57 +8,57 @@ const cardDetails = [
     {
         heading: 'Story of Usha Waghmare',
         desc: 'This Mother’s Day we thought of bringing to you an aspiring story of a woman and a mother who has had challenges and yet kept going to become someone for herself and her children.',
-        image: 'mothersdayBlog'
+        image: 'mothersdayBlog-min'
     },
     {
         heading: '5 Areas AI is affecting',
         desc: 'The evolution of technology has made our life much easier and fast.',
-        image: 'aiBlog'
+        image: 'aiBlog-min'
     },
     {
         heading: 'How Fintech Is Rattling',
         desc: 'For a time being, consumers have accepted the lack of technology found at traditional banks. But with fintech on the ridge, banks are toiling to keep up and offer customers the innovation they crave.',
-        image: 'fintechBankingBlog'
+        image: 'fintechBankingBlog-min'
     },
     {
         heading: 'Womens Day',
         desc: 'More Power and Strength to the Courageous Women- Happy Women’s Day.Being a woman there are many roles and responsibilities to fulfill.',
-        image: 'womensDayBlog'
+        image: 'womensDayBlog-min'
     },
     {
         heading: '5 reasons why e-Wallets are safe for your customers',
         desc: 'The traditional methods of payment have witnessed a huge transformation.',
-        image: 'ewalletBlog'
+        image: 'ewalletBlog-min'
     },
     {
         heading: 'Top Payment Trends 2021',
         desc: 'The traditional methods of payment have witnessed a huge transformation.',
-        image: 'topPaymentsBlog'
+        image: 'topPaymentsBlog-min'
     },
     {
         heading: 'Blockchain Revolution or Evolution?',
         desc: 'Blockchain technology seems to be a complicated concept associated with cryptocurrency Bitcoin.',
-        image: 'blockchainBlog'
+        image: 'blockchainBlog-min'
     },
     {
         heading: 'Fostering Innovation and Competition',
         desc: 'With recent digital transformations, even banks are moving towards digitizing and innovation.',
-        image: 'openBanksBlog'
+        image: 'openBanksBlog-min'
     },
     {
         heading: 'How AI is transforming the Fintech industry',
         desc: 'When we talk about finance, the first thing that pops into our head is ‘information’. More so, it relates to essential and subtle information.',
-        image: 'fintechBlog'
+        image: 'fintechBlog-min'
     },
     {
         heading: 'Does the evolving payment system still require a human touch?',
         desc: 'As times have transcended the core payment process to online, digital transformation has amalgamated payment systems to be digitally flexible.',
-        image: 'humanTouchBlog'
+        image: 'humanTouchBlog-min'
     },
     {
         heading: 'The New Social Payment Phenomena',
         desc: 'As social distancing is the new wave, A global study suggests that, “79% of respondents are now tapping into contactless payments”.',
-        image: 'contactlessPyamentBlog'
+        image: 'contactlessPyamentBlog-min'
     }
 ]
 

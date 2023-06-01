@@ -74,27 +74,27 @@ const POSSolutionDetails =[
     {
         heading:'Idea Validation & Refinement',
         desc : 'Process of testing and validating your idea prior to launching your business name, tagline, product, service, website etc.',
-        imgBG : 'img1'
+        imgBG : 'img1-min'
     },
     {
         heading:'Analysis And Planning',
         desc : 'Discipline combines in-depth analysis of both operational and financial data to help align business processes and strategies with financial goals.',
-        imgBG : 'img2'
+        imgBG : 'img2-min'
     },
     {
         heading: 'Understanding Technology Stack',
         desc : 'Identifying the set of softwares that provides the infrastructure for your business and MVP.',
-        imgBG : 'img3'
+        imgBG : 'img3-min'
     },
     {
         heading: 'Mockup Creation',
         desc : 'Create model used for teaching, demonstration, design evaluation, promotion, and other purposes.',
-        imgBG : 'img4'
+        imgBG : 'img4-min'
     },
     {
         heading:'Roadmap For Mvp',
         desc :  'A version of a new product which allows a team to collect the maximum amount of validated learnings about customers with the least effort.',
-        imgBG : 'img5'
+        imgBG : 'img5-min'
     },
    
 ]
