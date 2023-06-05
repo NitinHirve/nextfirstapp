@@ -26,7 +26,7 @@ function MyApp({ Component, pageProps }) {
   useEffect(() => {
     Aos.init({ duration: 1300 });
 
-  }, [])
+  })
 
   const isMobile = useMediaQuery((themes) => theme.breakpoints.down('sm'));
 
