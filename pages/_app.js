@@ -24,7 +24,7 @@ const theme = createTheme({
 function MyApp({ Component, pageProps }) {
 
   useEffect(() => {
-    Aos.init({ duration: 1300 });
+    Aos.init({delay:400 ,duration: 1300});
 
   })
 
