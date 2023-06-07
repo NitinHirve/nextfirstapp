@@ -30,7 +30,7 @@ const Ourmission = () => {
                                 {tabOn == '2' && 'We believe in fostering strong partnerships with our clients as technology and product agnostics. Our goal is to make payment processing simple and easy, so that businesses can focus on what they do best - growing their businesses.'}
                                 {tabOn == '3' && 'Established in 2010, starting from one garage room and a team of 5 people, we have been passionate about providing businesses with efficient and exceptional solutions. Driving innovation, commitment, and value for more than a decade, we are now a team of more than 150+ professionals, keeping our clients at the center.'}
                             </Typography>
-                             <Box className={styles.ourMission} sx={{width:{sm:'30%',xs:'100%'},padding:'10px!important',height:{sm:'100%',xs:'35%'},backgroundImage: tabOn == '1'? 'url(/aboutus/images/ourmission/ourmissionMin.webp)':(tabOn == '2' ? 'url(/aboutus/images/ourmission/ourvisonMin.webp)':'url(/aboutus/images/ourmission/ourhistoryMin.webp)')}}></Box>
+                             <Box className={styles.ourMission} sx={{width:{sm:'30%',xs:'100%'},padding:'10px!important',height:{sm:'100%',xs:'35%'},backgroundImage: tabOn == '1'? 'url(/aboutus/images/ourmission/ourmissionNewMin.webp)':(tabOn == '2' ? 'url(/aboutus/images/ourmission/ourvisonMinNew.webp)':'url(/aboutus/images/ourmission/ourhistoryMin.webp)')}}></Box>
                             </Box>
 
                         </Box>
