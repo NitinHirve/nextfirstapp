@@ -50,19 +50,19 @@ const LifeAtBNT = () => {
                     <Box className={style.photoGridImgBack} sx={{ width: { sm: '25%', xs: '50%' }, height: { sm: '100%', xs: '170px' } }}>
                         <img style={{ width: '100%', height: '100%' }} src="/aboutus/lifeatBnt/images/boysBNTminNew.webp" ></img>
                     </Box>
-                    <Box sx={{ width: { sm: '25%', xs: '50%' }, height: { sm: '100%', xs: '170px' }, backgroundColor: '#1e8be1', padding: { sm: '40px', xs: '10px' } }}>
-                        <Typography sx={{ fontFamily: 'Alexandria', fontSize: { sm: '17px', xs: '14px' }, color: '#fff', fontWeight: 400 }}>
+                    <Box data-aos="flip-right" sx={{ width: { sm: '25%', xs: '50%' }, height: { sm: '100%', xs: '170px' }, backgroundColor: '#1e8be1', padding: { sm: '40px', xs: '10px' } }}>
+                        <Typography  sx={{ fontFamily: 'Alexandria', fontSize: { sm: '17px', xs: '14px' }, color: '#fff', fontWeight: 400 }}>
                         Let loose and groove to the rhythm! Our parties are legendary to unleash your inner dancing diva or disco king!                        </Typography>
                     </Box>
                     <Box className={style.photoGridImgBack} sx={{ width: { sm: '50%', xs: '100%' }, height: { sm: '100%', xs: '170px' }, backgroundImage: 'url(/aboutus/lifeatBnt/images/pawanaback4MinNew.webp)' }}></Box>
                 </Box>
                 <Box sx={{ width: '100%', height: { sm: '250px', xs: 'auto' }, display: 'flex', flexWrap: 'wrap' }}>
-                    <Box sx={{ width: { sm: '25%', xs: '50%' }, height: { sm: '100%', xs: '170px' }, backgroundColor: '#f7f7f7',  padding: { sm: '40px', xs: '10px' }}}>
+                    <Box data-aos="flip-left" sx={{ width: { sm: '25%', xs: '50%' }, height: { sm: '100%', xs: '170px' }, backgroundColor: '#f7f7f7',  padding: { sm: '40px', xs: '10px' }}}>
                         <Typography sx={{ fontFamily: 'Alexandria', fontSize: { sm: '17px', xs: '13px' }, color: 'black', fontWeight: 400 }}>
                         {"When it's time to break free from the office walls, we embark on exciting team outings."  }                      </Typography>
                     </Box>
                     <Box className={style.photoGridImgBack} sx={{ width: { sm: '25%', xs: '50%' },height: { sm: '100%', xs: '170px' }, backgroundImage: 'url(/aboutus/lifeatBnt/images/girlsBNTminNew.webp)' }}></Box>
-                    <Box sx={{ width: { sm: '25%', xs: '50%' }, backgroundColor: '#f7f7f7', padding: '40px',height: { sm: '100%', xs: '170px' },padding: { sm: '40px', xs: '10px' } }}>
+                    <Box data-aos="flip-right" sx={{ width: { sm: '25%', xs: '50%' }, backgroundColor: '#f7f7f7', padding: '40px',height: { sm: '100%', xs: '170px' },padding: { sm: '40px', xs: '10px' } }}>
                         <Typography sx={{ fontFamily: 'Alexandria', fontSize: { sm: '17px', xs: '13px' }, color: 'black', fontWeight: 400 }}>
                         Our outings are an opportunity to break free from the usual office dress code and unleash crazy imagination.                        </Typography>
                     </Box>
@@ -73,7 +73,7 @@ const LifeAtBNT = () => {
                     <Box className={style.photoGridImgBack} sx={{ width: { sm: '50%', xs: '100%' }, height: { sm: '100%', xs: '170px' }, backgroundImage: 'url(/aboutus/lifeatBnt/images/groupBNTNew.webp)' }}></Box>
                     <Box className={style.photoGridImgBack} sx={{ width: { sm: '25%', xs: '50%' },height: { sm: '100%', xs: '170px' }, backgroundImage: 'url(/aboutus/lifeatBnt/images/prathmeshTrek.jpg)' }}></Box>
 
-                    <Box sx={{ width: { sm: '25%', xs: '50%' },height: { sm: '100%', xs: '170px' }, backgroundColor: '#1e8be1', padding: { sm: '40px', xs: '10px' } }}>
+                    <Box data-aos="flip-left" sx={{ width: { sm: '25%', xs: '50%' },height: { sm: '100%', xs: '170px' }, backgroundColor: '#1e8be1', padding: { sm: '40px', xs: '10px' } }}>
                         <Typography sx={{ fontFamily: 'Alexandria', fontSize: { sm: '17px', xs: '14px' }, color: '#fff', fontWeight: 400 }}>
                         {"It's not just about winning; it's about the spirit of healthy competition, teamwork, and having a blast on the field."  }                      </Typography>
                     </Box>
