@@ -1,6 +1,6 @@
 .myBG {
     /* background-image: url('../../public/aboutus/images/lifeatbntBg.jpg'); */
-    background: linear-gradient(rgba(30, 9, 87, 0.6),rgba(30, 9, 87, 0.6)), url('../../public/career/images/careerBGMin.webp');
+    background: linear-gradient(rgba(30, 9, 87, 0.6),rgba(30, 9, 87, 0.6)), url('../../public/career/images/careerBGMinNew.webp');
     background-size: cover;
     background-repeat: no-repeat;
     /* background-attachment: fixed; */
@@ -43,7 +43,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('../../public/aboutus/images/joinUs4.jpg');
+    background-image: url('../../public/aboutus/images/joinUs4New.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     filter: blur(1px);

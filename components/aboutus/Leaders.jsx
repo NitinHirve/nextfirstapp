@@ -11,13 +11,13 @@ const leadersDetail = [
   {
     name: 'Shekhar Khakurdikar',
     desgn: 'CTO & Co-Founder',
-    profilePic: 'ShekharSirMin.webp',
+    profilePic: 'ShekharSirMinNew.webp',
     linkedinURL: 'https://www.linkedin.com/in/shekharkhakurdikar/'
   },
   {
     name: 'Sachin Gurav',
     desgn: 'CEO & Co-Founder',
-    profilePic: 'SachinSirMin.webp',
+    profilePic: 'SachinSirMinNew.webp',
     linkedinURL: 'https://www.linkedin.com/in/sachin-gurav-62b5b4/'
   },
   {
@@ -41,7 +41,7 @@ const leadersDetail = [
   {
     name: 'Rajagopalan Nelliyodan',
     desgn: 'Operations Head',
-    profilePic: 'RajSir.webp',
+    profilePic: 'RajSirNew.jpg',
     linkedinURL: 'https://www.linkedin.com/in/rajagopalan-n-5b952937/'
   },
   {
