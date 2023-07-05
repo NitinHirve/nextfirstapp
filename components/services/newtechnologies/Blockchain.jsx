@@ -51,7 +51,7 @@ const AIDetails = [
     {
         logo: <DragIndicatorIcon  className={stylesPayment.actualLogo} />,
         title: 'Fraud Detection',
-        desc: 'Intelligent automation and robotic process automation can help detect frauds. An integral function, BNT’s AI can develop algorithms that improves analysis, avoids errors'
+        desc: 'Intelligent automation and robotic process automation can help detect frauds. An integral function, BNT’s AI can develop algorithms that improves analysis, avoids errors.'
     },
     {
         logo: <BugReportIcon  className={stylesPayment.actualLogo} />,
@@ -94,7 +94,7 @@ const APIDevelopmentDetails = [
     {
         logo: <AnimationIcon  className={stylesPayment.actualLogo} />,
         title: 'Product Based API',
-        desc: 'BNT’s expert team of developers can build product-centric API’s as per our client needs. Our efficient team develops API’s for enterprise applications, banks and financial institution'
+        desc: 'BNT’s expert team of developers can build product-centric API’s as per our client needs. Our efficient team develops API’s for enterprise applications, banks and financial institution.'
     },
     {
         logo: <BusinessIcon  className={stylesPayment.actualLogo} />,
@@ -104,7 +104,7 @@ const APIDevelopmentDetails = [
     {
         logo: <DragIndicatorIcon  className={stylesPayment.actualLogo} />,
         title: 'Custom API Integration',
-        desc: 'Developing custom API, we provide documentation, deployment, integration, publishing and maintenance of API. '
+        desc: 'Developing custom API, we provide documentation, deployment, integration, publishing and maintenance of API.'
     },
     {
         logo: <BugReportIcon  className={stylesPayment.actualLogo} />,
@@ -182,7 +182,7 @@ const Blockchain = () => {
                         <Box className={stylesPayment.mobile_card} >
                             <Box className={stylesPayment.mobile__card_logo}>{item.logo}</Box>
                             <h3>{item.title}</h3>
-                            <p>{item.desc}.</p>
+                            <p>{item.desc}</p>
                         </Box>
                     </Box>
                 </>))}
@@ -229,7 +229,7 @@ const Blockchain = () => {
                         <Box className={stylesPayment.mobile_card} >
                             <Box className={stylesPayment.mobile__card_logo}>{item.logo}</Box>
                             <h3>{item.title}</h3>
-                            <p>{item.desc}.</p>
+                            <p>{item.desc}</p>
                         </Box>
                     </Box>
                 </>))}
@@ -276,7 +276,7 @@ const Blockchain = () => {
                         <Box className={stylesPayment.mobile_card} >
                             <Box className={stylesPayment.mobile__card_logo}>{item.logo}</Box>
                             <h3>{item.title}</h3>
-                            <p>{item.desc}.</p>
+                            <p>{item.desc}</p>
                         </Box>
                     </Box>
                 </>))}
@@ -323,7 +323,7 @@ const Blockchain = () => {
                         <Box className={stylesPayment.mobile_card} >
                             <Box className={stylesPayment.mobile__card_logo}>{item.logo}</Box>
                             <h3>{item.title}</h3>
-                            <p>{item.desc}.</p>
+                            <p>{item.desc}</p>
                         </Box>
                     </Box>
                 </>))}

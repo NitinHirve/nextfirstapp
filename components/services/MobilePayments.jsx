@@ -38,7 +38,7 @@ const MobilePayments = () => {
                         <Box className={styles.mobile_card} >
                             <Box className={styles.mobile__card_logo}>{item.logo}</Box>
                             <h3>{item.title}</h3>
-                            <p>{item.desc}.</p>
+                            <p>{item.desc}</p>
                         </Box>
                     </Box>
                 </>))}

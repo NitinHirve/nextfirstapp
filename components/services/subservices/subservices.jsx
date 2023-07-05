@@ -130,12 +130,12 @@ const reEngineeringDetails = [
     {
         logo: <BusinessIcon  className={stylesPayment.actualLogo} />,
         title: 'Payment Gateway Certifications',
-        desc: "Mandatory compliance standard for all payment service providers"
+        desc: "Mandatory compliance standard for all payment service providers."
     },
     {
         logo: <DragIndicatorIcon  className={stylesPayment.actualLogo} />,
         title: 'PCI Compliance',
-        desc: 'Helps you process, handle or stores credit card data on behalf of a merchant'
+        desc: 'Helps you process, handle or stores credit card data on behalf of a merchant.'
     },
     {
         logo: <BugReportIcon  className={stylesPayment.actualLogo} />,
@@ -329,7 +329,7 @@ const Fintechservice = () => {
                         <Box className={stylesPayment.mobile_card} >
                             <Box className={stylesPayment.mobile__card_logo}>{item.logo}</Box>
                             <h3>{item.title}</h3>
-                            <p>{item.desc}.</p>
+                            <p>{item.desc}</p>
                         </Box>
                     </Box>
                 </>))}

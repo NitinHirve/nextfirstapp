@@ -332,7 +332,7 @@ const Fintechservice = () => {
                         <div className={stylesPayment.mobile_card} >
                             <div className={stylesPayment.mobile__card_logo}>{item.logo}</div>
                             <h3>{item.title}</h3>
-                            <p>{item.desc}.</p>
+                            <p>{item.desc}</p>
                         </div>
                     </div>
                 </>))}
@@ -344,7 +344,7 @@ const Fintechservice = () => {
                         <Box className={stylesPayment.mobile_card} >
                             <Box className={stylesPayment.mobile__card_logo}>{item.logo}</Box>
                             <h3>{item.title}</h3>
-                            <p>{item.desc}.</p>
+                            <p>{item.desc}</p>
                         </Box>
                     </Box>
                 </>))}

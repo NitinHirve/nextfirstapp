@@ -128,7 +128,7 @@ const enterpriseSolutionsDetails = [
     {
         logo: <MobileFriendlyIcon  className={stylesPayment.actualLogo} />,
         title: 'Enterprise Mobility Solution',
-        desc: 'Smart world demand business presence in smart devices. As applications are accessed through different mediums'
+        desc: 'Smart world demand business presence in smart devices. As applications are accessed through different mediums.'
     },
     {
         logo: <PrecisionManufacturingIcon  className={stylesPayment.actualLogo} />,
@@ -143,7 +143,7 @@ const enterpriseSolutionsDetails = [
     {
         logo: <CategoryIcon  className={stylesPayment.actualLogo} />,
         title: 'Merchandising   ',
-        desc: 'While all products might be customer centric, not all customers are all product centric. Hence, it is crucial to rightly promote products that will attract customers and also increase sales.   '
+        desc: 'While all products might be customer centric, not all customers are all product centric. Hence, it is crucial to rightly promote products that will attract customers and also increase sales.'
     }
 ]
 
@@ -333,7 +333,7 @@ const Serviceretail = () => {
                         <Box className={stylesPayment.mobile_card} >
                             <Box className={stylesPayment.mobile__card_logo}>{item.logo}</Box>
                             <h3>{item.title}</h3>
-                            <p>{item.desc}.</p>
+                            <p>{item.desc}</p>
                         </Box>
                     </Box>
                 </>))}
