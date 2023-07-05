@@ -116,22 +116,22 @@ const architecturDesc = [
 const reEngineeringDetails = [
 
     {
-        logo: <AnimationIcon style={{ color: '#04c718' }} className={stylesPayment.actualLogo} />,
+        logo: <AnimationIcon  className={stylesPayment.actualLogo} />,
         title: 'Product Enhancement',
         desc: 'Bringing in noteworthy and functional improvements to your product as part of a new version of it.'
     },
     {
-        logo: <BusinessIcon style={{ color: '#04c718' }} className={stylesPayment.actualLogo} />,
+        logo: <BusinessIcon  className={stylesPayment.actualLogo} />,
         title: 'Business Intelligence',
         desc: "Meet your customer's needs more effectively and efficiently, make interactions faster and easier."
     },
     {
-        logo: <DragIndicatorIcon style={{ color: '#04c718' }} className={stylesPayment.actualLogo} />,
+        logo: <DragIndicatorIcon  className={stylesPayment.actualLogo} />,
         title: 'Improved UX And UI Designs',
         desc: 'Built great experience to enhance customer satisfaction and improve repeat visits.'
     },
     {
-        logo: <BugReportIcon style={{ color: '#04c718' }} className={stylesPayment.actualLogo} />,
+        logo: <BugReportIcon  className={stylesPayment.actualLogo} />,
         title: 'Test Automation',
         desc: 'Control the execution of tests and compare your actual test results with predicted or expected results.'
     }
@@ -236,7 +236,7 @@ const Fintechservice = () => {
                     <Box  >
                         <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1100" data-aos-offset="100">
                             <Typography sx={{
-                                fontFamily: 'Alexandria', fontWeight: 300, fontSize: {sm:'50px',xs:'30px'}, color: '#d4d4d6', color: '#eff0f4',
+                                fontFamily: 'Alexandria', fontWeight: 300, fontSize: {sm:'50px',xs:'30px'}, color: '#89c3f0',
                                 textShadow: '0 13.36px 8.896px #c4b59d,0 -2px 1px #fff'
                             }}>Independent Testing</Typography>
                         </Box>
