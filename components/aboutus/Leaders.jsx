@@ -29,7 +29,7 @@ const leadersDetail = [
   {
     name: 'Gitanjali Mudaliar',
     desgn: 'HR Manager',
-    profilePic: 'GitanjaliMam2.jpg',
+    profilePic: 'GitanjaliMam.jpg',
     linkedinURL: 'https://www.linkedin.com/in/gitanjali-mudaliar-15721664/'
   },
   {
