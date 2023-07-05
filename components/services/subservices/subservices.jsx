@@ -123,22 +123,22 @@ const architecturDesc = [
 const reEngineeringDetails = [
 
     {
-        logo: <AnimationIcon style={{ color: '#04c718' }} className={stylesPayment.actualLogo} />,
+        logo: <AnimationIcon  className={stylesPayment.actualLogo} />,
         title: 'EMV Certifications',
         desc: 'Special test scripts, certified by the acquirer for every association, have to be executed with the help of the EMV toolkit.'
     },
     {
-        logo: <BusinessIcon style={{ color: '#04c718' }} className={stylesPayment.actualLogo} />,
+        logo: <BusinessIcon  className={stylesPayment.actualLogo} />,
         title: 'Payment Gateway Certifications',
         desc: "Mandatory compliance standard for all payment service providers"
     },
     {
-        logo: <DragIndicatorIcon style={{ color: '#04c718' }} className={stylesPayment.actualLogo} />,
+        logo: <DragIndicatorIcon  className={stylesPayment.actualLogo} />,
         title: 'PCI Compliance',
         desc: 'Helps you process, handle or stores credit card data on behalf of a merchant'
     },
     {
-        logo: <BugReportIcon style={{ color: '#04c718' }} className={stylesPayment.actualLogo} />,
+        logo: <BugReportIcon  className={stylesPayment.actualLogo} />,
         title: 'Payment Processor Certifications',
         desc: 'To ensure high class service across all channels.'
     }
@@ -163,8 +163,8 @@ const Fintechservice = () => {
                     </Box>
                 </Box>
                 <Box sx={{width: '50%',display: {sm:'flex',xs:'none'}, alignItems: 'center', justifyContent: 'center' }}>
-                    <Box data-aos="zoom-out" >
-                            <img className={styles.floatingImg} style={{ width: '530px' }} src="/services/images/fintech.png" alt="abutImg"></img>
+                    <Box  data-aos="zoom-out" >
+                            <img className={styles.floatingImg} style={{ width: '380px' }} src="/services/images/cutom2.png" alt="Img"></img>
                     </Box>
                 </Box>
             </Stack>
@@ -202,10 +202,10 @@ const Fintechservice = () => {
             </Box>
 
 
-            <Box id="targetDivSalesforce" sx={{ display: 'flex',justifyContent: 'start', marginTop: '110px',marginBottom: '50px', height: {sm:'180px',xs:'85px'},paddingLeft: {sm:'80px',xs:'20px'},}} >
+            <Box id="targetDivSalesforce" sx={{ display: 'flex',justifyContent: 'start', marginTop: '70px',marginBottom: '30px', height: {sm:'180px',xs:'85px'},paddingLeft: {sm:'80px',xs:'20px'},}} >
                 <Box  >
                     <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1100" data-aos-offset="100">
-                        <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: {sm:'100px',xs:'28px'}, color: '#e8e8e8' }}>Salesforce</Typography>
+                        <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: {sm:'100px',xs:'35px'}, color: '#1e8be1' }}>Salesforce</Typography>
                     </Box>
                     {/* <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1500" data-aos-offset="100">
                         <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, color: '#1e8be1', textAlign: 'left', fontSize: {sm:'5vw',xs:'35px'}, marginTop: {sm:'-60px',xs:'-26px'} }}>Salesforce</Typography>
@@ -223,7 +223,7 @@ const Fintechservice = () => {
                     {architectureHeading.map((heading, i) => (<>
                         <Box className={styles.processsorElement} sx={{ width: {sm:'25%',xs:'100%'}, padding: '20px', paddingTop: {sm:'40px',xs:'20px'}, borderRight: '1px solid #dde3ee' }}>
                             <Box data-aos="fade-right" data-aos-delay={200 * i} sx={{backgroundColor:{xs:'#f2f5f3',sm:'#FBFBFB'},padding:{xs:'10px',sm:0},borderRadius:{sm:0,xs:'7px'}}}>
-                                <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 400, color: '#144719', fontSize: '20px' }}>{heading}</Typography>
+                                <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 400, color: '#162d82', fontSize: '20px' }}>{heading}</Typography>
                                 <p style={{ fontFamily: 'Alexandria', color: '#424242', fontWeight: 300, fontSize: '14px', lineHeight: '21px', }}>{architecturDesc[i]}</p>
                             </Box>
                         </Box>
@@ -314,7 +314,7 @@ const Fintechservice = () => {
             <Box id="targetDivCerifications" sx={{ display: 'flex',justifyContent: 'end', marginTop: '50px',marginBottom: '50px', height: {sm:'100px',xs:'85px'},paddingRight: {sm:'40px',xs:'20px'},}} >
                 <Box  >
                     <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1100" data-aos-offset="100">
-                        <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: {sm:'80px',xs:'40px'}, color: '#e8e8e8' }}>CERTIFICATIONS</Typography>
+                        <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: {sm:'80px',xs:'40px'}, color: '#1e8be1' }}>Certifications</Typography>
                     </Box>
                     {/* <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1500" data-aos-offset="100">
                         <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, color: '#1e8be1', textAlign: 'center', fontSize: {sm:'5vw',xs:'40px'}, marginTop: {sm:'-70px',xs:'-23px'} }}>Re-Engineering</Typography>

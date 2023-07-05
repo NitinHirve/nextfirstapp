@@ -13,22 +13,22 @@ import BugReportIcon from '@mui/icons-material/BugReport';
 const reEngineeringDetails = [
 
     {
-        logo: <AnimationIcon style={{ color: '#04c718' }} className={stylesPayment.actualLogo} />,
+        logo: <AnimationIcon  className={stylesPayment.actualLogo} />,
         title: 'Crypto Wallet Development',
         desc: 'Intelligent software program that stores private and public keys and interacts enable users to send and receive and monitor digital currency.'
     },
     {
-        logo: <BusinessIcon style={{ color: '#04c718' }} className={stylesPayment.actualLogo} />,
+        logo: <BusinessIcon  className={stylesPayment.actualLogo} />,
         title: 'Ethereum/cardano/eos Blockchain',
         desc: "Allows quicker and easier transactions and monitoring across the different blockchains."
     },
     {
-        logo: <DragIndicatorIcon style={{ color: '#04c718' }} className={stylesPayment.actualLogo} />,
+        logo: <DragIndicatorIcon  className={stylesPayment.actualLogo} />,
         title: 'Writing Smart Contracts',
         desc: 'Intelligent computer protocol intended to digitally facilitate, verify, or enforce the negotiation or performance of a contract.'
     },
     {
-        logo: <BugReportIcon style={{ color: '#04c718' }} className={stylesPayment.actualLogo} />,
+        logo: <BugReportIcon  className={stylesPayment.actualLogo} />,
         title: 'Asset Registry And Kyc',
         desc: 'Centralized repository of KYC records with uniform KYC norms and inter-usability of the KYC records across the sectors.'
     }
@@ -39,22 +39,22 @@ const reEngineeringDetails = [
 const AIDetails = [
 
     {
-        logo: <AnimationIcon style={{ color: '#04c718' }} className={stylesPayment.actualLogo} />,
+        logo: <AnimationIcon  className={stylesPayment.actualLogo} />,
         title: 'Digital Assistants',
         desc: 'With the recent evolution in technology, we at BNT aim to provide support in form of developing AI bots to banks and financial processes that stimulate enhanced customer interactions and experiences.'
     },
     {
-        logo: <BusinessIcon style={{ color: '#04c718' }} className={stylesPayment.actualLogo} />,
+        logo: <BusinessIcon  className={stylesPayment.actualLogo} />,
         title: 'Portfolio Analytics',
         desc: "BNT’s expert professionals offer Artificial Intelligence Solutions that helps financial institutions in marking any default highlights for understanding credit history."
     },
     {
-        logo: <DragIndicatorIcon style={{ color: '#04c718' }} className={stylesPayment.actualLogo} />,
+        logo: <DragIndicatorIcon  className={stylesPayment.actualLogo} />,
         title: 'Fraud Detection',
         desc: 'Intelligent automation and robotic process automation can help detect frauds. An integral function, BNT’s AI can develop algorithms that improves analysis, avoids errors'
     },
     {
-        logo: <BugReportIcon style={{ color: '#04c718' }} className={stylesPayment.actualLogo} />,
+        logo: <BugReportIcon  className={stylesPayment.actualLogo} />,
         title: 'Risk Management',
         desc: 'AI in finance is playing a splendid role by curbing frauds. Further, at BNT, we provide AI algorithms to our clients that enable them to understand how customers are functioning and where they can mitigate risk.'
     }
@@ -66,22 +66,22 @@ const AIDetails = [
 const BigDataDetails = [
 
     {
-        logo: <AnimationIcon style={{ color: '#04c718' }} className={stylesPayment.actualLogo} />,
+        logo: <AnimationIcon  className={stylesPayment.actualLogo} />,
         title: 'Data Storage',
         desc: 'Handling huge data can be challenging. We at BNT handle, manage and store large amount of our client’s data. We also support in selecting the most effective data storage method depending on their needs.'
     },
     {
-        logo: <BusinessIcon style={{ color: '#04c718' }} className={stylesPayment.actualLogo} />,
+        logo: <BusinessIcon  className={stylesPayment.actualLogo} />,
         title: 'Data Mining',
         desc: "Our experienced data scientist professionals enable latest algorithms and data mining solutions that help them add an extra edge to their stats."
     },
     {
-        logo: <DragIndicatorIcon style={{ color: '#04c718' }} className={stylesPayment.actualLogo} />,
+        logo: <DragIndicatorIcon  className={stylesPayment.actualLogo} />,
         title: 'Cloud Computing',
         desc: 'We are cloud experts offering cloud computing ability for our clients maintaining cost and solutions. We provide excellent solution to our clients which are scalable, flexible and secure.'
     },
     {
-        logo: <BugReportIcon style={{ color: '#04c718' }} className={stylesPayment.actualLogo} />,
+        logo: <BugReportIcon  className={stylesPayment.actualLogo} />,
         title: 'Data Management',
         desc: 'Our experts help our clients in better data management. We support our clients with information on how to organize and maintain data, keeping the security intact at all times.'
     }
@@ -92,22 +92,22 @@ const BigDataDetails = [
 const APIDevelopmentDetails = [
 
     {
-        logo: <AnimationIcon style={{ color: '#04c718' }} className={stylesPayment.actualLogo} />,
+        logo: <AnimationIcon  className={stylesPayment.actualLogo} />,
         title: 'Product Based API',
         desc: 'BNT’s expert team of developers can build product-centric API’s as per our client needs. Our efficient team develops API’s for enterprise applications, banks and financial institution'
     },
     {
-        logo: <BusinessIcon style={{ color: '#04c718' }} className={stylesPayment.actualLogo} />,
+        logo: <BusinessIcon  className={stylesPayment.actualLogo} />,
         title: 'API Development And Integrate',
         desc: "At BNT, we develop API as a service for the web and mobile applications. We utilize HTTP/HTTPs, XML, XHTML, Java, SOAP, EDI, AJAX, or Rest API Development."
     },
     {
-        logo: <DragIndicatorIcon style={{ color: '#04c718' }} className={stylesPayment.actualLogo} />,
+        logo: <DragIndicatorIcon  className={stylesPayment.actualLogo} />,
         title: 'Custom API Integration',
         desc: 'Developing custom API, we provide documentation, deployment, integration, publishing and maintenance of API. '
     },
     {
-        logo: <BugReportIcon style={{ color: '#04c718' }} className={stylesPayment.actualLogo} />,
+        logo: <BugReportIcon  className={stylesPayment.actualLogo} />,
         title: 'API Testing',
         desc: 'We strategize, design, develop and deploy API testing platforms to automate the API testing procedure. This is important for validation, functional, UI, runtime, and security testing.'
     }

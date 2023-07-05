@@ -23,7 +23,7 @@ const Ewallets = () => {
                     <Box  >
                         <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1100" data-aos-offset="100">
                             <Typography sx={{
-                                fontFamily: 'Alexandria', fontWeight: 300, fontSize: {sm:'110px',xs:'70px'}, color: '#d4d4d6', color: '#eff0f4',
+                                fontFamily: 'Alexandria', fontWeight: 300, fontSize: {sm:'110px',xs:'70px'}, color: '#89c3f0',
                                 textShadow: '0 13.36px 8.896px #c4b59d,0 -2px 1px #fff'
                             }}>E</Typography>
                         </Box>

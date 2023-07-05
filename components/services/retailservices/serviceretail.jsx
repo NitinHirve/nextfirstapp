@@ -126,22 +126,22 @@ const StyledBoxHeadingENTERPRISE = styled(Box)({
 
 const enterpriseSolutionsDetails = [
     {
-        logo: <MobileFriendlyIcon style={{ color: '#04c718' }} className={stylesPayment.actualLogo} />,
+        logo: <MobileFriendlyIcon  className={stylesPayment.actualLogo} />,
         title: 'Enterprise Mobility Solution',
         desc: 'Smart world demand business presence in smart devices. As applications are accessed through different mediums'
     },
     {
-        logo: <PrecisionManufacturingIcon style={{ color: '#04c718' }} className={stylesPayment.actualLogo} />,
+        logo: <PrecisionManufacturingIcon  className={stylesPayment.actualLogo} />,
         title: 'Supply Chain Management',
         desc: 'While maximizing customer value is imperative, it is also essential to hold a competitive advantage at all hours.'
     },
     {
-        logo: <SensorOccupiedIcon style={{ color: '#04c718' }} className={stylesPayment.actualLogo} />,
+        logo: <SensorOccupiedIcon  className={stylesPayment.actualLogo} />,
         title: 'Erp And Crm',
         desc: 'Business success depends on engaging and managing various interactions. As customers are of prime significance.'
     },
     {
-        logo: <CategoryIcon style={{ color: '#04c718' }} className={stylesPayment.actualLogo} />,
+        logo: <CategoryIcon  className={stylesPayment.actualLogo} />,
         title: 'Merchandising   ',
         desc: 'While all products might be customer centric, not all customers are all product centric. Hence, it is crucial to rightly promote products that will attract customers and also increase sales.   '
     }
@@ -167,7 +167,7 @@ const Serviceretail = () => {
                 </Box>
                 <Box sx={{ width: '50%', display: { sm: 'flex', xs: 'none' }, alignItems: 'center', justifyContent: 'center' }}>
                     <Box data-aos="zoom-out" >
-                        <img className={styles.floatingImg} style={{ width: '500px' }} src="/services/images/retail.png" alt="abutImg"></img>
+                        <img className={styles.floatingImg} style={{ width: '500px' }} src="/services/images/retail2.png" alt="abutImg"></img>
                     </Box>
                 </Box>
             </Stack>
@@ -245,7 +245,7 @@ const Serviceretail = () => {
                     <Box  >
                         <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1100" data-aos-offset="100">
                             <Typography sx={{
-                                fontFamily: 'Alexandria', fontWeight: 300, fontSize: {sm:'110px',xs:'70px'}, color: '#d4d4d6', color: '#eff0f4',
+                                fontFamily: 'Alexandria', fontWeight: 300, fontSize: {sm:'110px',xs:'70px'}, color: '#89c3f0',
                                 textShadow: '0 13.36px 8.896px #c4b59d,0 -2px 1px #fff'
                             }}>E</Typography>
                         </Box>

@@ -24,7 +24,7 @@ const Dupes = () => {
 
 
             <Stack className={styles.myBG} direction="row" >
-                <Box sx={{ position: 'relative', width: {sm:'50%',xs:'100vw'}, height: {sm:'100vh',xs:'50vh'}, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+                <Box sx={{ position: 'relative', width: {sm:'50%',xs:'100vw'}, height: {sm:'100vh',xs:'70vh'}, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
                     <Box sx={{ position: 'absolute',margin:{xs:'0 15px 0 15px',sm:'-60px 0px 0 0px'}  }}>
                         {/* <Typography data-aos="fade-right" style={{ fontFamily: 'Alexandria', fontWeight: '300', color: '#1a237e', fontSize: '60px' }}>Next-Gen</Typography> */}
                         <Typography fontSize={{sm:'75px',xs:'55px'}} data-aos="fade-down" style={{ fontFamily: 'Alexandria', fontWeight: '400', color: '#0328a3', marginTop: '-10px' }}>
