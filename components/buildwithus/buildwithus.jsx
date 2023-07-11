@@ -12,8 +12,15 @@ import ConnectForm from './ConnectForm'
 
 const validationSchema = Yup.object({
   name: Yup.string().required('Name is required'),
-  email: Yup.string().email('Invalid email address').required('Email is required'),
-  phone: Yup.string().required('Phone is required'),
+  email:Yup
+  .string()
+  .trim()
+  .required('Email is required')
+  .matches(
+    /^(([a-zA-Z0-9!#$%&'*+-\/=?^_`{|]{1,64})([@]{1})([a-zA-Z0-9-.]{2,160})([.]{1})([a-zA-Z0-9-.]{2,24}))$/i,
+    'Please enter valid email'
+  ),
+  phone:Yup.string().required('Phone is required').matches(/^\d{10}$/,'Please enter valid number'),
   businessType: Yup.string().required('Business Type is required'),
   services: Yup.string().required('Services is required'),
   message: Yup.string().required('Message is required'),
