@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import { useFormik, Field } from 'formik';
 import { TextField, Button, Select, MenuItem, InputLabel, FormControl, styled } from '@mui/material';
 import * as Yup from 'yup';
@@ -22,13 +22,23 @@ const CustomTextField = styled(TextField)({
 
 const validationSchema = Yup.object({
     name: Yup.string().required('Name is required'),
-    email: Yup.string().email('Invalid email address').required('Email is required'),
-    phone: Yup.number().required('Phone is required'),
+    email:  Yup
+    .string()
+    .trim()
+    .required('Email is required')
+    .matches(
+      /^(([a-zA-Z0-9!#$%&'*+-\/=?^_`{|]{1,64})([@]{1})([a-zA-Z0-9-.]{2,160})([.]{1})([a-zA-Z0-9-.]{2,24}))$/i,
+      'Please enter valid email'
+    ),
+    phone: Yup.string().required('Phone is required').matches(/^\d{10}$/,'Please enter valid number'),
     coverletter: Yup.string().required('Message is required'),
 });
 
 
 const MyForm = () => {
+
+    const [isValidForm, setIsValidForm] = useState(false)
+
     const formik = useFormik({
         initialValues: {
             name: '',
@@ -81,6 +91,7 @@ const MyForm = () => {
                 label="Phone"
                 variant="outlined"
                 type="number"
+                pattern="[0-9]"
                 value={formik.values.phone}
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
@@ -114,7 +125,7 @@ const MyForm = () => {
 
             <br></br>
 
-            <Button sx={{ width: { sm: '100%', xs: '95%' }, margin: '30px 0 30px 0' }} type="submit" variant="contained" color="primary">
+            <Button  disabled={Object.keys(formik.touched).length===0 || !formik.isValid} sx={{ width: { sm: '100%', xs: '95%' }, margin: '30px 0 30px 0' }} type="submit" variant="contained" color="primary">
                 Submit
             </Button>
         </form>

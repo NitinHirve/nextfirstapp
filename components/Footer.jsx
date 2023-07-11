@@ -59,11 +59,11 @@ const Footer = () => {
                                 <Link href={'/solutions#targetDivDupesPreventer'}><ListItem>Dupes Preventer</ListItem></Link>
                                 <Link href={'/solutions#targetDivConfigPay'}><ListItem>Configpay</ListItem></Link>
                                 <Link href={'/solutions#targetDivRemittanceFramework'}><ListItem>Remittance Framework</ListItem></Link>
-                                <ListItem sx={{fontSize:'20px!important',color:'#fff',marginTop:'10px'}}>New Technologies</ListItem>
+                                {/* <ListItem sx={{fontSize:'20px!important',color:'#fff',marginTop:'10px'}}>New Technologies</ListItem>
                                 <Link href={'/services/newtechnologies#targetDivBlockchain'}><ListItem>BlockChain</ListItem></Link>
                                 <Link href={'/services/newtechnologies#targetDivAI'}><ListItem>Artificial Intelligence</ListItem></Link>
                                 <Link href={'/services/newtechnologies#targetDivBigData'}><ListItem>Big Data</ListItem></Link>
-                                <Link href={'/services/newtechnologies#targetDivAPIDevelopment'}><ListItem>API Development</ListItem></Link>
+                                <Link href={'/services/newtechnologies#targetDivAPIDevelopment'}><ListItem>API Development</ListItem></Link> */}
                             </List>
                         </Box>
                         <Box sx={{display:'flex',justifyContent:{xs:'center',sm:'space-evenly'}}}>
