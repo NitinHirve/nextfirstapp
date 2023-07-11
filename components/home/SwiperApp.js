@@ -35,7 +35,7 @@ export default function SwiperApp() {
                     centeredSlides={true}
                     slidesPerView={window.innerWidth < 768 ? 1 : "auto"}
                     loop={true}
-                    autoplay={{ delay: 3000, disableOnInteraction: false }}
+                    // autoplay={{ delay: 3000, disableOnInteraction: false }}
                     coverflowEffect={{
                         rotate: 50,
                         stretch: 0,
