@@ -66,7 +66,7 @@ const Dupes = () => {
                             <span style={{ fontSize: '30px', color: '#1e8be1' }}>DupesPreventer</span>   is the perfect solution for the problem of duplicity. Designed to detect duplicates of standard objects
                             like accounts, contact, lead, lead to account, lead to contact, and vice versa arising from prospect entries,
                             web-to-lead or integrated systems. With the help of this Application any duplicate entry can be blocked or
-                            reported based on yourrequirement.
+                            reported based on your requirement.
                         </Typography>
                         <Typography data-aos="fade-left" data-aos-once="false"  sx={{ fontFamily: 'Alexandria', fontWeight: '300', color: '#676767',  marginTop: '20px',fontSize: {sm:'18px',xs:'15px'} }}>
                             It can detect duplicates to Accounts, Contacts, Leads, along with, “Lead to Contact” and “Lead to Account” and VICEVERSA. It’s a two way

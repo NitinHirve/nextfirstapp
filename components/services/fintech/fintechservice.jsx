@@ -103,14 +103,14 @@ const architectureHeading = [
     'Technical Architecture Design',
     'Unit Testing Developed Modules',
     'Module Wise Deliveries',
-    'Front-end Develeopent'
+    'Front-end Development'
 ]
 
 const architecturDesc = [
     'Development of methodical information technology specifications, models and guidelines, using a variety of Information Technology notations.',
     'Testing modules together with associated control data, usage procedures, and operating procedures.',
     'Programs are composed of one or more independently developed modules that are not combined until the program is linked.',
-    'Developmen of website or app and server side of development where we focus how the site works.'
+    'Development of website or app and server side of development where we focus how the site works.'
 ]
 
 const reEngineeringDetails = [

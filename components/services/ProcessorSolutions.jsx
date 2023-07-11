@@ -23,7 +23,7 @@ const headings = [
 ]
 
 const desc = [
-    'We at BNT offer the most advanced technology base merchant onboarding solutions, providing quick and easy, customizable and exceptional branding experience for merchant onboarding. We also take care of KYC underwritings and provide efficient mechanisms with the setup facility.',
+    'We at BNT offer the most advanced technology base merchant onboarding solutions, providing quick and easy, customizable and exceptional branding experience. We also take care of KYC under writings and provide efficient mechanisms with the setup facility.',
     'BNT’s exceptional technology-driven team with the latest payment industry know-how is a perfect pick for building all your switch and routing platforms. We design, develop and support standard and innovative transaction requirements keeping with the new electronic market.',
     'As data is key essential to any business growth, we offer exception skills and utilize best technology practices providing analytics and reporting for enhancing your business growth.',
     'We develop strong and sound payment gateways, authorizing credit cards or direct payment processing for all types of businesses. Our secure payment gateways enable businesses to provide digital payment processes globally without any glitch.'

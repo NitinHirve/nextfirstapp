@@ -6,9 +6,9 @@ import stylesWhyus from '../../styles/home/whyus.module.css';
 // import Lineanm from './lineanm'
 
 
-const desc = ['Our customers are our priority! Our successful partnership with various Organizations',
-'Our flexibility allows easy adaptability and a seamless approach to any tech development',
-'Utilizing advanced technology, we ensure to apply the best tech practices',
+const desc = ['Our customers are our priority! We thoroughly evaluate and offer the best suitable business solutions for our customers.',
+'Our flexibility allows easy adaptability and a seamless approach to any tech development.',
+'Utilizing advanced technology, we ensure to apply the best tech practices.',
 'Our experts have absolute domain know-how and in-depth knowledge offering the most relevant and suitable business solutions.'
 ]
 
