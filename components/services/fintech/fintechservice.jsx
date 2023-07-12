@@ -158,7 +158,7 @@ const Fintechservice = () => {
                 </Box>
                 <Box sx={{width: '50%',display: {sm:'flex',xs:'none'}, alignItems: 'center', justifyContent: 'center' }}>
                     <Box data-aos="zoom-out" >
-                            <img className={styles.floatingImg} style={{ width: '530px' }} src="/services/images/fintech.png" alt="abutImg"></img>
+                            <img className={styles.floatingImg} style={{ width: '530px' }} src="/services/images/fintech.png" alt=" "></img>
                     </Box>
                 </Box>
             </Stack>

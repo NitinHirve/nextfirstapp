@@ -89,7 +89,7 @@ const Leaders = () => {
               }
               >
                 <Box className={styles.leaders} sx={{position:'relative', height: { xs: '340px', sm: '310px', backgroundImage: `url(/aboutus/images/leaders/${leader.profilePic})` } }}>
-                  {leader?.linkedinURL &&  <Link href={leader.linkedinURL}><Box className={styles.linkedinBox} > <TiSocialLinkedinCircular style={{color:'#4287f5',fontSize:'36px'}} /></Box></Link>}
+                  {leader?.linkedinURL &&  <Link href={leader.linkedinURL} target="_blank" ><Box className={styles.linkedinBox} > <TiSocialLinkedinCircular style={{color:'#4287f5',fontSize:'36px'}} /></Box></Link>}
                 </Box>
                 <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '35px' }}>
                   <p style={{ margin: 0, padding: 0, fontFamily: 'Alexandria', fontSize: '11px', color: '#6f6675' }}>{leader.desgn}</p>

@@ -77,7 +77,7 @@ const Payments = () => {
                 </Box>
                 <Box sx={{width: '50%',display: {sm:'flex',xs:'none'}, alignItems: 'center', justifyContent: 'center' }}>
                     <Box data-aos="zoom-out" >
-                            <img className={styles.floatingImg} style={{ width: '500px' }} src="/services/images/payments.png" alt="abutImg"></img>
+                            <img className={styles.floatingImg} style={{ width: '500px' }} src="/services/images/payments.png" alt=" "></img>
                     </Box>
                 </Box>
             </Stack>
