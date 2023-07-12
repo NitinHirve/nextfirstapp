@@ -70,7 +70,7 @@ const Homepage = () => {
                 <Box sx={{ position: 'relative',display:{xs: 'none', sm: 'block' }, width: '50%', height: { xs: 'auto', sm: '100%' }  }}>
                     <Box data-aos="zoom-out" sx={{ position: 'relative', top: '95px' }}>
                         <figure className={`moving-image ${styles.artbox}`}>
-                            <img className={`movable-image ${styles.box_image} ${styles.floatingImg}`} style={{ width: '550px' }} src="/home/images/homePayment.png" alt="abutImg"></img>
+                            <img className={`movable-image ${styles.box_image} ${styles.floatingImg}`} style={{ width: '550px' }} src="/home/images/homePayment.png" alt=" "></img>
                         </figure>
                     </Box>
 

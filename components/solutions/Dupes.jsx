@@ -37,7 +37,7 @@ const Dupes = () => {
                 {/* <StyledBox sx={{ position: 'relative' }}>
                     <Box data-aos="zoom-out" sx={{ position: 'relative' }}>
                         <figure >
-                            <img className={stylesRetail.floatingImg} style={{ width: '500px' }} src="/services/images/retail.png" alt="abutImg"></img>
+                            <img className={stylesRetail.floatingImg} style={{ width: '500px' }} src="/services/images/retail.png" alt=" "></img>
                         </figure>
                     </Box>
                 </StyledBox> */}
