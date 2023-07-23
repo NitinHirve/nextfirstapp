@@ -3,6 +3,7 @@ import { Stack, Box, styled, Typography, useMediaQuery } from '@mui/material';
 import style from '../../../styles/services/newtechnologies.module.css'
 import stylesPayment from '../../../styles/services/payments.module.css'
 import Link from 'next/link'
+import stylesFintech from '../../../styles/services/fintech.module.css'
 
 
 import AnimationIcon from '@mui/icons-material/Animation';
@@ -122,11 +123,8 @@ const Blockchain = () => {
     return (
         <>
 
-            <Box className={style.newtechBg} sx={{ height: { sm: '500px', xs: 'auto' }, marginBottom: '50px' }}>
+            {/* <Box className={style.newtechBg} sx={{ height: { sm: '500px', xs: 'auto' }, marginBottom: '50px' }}>
                 <Box sx={{ height: '100%', maxWidth: { sm: '800px', xs: '100%' }, marginLeft: { sm: '80px', xs: '20px' }, paddingTop: { sm: '110px', xs: '40px' } }}>
-                    {/* <Typography sx={{ fontFamily: 'Alexandria', padding: 0, margin: '0!important', color: 'white', fontSize: '40px', fontWeight: 600, lineHeight: { xs: '45px', sm: 1.5 } }}>
-                        Let’s Grow Together And Join Us To<br></br> Spread The Power Of Technology!
-                    </Typography> */}
                     <Box sx={{ height: { xs: '100px', sm: '180px' }, display: 'flex', justifyContent: 'left' }} >
                         <Box  >
                             <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1100" data-aos-offset="100">
@@ -141,7 +139,25 @@ const Blockchain = () => {
                         <span style={{ color: '#1e8be1', fontSize: '26px' }}>We</span> are a family of tech folks always striving for the next best thing. We value collaboration, inclusion, and excellence. With the aim of simplifying complex problems, we constantly challenge ourselves to adapt and evolve.
                     </Typography>
                 </Box>
-            </Box>
+            </Box> */}
+
+            <Stack className={stylesFintech.myBG} direction="row" sx={{height: {sm:'90vh',xs:'auto'}}} >
+                <Box sx={{ width: {sm:'50%',xs:'100%'},  display: 'flex', alignItems: {sm:'center',xs:'start'}, justifyContent: 'center',padding:{sm:0,xs:'20px'} }}>
+                    <Box >
+                        <Typography data-aos="fade-down" sx={{ fontFamily: 'Alexandria', fontWeight: '400', color: '#1039a1', fontSize: {sm:'70px',xs:'42px'}, lineHeight: {sm:'74px',xs:'48px'} }}>
+                        <span style={{color:'#8ca9ed'}}>Trending</span><br></br> Technologies
+                        </Typography>
+                        <Typography data-aos="fade-up" sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: {sm:'22px',xs:'18px'}, color: '#535151', maxWidth: '400px',padding:{sm:0,xs:'10px'},marginTop:{sm:'30px',xs:'5px'} }}>
+                        <span style={{ color: '#1e8be1', fontSize: '26px' }}>We</span> are a family of tech folks always striving for the next best thing. We value collaboration, inclusion, and excellence.
+                        </Typography>
+                    </Box>
+                </Box>
+                <Box sx={{width: '50%',display: {sm:'flex',xs:'none'}, alignItems: 'center', justifyContent: 'center' }}>
+                    <Box data-aos="zoom-out" >
+                            <img className={stylesFintech.floatingImg} style={{ width: '400px' }} src="/services/images/NewTechnologies.png" alt=" "></img>
+                    </Box>
+                </Box>
+            </Stack>
 
             <Stack id="targetDivBlockchain" direction={{ sm: "row", xs: 'column', height: { sm: 'auto', xs: 'auto' } }} >
                 <Box className={style.blockchainBG} sx={{ position: 'relative', width: { sm: '40%', xs: '100%' }, display: 'grid', placeItems: 'center', height: { sm: 'auto', xs: '200px' } }}>

@@ -6,6 +6,11 @@ import BlogCard from './BlogCard'
 
 const cardDetails = [
     {
+        heading: 'Top Payment Trends 2023',
+        desc: 'The digital payment industry is witnessing rapid growth. In 2021, it was estimated that the worldwide digital payments market generated around $88.1 billion in revenue. However, it is projected to grow to approximately $180.2 billion by the end of 2026',
+        image: 'topPayments23'
+    },
+    {
         heading: 'Story of Usha Waghmare',
         desc: 'This Mother’s Day we thought of bringing to you an aspiring story of a woman and a mother who has had challenges and yet kept going to become someone for herself and her children.',
         image: 'mothersdayBlog-min'

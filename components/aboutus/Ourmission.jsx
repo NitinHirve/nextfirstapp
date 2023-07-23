@@ -13,8 +13,8 @@ const Ourmission = () => {
         <>
             <Box sx={{ width: '100vw', height: {sm:'464px',xs:'auto'}, display: 'flex',}}>
                 <Box data-aos="fade-right" className={styles.OurmissionLeftSection} sx={{ width: {sm:'50%',xs:'100%'}, padding: {sm:'20px',xs:0}, boxSizing: 'border-box'  }}>
-                    <Box sx={{ marginLeft: {sm:'250px',xs:'20px'}, marginTop: '50px' }}>
-                        <p style={{ margin: 0, padding: 0, fontFamily: 'Alexandria', fontSize: '11px', color: '#6f6675' }}>Top level company</p>
+                    <Box sx={{ marginLeft: {sm:'250px',xs:'20px'}, marginTop: '60px' }}>
+                        {/* <p style={{ margin: 0, padding: 0, fontFamily: 'Alexandria', fontSize: '11px', color: '#6f6675' }}>Top level company</p> */}
                         <Typography sx={{ fontFamily: 'Alexandria', padding: 0, margin: '0!important', color: 'white', fontSize: '30px' }}>Providing Innovative<br></br> Web Solutions for Future</Typography>
                         <Box data-aos="zoom-out-up" sx={{ height: '45px', marginTop: '30px', width: {sm:'100%',xs:'93%'}, display: 'flex', alignItems: 'center' }}>
                             <Box onClick={() => { setTabOn('1') }} sx={{ fontFamily: 'Alexandria', fontSize: '13px', cursor: 'pointer', flex: 1, backgroundColor: tabOn == '1' ? '#fff' : '#7e16f5', color: tabOn == '1' ? 'black' : '#fff', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', clipPath: 'polygon(0% 0%, 100% 0%, 92% 100%, 0% 100%)' }}>Our Mission</Box>
