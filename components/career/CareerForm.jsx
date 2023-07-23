@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React, { useState } from 'react';
 import { useFormik, Field } from 'formik';
 import { TextField, Button, Select, MenuItem, InputLabel, FormControl, styled } from '@mui/material';
 import * as Yup from 'yup';
@@ -22,16 +22,17 @@ const CustomTextField = styled(TextField)({
 
 const validationSchema = Yup.object({
     name: Yup.string().required('Name is required'),
-    email:  Yup
-    .string()
-    .trim()
-    .required('Email is required')
-    .matches(
-      /^(([a-zA-Z0-9!#$%&'*+-\/=?^_`{|]{1,64})([@]{1})([a-zA-Z0-9-.]{2,160})([.]{1})([a-zA-Z0-9-.]{2,24}))$/i,
-      'Please enter valid email'
-    ),
-    phone: Yup.string().required('Phone is required').matches(/^\d{10}$/,'Please enter valid number'),
+    email: Yup
+        .string()
+        .trim()
+        .required('Email is required')
+        .matches(
+            /^(([a-zA-Z0-9!#$%&'*+-\/=?^_`{|]{1,64})([@]{1})([a-zA-Z0-9-.]{2,160})([.]{1})([a-zA-Z0-9-.]{2,24}))$/i,
+            'Please enter valid email'
+        ),
+    phone: Yup.string().required('Phone is required').matches(/^\d{10}$/, 'Please enter valid number'),
     coverletter: Yup.string().required('Message is required'),
+    resumeFile: Yup.mixed().required('Please select a file.'),
 });
 
 
@@ -45,16 +46,39 @@ const MyForm = () => {
             email: '',
             phone: '',
             coverletter: '',
+            resumeFile: null
         },
         validationSchema,
-        onSubmit: (values) => {
-            // Handle form submission here
-            console.log(values);
+        onSubmit: async (values) => {
+            try {
+                // Prepare the form data to send to the API
+                const formData = new FormData();
+                formData.append('name', values.name);
+                formData.append('email', values.email);
+                formData.append('phone', values.phone);
+                formData.append('coverletter', values.coverletter);
+                formData.append('resumeFile', values.resumeFile);
+                console.log("Form Values : ", values)
+
+                // Send the form data to the API endpoint
+                const response = await fetch('/api/submitForm', {
+                    method: 'POST',
+                    body: JSON.stringify(values),
+                });
+
+                if (response.ok) {
+                    console.log('Form submitted successfully!');
+                } else {
+                    console.error('Form submission failed.');
+                }
+            } catch (error) {
+                console.error('Error submitting form:', error);
+            }
         },
     });
 
     return (
-        <form style={{width:'80%'}}  onSubmit={formik.handleSubmit}>
+        <form style={{ width: '80%' }} onSubmit={formik.handleSubmit}>
             <TextField
                 id="name"
                 name="name"
@@ -80,7 +104,7 @@ const MyForm = () => {
                 onBlur={formik.handleBlur}
                 error={formik.touched.email && formik.errors.email}
                 helperText={formik.touched.email && formik.errors.email}
-                sx={{ width: { sm: '100%', xs: '95%' },  }}
+                sx={{ width: { sm: '100%', xs: '95%' }, }}
             />
 
             <br></br><br></br>
@@ -97,7 +121,7 @@ const MyForm = () => {
                 onBlur={formik.handleBlur}
                 error={formik.touched.phone && formik.errors.phone}
                 helperText={formik.touched.phone && formik.errors.phone}
-                sx={{ width: { sm: '100%', xs: '95%' }}}
+                sx={{ width: { sm: '100%', xs: '95%' } }}
                 InputProps={{
                     style: {
                         borderColor: 'red', // Set your desired border color
@@ -105,7 +129,6 @@ const MyForm = () => {
                 }}
             />
 
-          
 
             <br></br><br></br>
 
@@ -123,9 +146,28 @@ const MyForm = () => {
                 sx={{ width: { sm: '100%', xs: '95%' }, }}
             />
 
+            <br></br><br></br>
+
+            <TextField
+                type="file"
+                name="resumeFile"
+                label="Resume"
+                onChange={(event) => {
+                    formik.setFieldValue('resumeFile', event.currentTarget.files[0]);
+                }}
+                onBlur={formik.handleBlur}
+                error={formik.touched.resumeFile && formik.errors.resumeFile}
+                helperText={formik.touched.resumeFile && formik.errors.resumeFile}
+                inputProps={{ accept: '.pdf,.doc,.docx' }}
+                fullWidth
+                InputLabelProps={{
+                    shrink: true,
+                }}
+            />
+
             <br></br>
 
-            <Button  disabled={Object.keys(formik.touched).length===0 || !formik.isValid} sx={{ width: { sm: '100%', xs: '95%' }, margin: '30px 0 30px 0' }} type="submit" variant="contained" color="primary">
+            <Button disabled={Object.keys(formik.touched).length === 0 || !formik.isValid} sx={{ width: { sm: '100%', xs: '95%' }, margin: '30px 0 30px 0' }} type="submit" variant="contained" color="primary">
                 Submit
             </Button>
         </form>
