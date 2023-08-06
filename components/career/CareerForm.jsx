@@ -58,12 +58,11 @@ const MyForm = () => {
                 formData.append('phone', values.phone);
                 formData.append('coverletter', values.coverletter);
                 formData.append('resumeFile', values.resumeFile);
-                console.log("Form Values : ", values)
 
                 // Send the form data to the API endpoint
                 const response = await fetch('/api/submitForm', {
                     method: 'POST',
-                    body: JSON.stringify(values),
+                    body: formData,
                 });
 
                 if (response.ok) {

@@ -30,11 +30,7 @@ const Footer = () => {
                     >
                         <Box sx={{ maxWidth: { xs: '100%', sm: '300px' }, padding: { xs: '20px', sm: '0' }, color: '#fff' }}>
                             <Typography >
-                                We at <span style={{ color: '#bbdefb', fontSize: '20px' }}>BNT- “Bits and Thoughts”</span> have been providing services for more than a decade now.
-                                Accelerated with innovative goals, we envision our services with excellent quality.
-                                We are committed to high quality performance along with integrity & client satisfaction.
-                                Our constant growth and happy loyal clientele is a testament to our constant growth and
-                                proven market leadership.
+                                We at <span style={{ color: '#bbdefb', fontSize: '20px' }}>BNT- “Bits and Thoughts”</span> have been providing unique and tailored payment solutions for over a decade. We are committed to high-quality performance along with integrity & client satisfaction. Our constant growth and loyal clientele are a testament to our growth and proven market leadership.
                             </Typography>
                             <div style={{ display: 'flex', gap: '30px', marginTop: '20px' }}>
                                 <Link href={'https://www.facebook.com/BNTSOFT/'}  target="_blank" ><ImFacebook /></Link>
