@@ -36,7 +36,7 @@ const validationSchema = Yup.object({
 });
 
 
-const MyForm = () => {
+const MyForm = ({setIsFormSubmitted,setModelOpen}) => {
 
     const [isValidForm, setIsValidForm] = useState(false)
 
@@ -50,6 +50,7 @@ const MyForm = () => {
         },
         validationSchema,
         onSubmit: async (values) => {
+            setModelOpen(false)
             try {
                 // Prepare the form data to send to the API
                 const formData = new FormData();
@@ -67,6 +68,8 @@ const MyForm = () => {
 
                 if (response.ok) {
                     console.log('Form submitted successfully!');
+                    setIsFormSubmitted(true)
+                    setModelOpen(false)
                 } else {
                     console.error('Form submission failed.');
                 }
