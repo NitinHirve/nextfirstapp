@@ -1,5 +1,5 @@
 
-import React from 'react'
+import React,{useState} from 'react'
 
 import { Box, Stack, Typography, styled, alpha, InputBase, MenuItem, TextField, Grid, Button, Modal } from '@mui/material'
 import style from '../.././styles/career/career.module.css'
@@ -8,6 +8,7 @@ import ConnectForm from './CareerForm'
 
 import SearchIcon from '@mui/icons-material/Search';
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
+import TransitionAlerts from './AlertBox'
 
 const Search = styled('div')(({ theme }) => ({
     position: 'relative',
@@ -144,6 +145,8 @@ const Career = ({ jobsDetailsResponse }) => {
         setOpen(true)
     };
     const handleClose = () => setOpen(false);
+    const [isFormSubmitted, setIsFormSubmitted] = useState(false)
+
 
     const searchJob = (e) => {
         const updatedJobsDetailsResponse = jobsDetailsResponse.filter(job => {
@@ -166,6 +169,10 @@ const Career = ({ jobsDetailsResponse }) => {
                         push your limits, and make a difference.
                     </Typography>
                 </Box>
+            </Box>
+
+            <Box sx={{display:'flex',justifyContent:'center',position:'fixed',top:100,width:'100%'}}>
+              <TransitionAlerts isFormSubmitted={isFormSubmitted} setIsFormSubmitted={setIsFormSubmitted} />
             </Box>
 
             <Box sx={{ padding: { sm: '100px', xs: '20px' } }}>
@@ -326,7 +333,7 @@ const Career = ({ jobsDetailsResponse }) => {
                     </Typography>
 
                     <Box sx={{ width: '100%', border: '1px solid #d9dbde', backgroundColor: '#fafafa', paddingTop: '40px', display: 'flex', justifyContent: 'center' }}>
-                        <ConnectForm />
+                        <ConnectForm setIsFormSubmitted={setIsFormSubmitted} setModelOpen= {setOpen} />
 
                     </Box>
 
