@@ -1,19 +1,28 @@
 import nodemailer from 'nodemailer';
 import multer from 'multer';
-import bodyParser from 'body-parser';
-import formidable from 'formidable';
+const upload = multer().single('resumeFile');
+
+export const config = {
+  api: {
+    bodyParser: false
+  }
+}
 
 
 export default async function handler(req, res) {
 
   if (req.method === 'POST') {
-    const { name, email, phone, coverletter } = JSON.parse(req.body);
-    const resumeFile = req.files && req.files.resumeFile; // Assuming you are using the `express-fileupload` middleware to handle file uploads
-    // Perform any additional validation here if needed
-    console.log("Email req body : ",JSON.parse(req.body));
-    console.log("Email name : ",name);
-    console.log("Email email : ",email);
-    // Configure your email service (here we use Gmail as an example, but you can use other services)
+
+    upload(req, res, async (err) => {
+      if (err) {
+        console.error(err);
+        res.status(500).json({ message: 'Error handling FormData' });
+        return;
+      }
+
+      const formData = req.body;
+      const { name, email, phone, coverletter } = formData;
+
     const transporter = nodemailer.createTransport({
       service: 'Gmail',
       auth: {
@@ -31,12 +40,13 @@ export default async function handler(req, res) {
         Email: ${email}
         Phone: ${phone}
         Cover Letter: ${coverletter}
+        Resume : 
       `,
-      attachments: resumeFile
+      attachments: req.file
         ? [
             {
-              filename: resumeFile.name,
-              content: resumeFile.data,
+              filename: req.file.originalname,
+              content: req.file.buffer,
             },
           ]
         : [],
@@ -49,6 +59,8 @@ export default async function handler(req, res) {
       console.error(error);
       res.status(500).json({ error: 'Something went wrong.' });
     }
+
+    });  
   } else {
     res.status(405).json({ error: 'Method not allowed.' });
   }
