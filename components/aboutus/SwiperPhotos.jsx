@@ -17,7 +17,12 @@ import SwipCardPhoto from './SwipCardPhoto'
 
 SwiperCore.use([EffectCoverflow, Pagination, Navigation, Autoplay]);
 
-const photosDetail = ['','','','','','','','','','','','','','','','','','','','','','','']
+const photosDetail = [
+    '','','','','','','','','','','','','','','','','','','','',
+    '','','','','','','','','','','','','','','','','','','','',
+    '','','','','','','','','','','','','','','','','','','','',
+    '','','','','','','','','','','','',
+]
 
 export default function SwiperPhotos() {
     return (
