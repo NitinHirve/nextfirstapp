@@ -95,8 +95,8 @@ const LifeAtBNT = () => {
 
 
             <Box sx={{ margin: { sm: '70px 0px 70px 0px', xs: '20px' }, display: 'flex', flexDirection: { sm: 'row', xs: 'column' }, alignItems: 'center', justifyContent: 'center', gap: {sm:'80px',xs:'30px'} }}>
-                <YoutubeTestimonials videoId={'VgdfNjXYz4k'} height={isMobile?'200':'250'} width={isMobile?'100%':'440'}  />
-                <YoutubeTestimonials videoId={'M4Mj7RcWUpk'} height={isMobile?'200':'250'} width={isMobile?'100%':'440'} />
+                <YoutubeTestimonials videoId={'JK8Xob0zbFk'} height={isMobile?'200':'250'} width={isMobile?'100%':'440'}  />
+                <YoutubeTestimonials videoId={'TBFLV4OsI7s'} height={isMobile?'200':'250'} width={isMobile?'100%':'440'} />
             </Box>
 
 
