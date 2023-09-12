@@ -4,7 +4,7 @@
   background-position: center!important;
   background-size: cover!important;
   width: 300px!important;
-  height: 400px!important;
+  height: 0%!important;
 }
 
 @media (max-width: 768px) {
@@ -15,8 +15,8 @@
 }
 
 .swiper-slide .imgNew  {
-  width: 300px!important;
-  height: 400px!important;
+  width: 400px!important;
+  height: 500px!important;
   -o-object-fit: cover!important;
      object-fit: cover!important;
 }
@@ -40,5 +40,9 @@
     width: 300px;
     height:auto;
   }
+}
+
+.swiper-pagination {
+  display: none;
 }
 

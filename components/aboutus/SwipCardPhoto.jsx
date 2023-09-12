@@ -7,13 +7,14 @@ import { CardActionArea } from '@mui/material';
 
 const SwipCardPhoto = ({ imageIndex }) => {
   return (
-    <Card sx={{ maxWidth: {sm:270,xs:'100vw'}, borderRadius: 0 }} elevation={0}>
+    <Card sx={{ maxWidth: {sm:300,xs:'100vw'}, borderRadius: 0 }} elevation={0}>
       <CardActionArea elevation={0}>
         <CardMedia
 
           sx={{
             webkitTransition: '0.4s ease',
-            transition: '0.4s ease'
+            transition: '0.4s ease',
+            borderRadius:'10px'
           }}
           onMouseOver={(e) => {
             e.target.style.cssText = `-webkit-transform: scale(1.10);

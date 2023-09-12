@@ -19,9 +19,7 @@ SwiperCore.use([EffectCoverflow, Pagination, Navigation, Autoplay]);
 
 const photosDetail = [
     '','','','','','','','','','','','','','','','','','','','',
-    '','','','','','','','','','','','','','','','','','','','',
-    '','','','','','','','','','','','','','','','','','','','',
-    '','','','','','','','','','','','',
+    '','','','','',
 ]
 
 export default function SwiperPhotos() {
@@ -35,11 +33,13 @@ export default function SwiperPhotos() {
   marginTop:'20px'
             }}>
                 <Swiper
+                    effect={'coverflow'}
                     style={{
                         "--swiper-navigation-size": "30px",  //font-size: var(--swiper-navigation-size);
-                        width: '100%!important',
+                        width: '95%!important',
                         height: '200px!important'
                     }}
+                    centeredSlides={true}
                     navigation={true}
                     // centeredSlides={true}
                     slidesPerView={ 'auto'}
