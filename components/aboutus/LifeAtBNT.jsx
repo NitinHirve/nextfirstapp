@@ -110,6 +110,11 @@ const LifeAtBNT = () => {
                     </Box> */}
                 </Box>
             </Box>
+            <Box sx={{ padding: { xs: '0 20px 30px 20px', sm: "0 250px 50px 250px" } }} >
+                <Typography sx={{ textAlign: 'center', fontFamily: 'Alexandria', fontWeight: '300', color: '#676767', fontSize: '18px' }}>
+                    We believe work with fun can bring the best output. So, to make our team productive we take every chance to have fun and absolutely enjoy our breaks.
+                </Typography>
+            </Box>
             <SwiperPhotos />
 
             <Box sx={{ height: '190px' }}>
