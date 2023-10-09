@@ -5,10 +5,10 @@ import { Box, Stack, Typography, styled, Grid, useMediaQuery } from '@mui/materi
 import stylesPayment from '../../../styles/services/payments.module.css'
 import { MdKeyboardArrowUp } from 'react-icons/md';
 import { Architecture } from '@mui/icons-material';
-import AnimationIcon from '@mui/icons-material/Animation';
-import BusinessIcon from '@mui/icons-material/Business';
-import DragIndicatorIcon from '@mui/icons-material/DragIndicator';
-import BugReportIcon from '@mui/icons-material/BugReport';
+import CardMembershipIcon from '@mui/icons-material/CardMembership';
+import PaymentsIcon from '@mui/icons-material/Payments';
+import SupportIcon from '@mui/icons-material/Support';
+import CardTravelIcon from '@mui/icons-material/CardTravel';
 import Link from 'next/link'
 
 
@@ -74,7 +74,7 @@ const StyledBoxHeadingECommerce = styled(Box)({
 
 const customDetails =[
     {
-        heading:'Bi And Analytics',
+        heading:'BI And Analytics',
         desc : 'Our skills, technologies, practices for continuous iterative exploration and investigation of your business.',
         imgBG : 'img1-min'
     },
@@ -123,22 +123,22 @@ const architecturDesc = [
 const reEngineeringDetails = [
 
     {
-        logo: <AnimationIcon  className={stylesPayment.actualLogo} />,
+        logo: <CardMembershipIcon  className={stylesPayment.actualLogo} />,
         title: 'EMV Certifications',
         desc: 'Special test scripts, certified by the acquirer for every association, have to be executed with the help of the EMV toolkit.'
     },
     {
-        logo: <BusinessIcon  className={stylesPayment.actualLogo} />,
+        logo: <PaymentsIcon  className={stylesPayment.actualLogo} />,
         title: 'Payment Gateway Certifications',
         desc: "Mandatory compliance standard for all payment service providers."
     },
     {
-        logo: <DragIndicatorIcon  className={stylesPayment.actualLogo} />,
+        logo: <SupportIcon  className={stylesPayment.actualLogo} />,
         title: 'PCI Compliance',
         desc: 'Helps you process, handle or stores credit card data on behalf of a merchant.'
     },
     {
-        logo: <BugReportIcon  className={stylesPayment.actualLogo} />,
+        logo: <CardTravelIcon  className={stylesPayment.actualLogo} />,
         title: 'Payment Processor Certifications',
         desc: 'To ensure high class service across all channels.'
     }
@@ -173,7 +173,7 @@ const Fintechservice = () => {
             <Box sx={{ display: 'flex',justifyContent: 'end', marginTop: '50px',marginBottom: '50px', height: {sm:'180px',xs:'85px'},paddingRight: {sm:'40px',xs:'20px'},}} >
                 <Box  >
                     <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1100" data-aos-offset="100">
-                        <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: {sm:'100px',xs:'28px'}, color: '#e8e8e8',textAlign: 'center' }}>CUSTOM</Typography>
+                        <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: {sm:'100px',xs:'28px'}, color: '#e3e3e3',textAlign: 'center' }}>CUSTOM</Typography>
                     </Box>
                     <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1500" data-aos-offset="100">
                         <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, color: '#1e8be1', textAlign: 'center', fontSize: {sm:'5vw',xs:'35px'}, marginTop: {sm:'-60px',xs:'-26px'} }}>Development</Typography>

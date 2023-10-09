@@ -74,12 +74,12 @@ const StyledBoxHeadingECommerce = styled(Box)({
 
 const POSSolutionDetails =[
     {
-        heading:'Pos And Payment Peripherals',
+        heading:'POS and Payment Peripherals',
         desc : 'Integrate with Pin Pads, Barcode readers, ECRs, Bluetooth Printers, Biometric readers under one platform for flawless operation facility.',
         imgBG : 'img1-min'
     },
     {
-        heading:'Kiosk And Self Checkout',
+        heading:'Kiosk and Self Checkout',
         desc : 'Automating retail experience with DIY ability and enabling users to scan goods and pay through your own choice of digital medium.',
         imgBG : 'img2-min'
     },
@@ -105,7 +105,7 @@ const headingsBackOffice = [
     'Workforce Management',
     'Customer Management',
     'Inventory Management',
-    'Bi And Analytics'
+    'BI And Analytics'
 ]
 
 const descBackOffice = [
@@ -137,7 +137,7 @@ const enterpriseSolutionsDetails = [
     },
     {
         logo: <SensorOccupiedIcon  className={stylesPayment.actualLogo} />,
-        title: 'Erp And Crm',
+        title: 'ERP And CRM',
         desc: 'Business success depends on engaging and managing various interactions. As customers are of prime significance.'
     },
     {
@@ -179,7 +179,7 @@ const Serviceretail = () => {
             <Box sx={{ display: 'flex',justifyContent: 'end', marginTop: '50px',marginBottom: '50px', height: {sm:'180px',xs:'85px'},paddingRight: {sm:'40px',xs:'20px'},}} >
                 <Box  >
                     <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1100" data-aos-offset="100">
-                        <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: {sm:'64px',xs:'28px'}, color: '#e8e8e8' }}>IN-STORE OPERATIONS</Typography>
+                        <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: {sm:'64px',xs:'28px'}, color: '#e3e3e3' }}>IN-STORE OPERATIONS</Typography>
                     </Box>
                     <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1500" data-aos-offset="100">
                         <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, color: '#1e8be1', textAlign: 'center', fontSize: {sm:'5vw',xs:'35px'}, marginTop: {sm:'-60px',xs:'-26px'} }}>POS Solutions</Typography>
@@ -211,7 +211,7 @@ const Serviceretail = () => {
             <Box sx={{ display: 'flex',justifyContent: 'start', marginTop: '110px',marginBottom: '50px', height: {sm:'180px',xs:'85px'},paddingLeft: {sm:'80px',xs:'20px'},}} >
                 <Box  >
                     <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1100" data-aos-offset="100">
-                        <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: {sm:'64px',xs:'28px'}, color: '#e8e8e8' }}>IN-STORE OPERATIONS</Typography>
+                        <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: {sm:'64px',xs:'28px'}, color: '#e3e3e3' }}>IN-STORE OPERATIONS</Typography>
                     </Box>
                     <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1500" data-aos-offset="100">
                         <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, color: '#1e8be1', textAlign: 'center', fontSize: {sm:'5vw',xs:'35px'}, marginTop: {sm:'-60px',xs:'-26px'} }}>Back Office</Typography>
@@ -260,11 +260,13 @@ const Serviceretail = () => {
                     <Box className={stylesPayment.drop}>
                         <Box className={stylesPayment.content}>
                             <h2 >01</h2>
-                            <h1 >Cloud Based Payment</h1>
+                            <h1 >Quick Online Checkout</h1>
                             <a  >Read more</a>
                         </Box>
                         <Box className={stylesPayment.contentDesc}>
-                            <p style={{ textAlign: 'center' }}>Redefining payment systems, we guarantee to transform your payment experience with our cloud based payment solutions. Offering flexibility and no latency, our cloud platforms are secure and efficient.</p>
+                            <p style={{ textAlign: 'center' }}>
+                            Increasing market visibility and traction, social media is an effective and powerful medium to engage and redirect audience to online store.
+                            </p>
                         </Box>
                     </Box>
                 </Box>
@@ -272,12 +274,12 @@ const Serviceretail = () => {
                     <Box className={stylesPayment.drop} style={{ borderRadius: '61% 39% 50% 50% / 41% 52% 48% 59% ' }}>
                         <Box className={stylesPayment.content}>
                             <h2 >02</h2>
-                            <h1 >Cross Border Payment</h1>
+                            <h1 >Social Media Commerce</h1>
                             <a  >Read more</a>
                         </Box>
                         <Box className={stylesPayment.contentDesc}>
                             <p style={{ textAlign: 'center' }}>
-                                Refining payment systems, we also empower individuals, corporations, settlement institutions and central banks with convenient and flexible payment processes.
+                            We leverage social media platforms helping companies develop optimum and strong online presence with higher sales and visibility value.
                             </p>
                         </Box>
                     </Box>
@@ -286,12 +288,12 @@ const Serviceretail = () => {
                     <Box className={stylesPayment.drop} style={{ borderRadius: '56% 44% 71% 29% / 50% 54% 46% 50% ' }}>
                         <Box className={stylesPayment.content}>
                             <h2 >03</h2>
-                            <h1 >Crypto Currencies</h1>
+                            <h1 >SAAS Solutions</h1>
                             <a  >Read more</a>
                         </Box>
                         <Box className={stylesPayment.contentDesc}>
                             <p style={{ textAlign: 'center' }}>
-                                We evolve and provide trending market suitable solutions to all your payment process. We build and provide digital currency with cutting edge encryption techniques utilizing latest Bitcoin and ETH methods.
+                            Utilizing advanced and latest technology, we develop and provide latest SaaS ecommerce solutions. Providing cloud based hosting systems, they can be accessed by any web user on the internet.
                             </p>
                         </Box>
                     </Box>
@@ -300,12 +302,12 @@ const Serviceretail = () => {
                     <Box className={stylesPayment.drop} style={{ borderRadius: '55% 45% 33% 67% / 35% 31% 69% 65% ' }}>
                         <Box className={stylesPayment.content}>
                             <h2 >04</h2>
-                            <h1 >Payment With Social Media</h1>
+                            <h1 >Web Design And Development</h1>
                             <a  >Read more</a>
                         </Box>
                         <Box className={stylesPayment.contentDesc}>
                             <p style={{ textAlign: 'center' }}>
-                                Facilitating payment collection across all platforms, our e-wallets are flexible and can be integrated with all social media platforms for any payment requirement.
+                            Variants of portals include mashups and intranet ``dashboards`` for executives and managers.
                             </p>
                         </Box>
                     </Box>
@@ -318,7 +320,7 @@ const Serviceretail = () => {
             <Box sx={{ display: 'flex',justifyContent: 'end', marginTop: '50px',marginBottom: '50px', height: {sm:'180px',xs:'85px'},paddingRight: {sm:'40px',xs:'20px'},}} >
                 <Box  >
                     <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1100" data-aos-offset="100">
-                        <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: {sm:'100px',xs:'50px'}, color: '#e8e8e8' }}>ENTERPRISE</Typography>
+                        <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: {sm:'100px',xs:'50px'}, color: '#e3e3e3' }}>ENTERPRISE</Typography>
                     </Box>
                     <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1500" data-aos-offset="100">
                         <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, color: '#1e8be1', textAlign: 'center', fontSize: {sm:'6vw',xs:'40px'}, marginTop: {sm:'-90px',xs:'-45px'} }}>Solutions</Typography>

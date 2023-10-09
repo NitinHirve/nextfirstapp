@@ -35,7 +35,7 @@ const ProcessorSolutions = () => {
             <Box sx={{ display: 'flex', justifyContent: 'start', marginTop: '50px', marginBottom: '50px', height: { sm: '180px', xs: '85px' }, paddingLeft: { sm: '80px', xs: '20px' }, }} >
                 <Box  >
                     <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1100" data-aos-offset="100">
-                        <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: { sm: '100px', xs: '50px' }, color: '#e8e8e8' }}>PROCESSOR</Typography>
+                        <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: { sm: '100px', xs: '50px' }, color: '#e3e3e3' }}>PROCESSOR</Typography>
                     </Box>
                     <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1500" data-aos-offset="100">
                         <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, color: '#1e8be1', textAlign: 'center', fontSize: { sm: '6vw', xs: '40px' }, marginTop: { sm: '-90px', xs: '-45px' } }}>Solutions</Typography>
