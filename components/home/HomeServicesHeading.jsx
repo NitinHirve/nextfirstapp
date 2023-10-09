@@ -30,7 +30,7 @@ const HomeServicesHeading = () => {
             <Box sx={{ height: {xs:'100px',sm:'180px'}, display: 'flex',justifyContent: 'center'}} >
                 <Box  >
                     <Box className="my-element">
-                        <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300,textAlign:'center', fontSize: { xs: '32px', sm: '110px' }, letterSpacing:{xs:'9px'} , color: '#e8e8e8' }}>SERVICES</Typography>
+                        <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300,textAlign:'center', fontSize: { xs: '32px', sm: '110px' }, letterSpacing:{xs:'9px'} , color: '#e3e3e3' }}>SERVICES</Typography>
                     </Box>
                     <Box className="my-element" >
                         <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, color: '#1e8be1', textAlign: 'center', fontSize: { xs: '41px', sm: '55px' }, marginTop: { xs: '-33px', sm: '-80px' } }}>What we do?</Typography>
@@ -39,8 +39,7 @@ const HomeServicesHeading = () => {
             </Box>
             <Box sx={{padding:{xs:'0 20px 30px 20px',sm:"0 160px 50px 160px"}}} >
                 <Typography className="my-element" sx={{textAlign: 'center', fontFamily: 'Alexandria', fontWeight: '300', color: '#676767', fontSize: '18px' }}>
-                    Let us know which industry you belong to? With the rapidly growing Fintech market,
-                    we at BNT provide the latest and evolved technology know-how, building remarkable payment
+                    We at BNT provide the latest and evolved technology know-how, building remarkable payment
                     experiences. Offering dynamic and rigorous payment solutions, we cater to developing a
                     secure and reliable payment solution. 
                 </Typography>

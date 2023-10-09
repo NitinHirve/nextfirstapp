@@ -95,16 +95,16 @@ const Dupes = () => {
                             integration, and data sync between SAP and Hybris Ecommerce.
                         </Typography>
                         <Typography data-aos="fade-left" data-aos-once="false" sx={{ fontFamily: 'Alexandria', fontWeight: '300', color: '#676767', fontSize: {sm:'18px',xs:'15px'}, marginTop: '20px' }}>
-                            <span style={{ fontSize: '20px', color: '#07ad07' }}>Reduced Time</span> : An efficient payment integration application that is custom made and fit for all SAP Hybris Commerce Platform.
+                            <span style={{ fontSize: '20px', color: '#7b44a6' }}>Reduced Time</span> : An efficient payment integration application that is custom made and fit for all SAP Hybris Commerce Platform.
                         </Typography>
                         <Typography data-aos="fade-left" data-aos-once="false"  sx={{ fontFamily: 'Alexandria', fontWeight: '300', color: '#676767', fontSize: {sm:'18px',xs:'15px'}, marginTop: '20px' }}>
-                            <span style={{ fontSize: '20px', color: '#07ad07' }}>Cost Effective</span> : A payment gateway is a basic module while developing an ecommerce platform.
+                            <span style={{ fontSize: '20px', color: '#7b44a6' }}>Cost Effective</span> : A payment gateway is a basic module while developing an ecommerce platform.
                         </Typography>
                         <Typography data-aos="fade-left" data-aos-once="false"  sx={{ fontFamily: 'Alexandria', fontWeight: '300', color: '#676767', fontSize: {sm:'18px',xs:'15px'}, marginTop: '20px' }}>
-                            <span style={{ fontSize: '20px', color: '#07ad07' }}>Zero Coding</span> : ConfigPay can be appropriately configured with any SAP and Hybris ecommerce platform.
+                            <span style={{ fontSize: '20px', color: '#7b44a6' }}>Zero Coding</span> : ConfigPay can be appropriately configured with any SAP and Hybris ecommerce platform.
                         </Typography>
                         <Typography data-aos="fade-left" data-aos-once="false"  sx={{ fontFamily: 'Alexandria', fontWeight: '300', color: '#676767', fontSize: {sm:'18px',xs:'15px'}, marginTop: '20px' }}>
-                            <span style={{ fontSize: '20px', color: '#07ad07' }}>Configuration Based</span> : For integrating PSP/Payment gateway, read the guided manner carefully and simply add configuration.
+                            <span style={{ fontSize: '20px', color: '#7b44a6' }}>Configuration Based</span> : For integrating PSP/Payment gateway, read the guided manner carefully and simply add configuration.
                         </Typography>
                     </Box>
                 </Box>

@@ -44,7 +44,7 @@ export default function SwiperPhotos() {
                     // centeredSlides={true}
                     slidesPerView={ 'auto'}
                     loop={true}
-                    autoplay={{ delay: 1500, disableOnInteraction: false }}
+                    autoplay={{ delay: 2500, disableOnInteraction: false }}
                     pagination={{
                         clickable: true
                     }}

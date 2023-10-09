@@ -34,17 +34,17 @@ const details =[
         imgBG : 'img4-min'
     },
     {
-        heading:'Fx Solutions',
+        heading:'FX Solutions',
         desc : 'While foreign exchange can be tricky and complicated, we build global decentralized and over the counter market for exchanging or trading currencies.',
         imgBG : 'img5-min'
     },
     {
-        heading:'Biometric And Nfc',
+        heading:'Biometric And NFC',
         desc : 'Utilizing latest technology of biometric and NFC ability we enable contactless payments.',
         imgBG : 'img6-min'
     },
     {
-        heading:'Building Open Apis',
+        heading:'Building Open APIs',
         desc : 'We build open API for businesses that allows to share data and functionality with other developers and business',
         imgBG : 'img7-min'
     },
@@ -85,7 +85,7 @@ const Payments = () => {
             <Box sx={{ display: 'flex',justifyContent: 'end', marginTop: '50px',marginBottom: '50px', height: {sm:'180px',xs:'85px'},paddingRight: {sm:'40px',xs:'20px'},}} >
                 <Box  >
                     <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1100" data-aos-offset="100">
-                        <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: {sm:'100px',xs:'50px'}, color: '#e8e8e8' }}>ACQUIRING</Typography>
+                        <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: {sm:'100px',xs:'50px'}, color: '#e3e3e3' }}>ACQUIRING</Typography>
                     </Box>
                     <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1500" data-aos-offset="100">
                         <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, color: '#1e8be1', textAlign: 'center', fontSize: {sm:'6vw',xs:'40px'}, marginTop: {sm:'-90px',xs:'-45px'} }}>Solutions</Typography>

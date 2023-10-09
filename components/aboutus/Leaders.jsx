@@ -67,7 +67,7 @@ const Leaders = () => {
       <Box sx={{ height: { xs: '100px', sm: '180px' }, marginTop: '50px', display: 'flex', justifyContent: 'center' }} >
         <Box  >
           <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1100" data-aos-offset="100">
-            <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, textAlign: 'center', fontSize: { xs: '32px', sm: '110px' }, letterSpacing: '20px', color: '#e8e8e8' }}>OUR</Typography>
+            <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, textAlign: 'center', fontSize: { xs: '32px', sm: '110px' }, letterSpacing: '20px', color: '#e3e3e3' }}>OUR</Typography>
           </Box>
           <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1500" data-aos-offset="100">
             <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, color: '#1e8be1', textAlign: 'center', fontSize: { xs: '41px', sm: '55px' }, marginTop: { xs: '-33px', sm: '-80px' } }}>Professionals</Typography>

@@ -41,13 +41,7 @@ const Navbar2 = (props) => {
                             <Link className={`${router.asPath == '/'? styles.navActive : ''}`} href={'/'}>Home</Link>
 
                         </li>
-                        <li className={styles.navbardropdown}>
-                            <Link className={`${router.asPath.includes('/aboutus')? styles.navActive : ''}`} href=''>Who we are</Link>
-                            <div className={styles.dropdown}>
-                                <Link href={'/aboutus/aboutus'}>About Us</Link>
-                                <Link href={'/aboutus/lifeatBNT'}>Life at BNT</Link>
-                            </div>
-                        </li>
+                       
                         <li className={styles.navbardropdown}>
                             <a className={`${router.asPath.includes('/services')? styles.navActive : ''}`} href="#">Services</a>
                             <div className={styles.dropdown}>
@@ -64,8 +58,15 @@ const Navbar2 = (props) => {
                         <li className={styles.navbardropdown}>
                             <Link className={`${router.asPath == '/blogs'? styles.navActive : ''}`} href={'/blogs'}>Blogs</Link>
                         </li>
+                         <li className={styles.navbardropdown}>
+                            <Link className={`${router.asPath.includes('/aboutus')? styles.navActive : ''}`} href=''>Who we are</Link>
+                            <div className={styles.dropdown}>
+                                <Link href={'/aboutus/aboutus'}>About Us</Link>
+                                <Link href={'/aboutus/lifeatBNT'}>Life at BNT</Link>
+                            </div>
+                        </li>
                         <li className={styles.navbardropdown}>
-                            <Link className={`${router.asPath == '/career'? styles.navActive : ''}`}  href={'/career'}>Career</Link>
+                            <Link className={`${router.asPath == '/career'? styles.navActive : ''}`}  href={'/career'}>Careers</Link>
                         </li>
                         <li className={styles.navbardropdown}>
                             <Link className={`${router.asPath == '/buildwithus'? styles.navActive : ''}`} href={'/buildwithus'}>Build With Us</Link>

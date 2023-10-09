@@ -59,10 +59,10 @@ const headings = [
     'Analysis And Planning',
     'Understanding Technology Stack',
     'Mockup Creation',
-    'Roadmap For Mvp'
+    'Roadmap For MVP'
 ]
 
-const desc = [
+const desc = [  
     'Process of testing and validating your idea prior to launching your business name, tagline, product, service, website etc.',
     'Discipline combines in-depth analysis of both operational and financial data to help align business processes and strategies with financial goals.',
     'Identifying the set of softwares that provides the infrastructure for your business and MVP.',
@@ -77,7 +77,7 @@ const POSSolutionDetails =[
         imgBG : 'img1-min'
     },
     {
-        heading:'Analysis And Planning',
+        heading:'Analysis and Planning',
         desc : 'Discipline combines in-depth analysis of both operational and financial data to help align business processes and strategies with financial goals.',
         imgBG : 'img2-min'
     },
@@ -92,7 +92,7 @@ const POSSolutionDetails =[
         imgBG : 'img4-min'
     },
     {
-        heading:'Roadmap For Mvp',
+        heading:'Roadmap for MVP',
         desc :  'A version of a new product which allows a team to collect the maximum amount of validated learnings about customers with the least effort.',
         imgBG : 'img5-min'
     },
@@ -167,7 +167,7 @@ const Fintechservice = () => {
             <Box sx={{ display: 'flex',justifyContent: 'end', marginTop: '50px',marginBottom: '50px', height: {sm:'180px',xs:'85px'},paddingRight: {sm:'40px',xs:'20px'},}} >
                 <Box  >
                     <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1100" data-aos-offset="100">
-                        <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: {sm:'64px',xs:'28px'}, color: '#e8e8e8' }}>PRODUCT IDEATION &</Typography>
+                        <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: {sm:'64px',xs:'28px'}, color: '#e3e3e3' }}>PRODUCT IDEATION &</Typography>
                     </Box>
                     <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1500" data-aos-offset="100">
                         <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, color: '#1e8be1', textAlign: 'center', fontSize: {sm:'5vw',xs:'35px'}, marginTop: {sm:'-60px',xs:'-26px'} }}>Innovation</Typography>
@@ -199,7 +199,7 @@ const Fintechservice = () => {
             <Box sx={{ display: 'flex',justifyContent: 'start', marginTop: '110px',marginBottom: '50px', height: {sm:'180px',xs:'85px'},paddingLeft: {sm:'80px',xs:'20px'},}} >
                 <Box  >
                     <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1100" data-aos-offset="100">
-                        <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: {sm:'64px',xs:'28px'}, color: '#e8e8e8' }}>ARCHITECTURE DESIGN &</Typography>
+                        <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: {sm:'64px',xs:'28px'}, color: '#e3e3e3' }}>ARCHITECTURE DESIGN &</Typography>
                     </Box>
                     <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1500" data-aos-offset="100">
                         <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, color: '#1e8be1', textAlign: 'center', fontSize: {sm:'5vw',xs:'35px'}, marginTop: {sm:'-60px',xs:'-26px'} }}>Innovation</Typography>
@@ -318,7 +318,7 @@ const Fintechservice = () => {
             <Box sx={{ display: 'flex',justifyContent: 'end', marginTop: '50px',marginBottom: '50px', height: {sm:'180px',xs:'85px'},paddingRight: {sm:'40px',xs:'20px'},}} >
                 <Box  >
                     <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1100" data-aos-offset="100">
-                        <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: {sm:'80px',xs:'40px'}, color: '#e8e8e8' }}>PRODUCT SUPPORT &</Typography>
+                        <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: {sm:'80px',xs:'40px'}, color: '#e3e3e3' }}>PRODUCT SUPPORT &</Typography>
                     </Box>
                     <Box data-aos="fade-up" data-aos-once="false" data-aos-duration="1500" data-aos-offset="100">
                         <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, color: '#1e8be1', textAlign: 'center', fontSize: {sm:'5vw',xs:'40px'}, marginTop: {sm:'-70px',xs:'-23px'} }}>Re-Engineering</Typography>
