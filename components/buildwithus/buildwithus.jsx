@@ -67,7 +67,7 @@ const BuildWithUs = () => {
             </Box>
           </Box>
           <Typography sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: { sm: '21px', xs: '18px' }, color: '#fff', padding: { sm: '0 350px 0 350px', xs: '10px' }, textAlign: 'center' }}>
-            <span style={{ color: 'black', fontSize: '26px' }}>We</span> are a family of tech folks always striving for the next best thing.
+            <span style={{ color: 'white', fontSize: '26px' }}>We</span> are a family of tech folks always striving for the next best thing.
           </Typography>
         </Box>
       </Box>

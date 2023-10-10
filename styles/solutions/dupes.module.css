@@ -50,7 +50,7 @@
 }
 
 
-.dupesblob:before {
+/* .dupesblob:before {
     content: '1';
     position: absolute;
     top: 10px;
@@ -72,9 +72,9 @@
     justify-content: center;
     font-size: 2em;
     /* opacity: 0.9; */
-}
+/* }  */
 
-.configpayblob:before{
+/* .configpayblob:before{
 
     content: '2';
     position: absolute;
@@ -97,7 +97,7 @@
     justify-content: center;
     font-size: 2em;
 
-}
+} */
 
 .dupesblobImg{
     width: 650px;
@@ -133,7 +133,7 @@
     }
 }
 
-.remitanceblob:before{
+/* .remitanceblob:before{
 
     content: '3';
     position: absolute;
@@ -156,4 +156,4 @@
     justify-content: center;
     font-size: 2em;
 
-}
+} */

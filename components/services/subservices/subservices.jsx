@@ -214,7 +214,7 @@ const Fintechservice = () => {
             </Box>
 
 
-            <Box sx={{ height: {sm:'400px',xs:'auto'}, border: {sm:'1px solid #dde3ee',xs:'none'}, borderRight: '0px', borderLeft: 'none', display: 'flex', flexDirection:{sm:'row',xs:'column'}, marginRight: {sm:'40px',xs:'0px'}, marginBottom: '40px' }}>
+            <Box sx={{ height: {sm:'auto',xs:'auto'}, border: {sm:'1px solid #dde3ee',xs:'none'}, borderRight: '0px', borderLeft: 'none', display: 'flex', flexDirection:{sm:'row',xs:'column'}, marginBottom: '40px' }}>
                 <Box data-aos="fade-right" className={styles.backOfficeBG} sx={{ width: {sm:'40%',xs:'100%'}, display: 'flex', alignItems: 'center', justifyContent: 'center',padding:{sm:0,xs:'30px 20px'} }}>
                     <Typography sx={{ fontFamily: 'Alexandria', paddingLeft: '25px', fontWeight: 300, fontSize: '22px', color: 'white', maxWidth: '400px', borderLeft: '5px solid yellow' }}>
                     Armed with the flexible engagement model, experience in product development, enterprise and Cloud solutions, BNT caters enterprises with Salesforce enabled services, applications and products.                    </Typography>

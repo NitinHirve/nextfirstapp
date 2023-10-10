@@ -208,7 +208,7 @@ const Fintechservice = () => {
             </Box>
 
 
-            <Box sx={{ height: {sm:'400px',xs:'auto'}, border: {sm:'1px solid #dde3ee',xs:'none'}, borderRight: '0px', borderLeft: 'none', display: 'flex', flexDirection:{sm:'row',xs:'column'}, marginRight: {sm:'40px',xs:'0px'}, marginBottom: '40px' }}>
+            <Box sx={{ height: {sm:'auto',xs:'auto'}, border: {sm:'1px solid #dde3ee',xs:'none'}, borderRight: '0px', borderLeft: 'none', display: 'flex', flexDirection:{sm:'row',xs:'column'}, marginBottom: '40px' }}>
                 <Box data-aos="fade-right" className={styles.backOfficeBG} sx={{ width: {sm:'40%',xs:'100%'}, display: 'flex', alignItems: 'center', justifyContent: 'center',padding:{sm:0,xs:'30px 20px'} }}>
                     <Typography sx={{ fontFamily: 'Alexandria', paddingLeft: '25px', fontWeight: 300, fontSize: '22px', color: 'white', maxWidth: '400px', borderLeft: '5px solid yellow' }}>
                     With an increasing focus on customer experience, it is imperative to offer an elevated and competitive shopping experience for consumers. Thus, it is optimum to strengthen your retail in-store operations.</Typography>
@@ -250,7 +250,7 @@ const Fintechservice = () => {
                 <Box data-aos="zoom-out" sx={{ position: {sm:'absolute',xs:'static'}, top: 50, right: 600,display:{sm:'block',xs:'flex'},justifyContent:{xs:'center'} ,marginTop:{sm:0,xs:'80px'}}}>
                     <Box className={stylesPayment.drop}>
                         <Box className={stylesPayment.content}>
-                            <h2 style={{ color: '#2d6beb' }}>01</h2>
+                            {/* <h2 style={{ color: '#2d6beb' }}>01</h2> */}
                             <h1 >Plan Testing Strategy</h1>
                             <a style={{ backgroundColor: '#2d6beb' }} >Read more</a>
                         </Box>
@@ -262,7 +262,7 @@ const Fintechservice = () => {
                 <Box data-aos="zoom-out" data-aos-delay="300" sx={{ position: {sm:'absolute',xs:'static'}, top: 120, right: 250 , display:{sm:'block',xs:'flex'},justifyContent:{xs:'center'},marginTop:{sm:0,xs:'50px'}}}>
                     <Box className={stylesPayment.drop} style={{ borderRadius: '61% 39% 50% 50% / 41% 52% 48% 59% ' }}>
                         <Box className={stylesPayment.content}>
-                            <h2 style={{ color: '#2d6beb' }}>02</h2>
+                            {/* <h2 style={{ color: '#2d6beb' }}>02</h2> */}
                             <h1 >Test Script Preparation</h1>
                             <a style={{ backgroundColor: '#2d6beb' }} >Read more</a>
                         </Box>
@@ -276,7 +276,7 @@ const Fintechservice = () => {
                 <Box data-aos="zoom-out" sx={{ position: {sm:'absolute',xs:'static'}, top: 460, right: 250, display:{sm:'block',xs:'flex'},justifyContent:{xs:'center'},marginTop:{sm:0,xs:'50px'} }}>
                     <Box className={stylesPayment.drop} style={{ borderRadius: '56% 44% 71% 29% / 50% 54% 46% 50% ' }}>
                         <Box className={stylesPayment.content}>
-                            <h2 style={{ color: '#2d6beb' }}>03</h2>
+                            {/* <h2 style={{ color: '#2d6beb' }}>03</h2> */}
                             <h1 >Test Case Documentation</h1>
                             <a style={{ backgroundColor: '#2d6beb' }} >Read more</a>
                         </Box>
@@ -289,7 +289,7 @@ const Fintechservice = () => {
                 <Box data-aos="zoom-out" sx={{ position: {sm:'absolute',xs:'static'}, top: 650, right: 600 , display:{sm:'block',xs:'flex'},justifyContent:{xs:'center'},marginTop:{sm:0,xs:'50px'} }}>
                     <Box className={stylesPayment.drop} style={{ borderRadius: '55% 45% 33% 67% / 35% 31% 69% 65% ' }}>
                         <Box className={stylesPayment.content}>
-                            <h2 style={{ color: '#2d6beb' }}>04</h2>
+                            {/* <h2 style={{ color: '#2d6beb' }}>04</h2> */}
                             <h1 >Functional Testing</h1>
                             <a style={{ backgroundColor: '#2d6beb' }} >Read more</a>
                         </Box>

@@ -30,7 +30,7 @@ const Ourmission = () => {
                                 {tabOn == '2' && 'We believe in fostering strong partnerships with our clients as technology and product agnostics. Our goal is to make payment processing simple and easy, so that businesses can focus on what they do best - growing their businesses.'}
                                 {tabOn == '3' && 'Established in 2010, starting from one garage room and a team of 5 people, we have been passionate about providing businesses with efficient and exceptional solutions. Driving innovation, commitment, and value for more than a decade, we are now a team of more than 150+ professionals, keeping our clients at the center.'}
                             </Typography>
-                             <Box  className={styles.ourMission} sx={{width:{sm:'30%',xs:'100%'},padding:'10px!important',height:{sm:'100%',xs:'35%'},backgroundImage: tabOn == '1'? 'url(/aboutus/images/ourmission/ourmissionNewMin.webp)':(tabOn == '2' ? 'url(/aboutus/images/ourmission/ourvisonMinNew.webp)':'url(/aboutus/images/ourmission/ourhistoryMin.webp)')}}></Box>
+                             <Box  className={styles.ourMission} sx={{width:{sm:'30%',xs:'100%'},padding:'10px!important',height:{sm:'100%',xs:'35%'},backgroundImage: tabOn == '1'? 'url(/aboutus/images/ourmission/ourmissionNewMin2.png)':(tabOn == '2' ? 'url(/aboutus/images/ourmission/ourvisonMinNew.webp)':'url(/aboutus/images/ourmission/ourhistoryMin.webp)')}}></Box>
                             </Box>
 
                         </Box>
@@ -49,10 +49,10 @@ const Ourmission = () => {
                         <p data-aos="fade-right" style={{ margin: 0, padding: 0, fontFamily: 'Alexandria', fontSize: '13px', color: '#6f6675', letterSpacing: '10px' }}>WHO WE ARE</p>
                         <Typography data-aos="fade-right" sx={{ fontFamily: 'Alexandria', padding: 0, marginTop: '10px', color: 'black', fontSize: '45px', lineHeight: '52px' }}>Technology<br style={{ width: '5px' }}></br>& Product<br></br>Partner</Typography>
                         <Typography data-aos="fade-right" sx={{ marginTop: '20px' }}>
-                            We at <span style={{ fontFamily: 'Alexandria', color: '#1e8be1' }}>BNT- Bits and Thoughts</span> have been providing services for more than a decade now.
-                            Accelerated with innovative goals, we envision our services with no compromise on
-                            quality. We are committed to high quality performance along with integrity &
-                            client satisfaction.
+                           For over a decade, BNT has been passionate about everything in the payment and technology segment. 
+                           Inspired by innovative goals, we envision providing custom payment solutions which are both digitally
+                           advanced and sustainable. Our dedicated team of tech and domain experts is committed to delivering high-quality
+                           performance solutions that augment business growth.
                         </Typography>
                     </Box>
                 </Box>
