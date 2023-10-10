@@ -241,7 +241,7 @@ const Blockchain = () => {
                             irregular patterns detecting frauds, and improving compliance.
                         </Typography>
                         <Typography data-aos="fade-left" data-aos-once="false" sx={{ fontFamily: 'Alexandria', fontWeight: '300', color: '#676767', marginTop: '20px', fontSize: { sm: '18px', xs: '15px' } }}>
-                            With physical payment operations becoming absolute post pandemic, Artificial Intelligence is emerging as an evolving
+                            With physical payment operations becoming obselete post pandemic, Artificial Intelligence is emerging as an evolving
                             solution for digital payments. Machine Learning in payment enables fintech players and customers with online
                             purchases through contactless payment using RFID technology and virtual cards.
                         </Typography>

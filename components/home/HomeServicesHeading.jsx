@@ -39,7 +39,7 @@ const HomeServicesHeading = () => {
             </Box>
             <Box sx={{padding:{xs:'0 20px 30px 20px',sm:"0 160px 50px 160px"}}} >
                 <Typography className="my-element" sx={{textAlign: 'center', fontFamily: 'Alexandria', fontWeight: '300', color: '#676767', fontSize: '18px' }}>
-                    We at BNT provide the latest and evolved technology know-how, building remarkable payment
+                    We at BNT provide the latest technology solutions and evolved technology know-how, building remarkable payment
                     experiences. Offering dynamic and rigorous payment solutions, we cater to developing a
                     secure and reliable payment solution. 
                 </Typography>

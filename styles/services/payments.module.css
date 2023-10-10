@@ -325,6 +325,7 @@
     background: #fff;
     border-radius: 50%;
     opacity: 0.9;
+    z-index:-1
 }
 
 .drop .content {

@@ -7,7 +7,7 @@ import BlogCard from './BlogCard'
 const cardDetails = [
     {
         heading: 'Top Payment Trends 2023',
-        desc: 'The digital payment industry is witnessing rapid growth. In 2021, it was estimated that the worldwide digital payments market generated around $88.1 billion in revenue. However, it is projected to grow to approximately $180.2 billion by the end of 2026',
+        desc: 'The digital payment industry is witnessing rapid growth. In 2021, it was estimated that the worldwide digital payments market generated around $88.1 billion in revenue.',
         image: 'topPayments23'
     },
     {
