@@ -1,6 +1,6 @@
 import React from 'react'
-import styles from '../../styles/about.module.css'
-import Aboutus from '../../components/aboutus/aboutus'
+import styles from '../styles/about.module.css'
+import Aboutus from '.././components/aboutus/aboutus'
 
 
 

@@ -1,6 +1,6 @@
 import React from 'react'
 // import styles from '../styles/about.module.css'
-import LifeAtBNT from '../../components/aboutus/LifeAtBNT'
+import LifeAtBNT from '../.././components/aboutus/LifeAtBNT'
 
 
 
