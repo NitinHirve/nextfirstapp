@@ -61,7 +61,7 @@ const Homepage = () => {
                         <Typography data-aos="fade-up" sx={{ fontFamily: 'Alexandria', fontWeight: 300, fontSize: '22px', color: '#535151' }}>
                             Fuelled with technology, expertise,<br /> and experiences.
                         </Typography>
-                        <Link href={'/aboutus/aboutus'}>
+                        <Link href={'/aboutus'}>
                             <button className={`${stylesServices.btn} ${stylesServices.fourth}`}>Know more</button>
                         </Link>
 
