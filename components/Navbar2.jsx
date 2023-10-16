@@ -58,15 +58,16 @@ const Navbar2 = (props) => {
                         <li className={styles.navbardropdown}>
                             <Link className={`${router.asPath == '/blogs'? styles.navActive : ''}`} href={'/blogs'}>Blogs</Link>
                         </li>
-                         <li className={styles.navbardropdown}>
-                            <Link className={`${router.asPath.includes('/aboutus')? styles.navActive : ''}`} href=''>Who we are</Link>
-                            <div className={styles.dropdown}>
-                                <Link href={'/aboutus/aboutus'}>About Us</Link>
-                                <Link href={'/aboutus/lifeatBNT'}>Life at BNT</Link>
-                            </div>
+                        
+                        <li className={styles.navbardropdown}>
+                            <Link className={`${router.asPath == '/aboutus'? styles.navActive : ''}`}  href={'/aboutus'}>About Us</Link>
                         </li>
                         <li className={styles.navbardropdown}>
-                            <Link className={`${router.asPath == '/career'? styles.navActive : ''}`}  href={'/career'}>Careers</Link>
+                            <Link className={`${router.asPath.includes('/whoweare')? styles.navActive : ''}`} href=''>Who we are</Link>
+                            <div className={styles.dropdown}>
+                                <Link href={'/whoweare/lifeatBNT'}>Life at BNT</Link>
+                                <Link href={'/whoweare/career'}>Careers</Link>
+                            </div>
                         </li>
                         <li className={styles.navbardropdown}>
                             <Link className={`${router.asPath == '/buildwithus'? styles.navActive : ''}`} href={'/buildwithus'}>Build With Us</Link>

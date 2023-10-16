@@ -161,26 +161,37 @@ function Navbar(props) {
                         </ListItem>
                     </Link>
 
-                    <Link   onClick={(e) => {e.stopPropagation(); pageRoute==='/aboutus'? setPageRoute(''): setPageRoute('/aboutus') }} href={''}>
-                        <ListItem sx={{...(pageRoute ==='/aboutus' &&  {backgroundColor:'#dbdbd9'})}} key={'About Us'} disablePadding>
-                            <ListItemButton className={`${router.asPath.includes('/aboutus')? styles.navActive : ''}`} sx={{ textAlign: 'center' }}>
-                                <ListItemText primary={'Who we are'} /> { pageRoute ==='/aboutus' ? <IoIosArrowDown />: <IoIosArrowForward />}
+                   
+
+                    <Link href={'/aboutus'}>
+                        <ListItem key={'aboutus'} disablePadding>
+                            <ListItemButton className={` ${router.asPath == '/aboutus' ? styles.navActive : ''}`} sx={{ textAlign: 'center' }}>
+                                <ListItemText primary={'About us'} />
                             </ListItemButton>
                         </ListItem>
                     </Link>
-                    {pageRoute === '/aboutus' && <>
+
+                    <Link   onClick={(e) => {e.stopPropagation(); pageRoute==='/whoweare'? setPageRoute(''): setPageRoute('/whoweare') }} href={''}>
+                        <ListItem sx={{...(pageRoute ==='/whoweare' &&  {backgroundColor:'#dbdbd9'})}} key={'Who we are'} disablePadding>
+                            <ListItemButton className={`${router.asPath.includes('/whoweare')? styles.navActive : ''}`} sx={{ textAlign: 'center' }}>
+                                <ListItemText primary={'Who we are'} /> { pageRoute ==='/whoweare' ? <IoIosArrowDown />: <IoIosArrowForward />}
+                            </ListItemButton>
+                        </ListItem>
+                    </Link>
+
+                    {pageRoute === '/whoweare' && <>
                         <List className={styles.mobileNavbarDropdow}  sx={{backgroundColor:'#e3f2fc',padding:0}} >
-                            <Link onClick={()=>{setPageRoute('')}} href={'/aboutus/aboutus'}>
-                                <ListItem key={'About Us'} disablePadding>
+                            <Link onClick={()=>{setPageRoute('')}} href={'/whoweare/lifeatBNT'}>
+                                <ListItem key={'Life at BNT'} disablePadding>
                                     <ListItemButton sx={{ textAlign: 'center' }}>
-                                        <ListItemText primary={'About Us'} />
+                                        <ListItemText primary={'Life at BNT'} />
                                     </ListItemButton>
                                 </ListItem>
                             </Link>
-                            <Link onClick={()=>{setPageRoute('')}} href={'/aboutus/lifeatBNT'}>
-                                <ListItem key={'About Us'} disablePadding>
+                            <Link onClick={()=>{setPageRoute('')}} href={'/whoweare/career'}>
+                                <ListItem key={'Careers'} disablePadding>
                                     <ListItemButton sx={{ textAlign: 'center' }}>
-                                        <ListItemText primary={'Life at BNT'} />
+                                        <ListItemText primary={'Careers'} />
                                     </ListItemButton>
                                 </ListItem>
                             </Link>
@@ -189,13 +200,7 @@ function Navbar(props) {
 
                     </>}
 
-                    <Link href={'/career'}>
-                        <ListItem key={'Career'} disablePadding>
-                            <ListItemButton className={` ${router.asPath == '/career' ? styles.navActive : ''}`} sx={{ textAlign: 'center' }}>
-                                <ListItemText primary={'Careers'} />
-                            </ListItemButton>
-                        </ListItem>
-                    </Link>
+                   
 
                     <Link href={'/buildwithus'}>
                         <ListItem key={'Build With Us'} disablePadding>
@@ -248,14 +253,7 @@ function Navbar(props) {
                                         Home
                                     </button>
                                 </Link>
-                                <Link href='/aboutus'>
-                                    <button
-                                        className={`raise ${router.asPath == '/aboutus' ? styles.navActive : styles.navList}`}
-
-                                    >
-                                        About Us
-                                    </button>
-                                </Link>
+                               
                                 <Link href='services'>
                                     <button
                                         className={`raise ${router.asPath == '/services' ? styles.navActive : styles.navList}`}
@@ -275,6 +273,13 @@ function Navbar(props) {
                                         className={`raise ${router.asPath == '/blogs' ? styles.navActive : styles.navList}`}
                                     >
                                         Blogs
+                                    </button>
+                                </Link>
+                                <Link href='/aboutus'>
+                                    <button
+                                        className={`raise ${router.asPath == '/aboutus' ? styles.navActive : styles.navList}`}
+                                    >
+                                        About Us
                                     </button>
                                 </Link>
                                 <Link href='/career'>
