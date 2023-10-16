@@ -44,10 +44,10 @@ const Footer = () => {
                             <List>
                                 {/* <ListItem sx={{fontSize:'20px!important',color:'#fff'}}>Services</ListItem> */}
                                 <Link href={'/'}><ListItem>Home</ListItem></Link>
-                                <Link href={'/aboutus/aboutus'}><ListItem>About Us</ListItem></Link>
-                                <Link href={'/aboutus/lifeatBNT'}><ListItem>Life at BNT</ListItem></Link>
+                                <Link href={'/aboutus'}><ListItem>About Us</ListItem></Link>
+                                <Link href={'/whoweare/lifeatBNT'}><ListItem>Life at BNT</ListItem></Link>
                                 <Link href={'/blogs'}><ListItem>Blogs</ListItem></Link>
-                                <Link href={'/career'}><ListItem>Careers</ListItem></Link>
+                                <Link href={'/whoweare/career'}><ListItem>Careers</ListItem></Link>
                                 <Link href={'/buildwithus'}><ListItem>Build with Us</ListItem></Link>
                             </List>
                         </Box>
