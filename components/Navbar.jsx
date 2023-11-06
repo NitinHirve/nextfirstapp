@@ -79,7 +79,7 @@ function Navbar(props) {
                             >
                                 {/* <p className="bntLogo" style={{fontFamily: 'Alexandria',fontWeight:'bold'}}> BNT-SOFT</p> */}
 
-                                <img src="https://bnt-soft.com/wp-content/uploads/2020/05/logoheader.png" alt="BnT Soft" style={{ height: "35px" }} />
+                                <img src="/home/images/BNtlogo.jpeg" alt="BnT Soft" style={{ height: "35px" }} />
 
                             </Box></Link>
             <Divider />
@@ -240,7 +240,7 @@ function Navbar(props) {
                             >
                                 {/* <p className="bntLogo" style={{fontFamily: 'Alexandria',fontWeight:'bold'}}> BNT-SOFT</p> */}
 
-                                <img src="https://bnt-soft.com/wp-content/uploads/2020/05/logoheader.png" alt="BnT Soft" style={{ height: "35px" }} />
+                                <img src="/home/images/BNtlogo.jpeg" alt="BnT Soft" style={{ height: "35px" }} />
 
                             </Box>
                             </Link>

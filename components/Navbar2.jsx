@@ -34,7 +34,7 @@ const Navbar2 = (props) => {
 
                 <nav className={styles.navbar}>
                     <Link href="/" className={styles.navbarlogo}>
-                        <img src="https://bnt-soft.com/wp-content/uploads/2020/05/logoheader.png" alt="BnT Soft" style={{ height: "35px" }} />
+                        <img src="/home/images/BNtlogo.jpeg" alt="BnT Soft" style={{ height: "35px" }} />
                     </Link>
                     <ul className={styles.navbarlinks} style={{ width: '59vw', marginLeft: '165px', display: 'flex', justifyContent: 'space-between' }}>
                         <li className={ `${styles.navbardropdown} `}>
