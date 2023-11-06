@@ -36,6 +36,9 @@
     
   }
   .navbarlogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #ff3f34;
     text-decoration: none;
     font-size: 25px;

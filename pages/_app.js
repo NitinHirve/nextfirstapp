@@ -41,6 +41,7 @@ function MyApp({ Component, pageProps }) {
         <title>Index page</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+        <link rel="icon" href="/home/images/faviconBNT.ico" type="image/x-icon"></link>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Noto+Sans+Lao+Looped:wght@500&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@500&family=Noto+Sans+Lao+Looped:wght@500&display=swap" rel="stylesheet" />
         <link href='https://fonts.googleapis.com/css?family=Raleway:200,400,800' rel='stylesheet' type='text/css'></link>
