@@ -38,7 +38,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="keywords" content="payments, fintek, Itservices,forex exchange" />
         <meta name="author" content="Nitin Hirve" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Index page</title>
+        <title>BNT soft</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
         <link rel="icon" href="/home/images/faviconBNT.ico" type="image/x-icon"></link>
