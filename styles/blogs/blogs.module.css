@@ -1,11 +1,72 @@
-
-
 .myBG {
     background-image: url('../../public/blogs/images/blogsBG.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    display:grid;
+    display: grid;
+        place-items: center;
+        color: white;
+    }
+    
+    /* new */
+    
+    .blogCard {
+        border-radius: 0;
+    }
+    
+    .blogCard_media {
+        transition: 0.4s ease;
+        /* height: 200px; */
+    }
+    
+    .blogCard_media:hover {
+        -webkit-transform: scale(1.10);
+        transform: scale(1.10)
+    }
+    
+    .blogCard_CardContent {
+        background-color: #fafbff;
+    }
+    
+    .blogCard_CardContent_Box {
+        /* min-height: 270px; */
+        /* position: 'relative' */
+    }
+    
+    .blogCard_title {
+        font-family: 'Alexandria';
+        font-weight: 500;
+    }
+    
+    .blogCard_desc {
+        font-family: Alexandria;
+        font-weight: 300;
+        color: black;
+        font-size: 16px;
+    }
+    
+    .blogCard_readMoreBox {
+        bottom: 0;
+        width: 100%;
+        height: 60px;
+        background-color: #dee6ff;
+        /* margin-top: 30px; */
+        /* position: absolute; */
+    
+    }
+    
+    .blogCard_readMoreTitle {
+        display: grid;
     place-items: center;
-    color:white;
 }
+
+/* @media (max-width:600px) {
+    .blogCard_CardContent_Box {
+        min-height: auto;
+        position: static;
+    }
+
+    .blogCard_readMoreBox {
+        position: static;
+    }
+} */

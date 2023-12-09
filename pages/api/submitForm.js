@@ -24,16 +24,16 @@ export default async function handler(req, res) {
       const { name, email, phone, coverletter } = formData;
 
     const transporter = nodemailer.createTransport({
-      service: 'Gmail',
+      service: 'Outlook',
       auth: {
-        user: 'hirvenitin@gmail.com',
-        pass: 'fmoyoudwzhjupnfn',
+        user: 'noreply@bnt-soft.com',
+        pass: 'Pad05029',
       },
     });
 
     const mailOptions = {
-      from: 'hirvenitin@gmail.com',
-      to: 'hirvenitin@gmail.com',
+      from: 'noreply@bnt-soft.com',
+      to: 'hr@bnt-soft.com',
       subject: 'New Form Submission',
       text: `
         Name: ${name}
