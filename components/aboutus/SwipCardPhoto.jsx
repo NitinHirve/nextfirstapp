@@ -25,7 +25,7 @@ const SwipCardPhoto = ({ imageIndex }) => {
           component="img"
           height="160"
           image={`/aboutus/lifeatBnt/images/swiperImages/img${imageIndex}.jpg`}
-          alt="green iguana"
+          alt=" "
         />
       </CardActionArea>
     </Card>

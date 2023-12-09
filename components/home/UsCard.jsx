@@ -24,7 +24,7 @@ const UsCard = ({ title, cardImage, desc }) => {
           component="img"
           height="160"
           image={`/home/images/whyus/${cardImage}.webp`}
-          alt="green iguana"
+          alt=" "
         />
         <CardContent elevation={0}>
           <Typography gutterBottom variant="h6" component="div" sx={{ fontFamily: 'Alexandria', fontWeight: '500' }}>

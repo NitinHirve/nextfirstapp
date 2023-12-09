@@ -1,6 +1,7 @@
 import '../styles/roots.css';
 import '../styles/globals.css';
 import '../styles/styles.css';
+import '../styles/blogs/blogdetails.css';
 
 import Navbar from '../components/Navbar'
 import Navbar2 from '../components/Navbar2'

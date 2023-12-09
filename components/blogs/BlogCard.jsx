@@ -1,44 +1,55 @@
 import * as React from 'react';
 import { Box, Card, CardContent, CardMedia, Typography, CardActionArea } from '@mui/material';
+import Link from 'next/link';
+import styles from '../../styles/blogs/blogs.module.css'
 
 
-const UsCard = ({ title, cardImage, desc }) => {
+
+const UsCard = ({ blogIndex, cardDetail, title, cardImage, desc, wrapHeight }) => {
+
+    let newDesc;
+    if (wrapHeight) {
+        const newD = desc.split(' ').slice(0, 13).join(' ')
+        newDesc = newD + '...'
+
+    }
+
     return (
         <>
-            <Card sx={{ borderRadius: 0}} elevation={0}>
-                <CardActionArea elevation={0}>
-                    <CardMedia
-                        sx={{
-                            webkitTransition: '0.4s ease',
-                            transition: '0.4s ease'
-                        }}
-                        onMouseOver={(e) => {
-                            e.target.style.cssText = `-webkit-transform: scale(1.10);transform: scale(1.10);`
-                        }}
-                        onMouseOut={(e) => {
-                            e.target.style.cssText = `-webkit-transform: scale(1);transform: scale(1);`
-                        }}
-                        component="img"
-                        height="200"
-                        image={`/blogs/images/blogs/${cardImage}.jpg`}
-                        alt="green iguana"
-                    />
-                    <CardContent sx={{backgroundColor:'#fafbff'}}   elevation={0}>
-                    <Box sx={{minHeight: { xs: 'auto', sm: '270px' },position:{sm:'relative',xs:'static'}}}>
-                        <Typography gutterBottom variant="h6" component="div" sx={{ fontFamily: 'Alexandria', fontWeight: '500' }}>
-                            {title}
-                        </Typography>
-                        <Typography variant="body2" color="text.secondary" sx={{ fontFamily: 'Alexandria', fontWeight: '300', color: 'black', fontSize: '16px' }}>
-                            {desc}
-                        </Typography>
-                        <Box sx={{ height: '60px', backgroundColor: '#dee6ff',marginTop:'30px',position:{sm:'absolute', xs:'static'},bottom:0,width:'100%' }}>
-                            <Typography sx={{ display: 'grid', placeItems: 'center' }}><p>Read More</p></Typography>
-                        </Box>
-                        </Box>
-                    </CardContent>
-                </CardActionArea>
-            </Card>
+            <Link href={{ pathname: '/blogs/blogdetails', query: {folderName:cardDetail.folderName, blogIndex } }}>
 
+                <Card className={styles.blogCard} elevation={0}>
+                    <CardActionArea elevation={0}>
+                        <CardMedia
+                            className={styles.blogCard_media}
+                            sx={{
+
+                            }}
+                            component="img"
+
+                            image={`https://bntblogs.s3.ap-south-1.amazonaws.com/contents/${cardDetail.folderName}/${cardImage}.jpg`}
+                            alt=" "  
+                        />
+
+
+                        <CardContent className={styles.blogCard_CardContent} elevation={0}>
+                            <Box className={styles.blogCard_CardContent_Box} sx={{ ...(wrapHeight ? { height: 'fit-content' } : { minHeight: { xs: 'auto', sm: '270px' } }), position: { sm: 'relative', xs: 'static' } }}>
+                                <Typography className={styles.blogCard_title} gutterBottom variant="h6" component="div">
+                                    {title}
+                                </Typography>
+                                <Typography className={styles.blogCard_desc} variant="body2" color="text.secondary" >
+                                    {wrapHeight ? newDesc : desc}
+                                </Typography>
+                                <Box className={styles.blogCard_readMoreBox} sx={{ marginTop: wrapHeight ? '15px' : '30px', position: { sm: wrapHeight ? 'static' : 'absolute', xs: 'static' } }}>
+                                    <Typography className={styles.blogCard_readMoreTitle} >
+                                        <p>Read More</p>
+                                    </Typography>
+                                </Box>
+                            </Box>
+                        </CardContent>
+                    </CardActionArea>
+                </Card>
+            </Link>
         </>
 
     );

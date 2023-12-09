@@ -1,3 +1,6 @@
+/* * {
+  box-sizing: border-box;
+} */
 html,
 body {
   padding: 0;
@@ -120,4 +123,15 @@ a {
 
 .css-i4bv87-MuiSvgIcon-root {
   color: blue!important
+}
+#paraId {
+  color: red;
+}
+
+#containerBox {
+  color: purple;
+}
+
+#myNitin{
+  color:yellow;
 }
