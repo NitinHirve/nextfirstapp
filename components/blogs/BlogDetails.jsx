@@ -8,7 +8,10 @@ import BlogCard from './BlogCard'
 const BlogDetails = ({ blogDetail }) => {
 
     const [blogDetailsFromS3, setBlogDetailsFromS3] = useState('')
-    const allBlogs = JSON.parse(localStorage.getItem('allBlogs'))
+    let allBlogs = []
+    if(window!=='undefined'){
+         allBlogs = JSON.parse(localStorage.getItem('allBlogs'))
+   }
     const { blogIndex, folderName } = blogDetail;
 
 
