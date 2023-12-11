@@ -115,6 +115,7 @@ const Blogs = () => {
     const [currentPage, setCurrentPage] = useState(1)
     const [blogsPerPage, setBlogsPerPage] = useState(1)
     const [pagesCount, setPagesCount] = useState(0)
+    const [allBlogsForLocalStorage, setAllBlogsForLocalStorage] = useState([])
 
 
 
@@ -127,10 +128,13 @@ const Blogs = () => {
         setAllCategories(data.category)
         setAllBlogs(data.allblogs)
         setBlogsPerPage(data.pagecount)
+        setAllBlogsForLocalStorage(data.allblogs)
 
         const pagesCount = Math.ceil(data.allblogs.length / data.pagecount)
         setPagesCount(pagesCount)
-        localStorage.setItem('allBlogs', JSON.stringify(data.allblogs))
+        if(window!=='undefined'){
+            localStorage.setItem('allBlogs', JSON.stringify(data.allblogs))
+        }
     }
 
     useEffect(() => {
@@ -138,7 +142,10 @@ const Blogs = () => {
     }, [])
 
     const handleBlogCategory = (e) => {
-        const allBlogs = JSON.parse(localStorage.getItem('allBlogs'))
+        let allBlogs=[]
+        if(window!=='undefined'){
+             allBlogs = JSON.parse(localStorage.getItem('allBlogs'))
+        }
         if (e.target.value === 'All') {
             setAllBlogs(allBlogs);
             setCurrentBlogCategory('All')
@@ -161,10 +168,15 @@ const Blogs = () => {
     }
 
     const handlePagination = () => {
-        const startIndex = currentPage * blogsPerPage - blogsPerPage
-        const allBlogs = JSON.parse(localStorage.getItem('allBlogs'))
-        const blogsForPage = allBlogs.slice(startIndex, startIndex + blogsPerPage)
-        setAllBlogs(blogsForPage)
+        if(allBlogsForLocalStorage.length>0){
+            const startIndex = currentPage * blogsPerPage - blogsPerPage
+            let allBlogs=[]
+            if(window!=='undefined'){
+                 allBlogs = JSON.parse(localStorage.getItem('allBlogs'))
+            }
+            const blogsForPage = allBlogs.slice(startIndex, startIndex + blogsPerPage)
+            setAllBlogs(blogsForPage)
+        }
     }
 
     const handlePrev = () => {
@@ -178,7 +190,7 @@ const Blogs = () => {
 
     useEffect(() => {
         handlePagination()
-    }, [currentPage])
+    }, [currentPage,allBlogsForLocalStorage])
 
     return (
         <>

@@ -1,6 +1,12 @@
 import React from 'react'
-import BlogDetails from '../../components/blogs/BlogDetails'
+// import BlogDetails from '../../components/blogs/BlogDetails'
 import { useRouter } from 'next/router';
+import dynamic from 'next/dynamic'
+
+const DynamicBlogDetails = dynamic(() => import('../../components/blogs/BlogDetails'), {
+    ssr: false
+  })
+
 
 const Blogdetails = () => {
 
@@ -10,7 +16,7 @@ const Blogdetails = () => {
 
     return (
         <>
-            <BlogDetails blogDetail={cardDetail} />
+            <DynamicBlogDetails blogDetail={cardDetail} />
         </>
     )
 }
