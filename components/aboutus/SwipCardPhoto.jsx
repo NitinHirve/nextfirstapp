@@ -5,7 +5,9 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 
-const SwipCardPhoto = ({ imageIndex }) => {
+const SWIPER_IMAGES_URL = 'https://bntblogs.s3.ap-south-1.amazonaws.com/swiperImages/'
+
+const SwipCardPhoto = ({ imageName }) => {
   return (
     <Card sx={{ maxWidth: {sm:300,xs:'100vw'}, borderRadius: 0 }} elevation={0}>
       <CardActionArea elevation={0}>
@@ -24,7 +26,7 @@ const SwipCardPhoto = ({ imageIndex }) => {
   transform: scale(1);`}}
           component="img"
           height="160"
-          image={`/aboutus/lifeatBnt/images/swiperImages/img${imageIndex}.jpg`}
+          image={`${SWIPER_IMAGES_URL+imageName}`}
           alt=" "
         />
       </CardActionArea>
