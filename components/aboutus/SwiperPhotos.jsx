@@ -1,3 +1,5 @@
+
+import react, { useEffect } from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.min.css";
 import "swiper/css/effect-coverflow";
@@ -13,24 +15,36 @@ import SwiperCore, {
 
 import SwipCardPhoto from './SwipCardPhoto'
 
+import { imageDetails } from './swiperImagesJson'
+
 
 
 SwiperCore.use([EffectCoverflow, Pagination, Navigation, Autoplay]);
 
 const photosDetail = [
-    '','','','','','','','','','','','','','','','','','','','',
-    '','','','','',
+    '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '',
+    '', '', '', '', '',
 ]
 
-export default function SwiperPhotos() {
+export default function SwiperPhotos({swiperImagesDetails}) {
+
+    // const getImages = async()=>{
+
+    // }
+
+    // useEffect(()=>{
+    //     getImages()
+    // },[])
+
+
     return (
         <>
             <div style={{
-  height: '150px!important',
-  width: '100%',
-  backgroundColor: '#fff',
-  display: 'block',
-  marginTop:'20px'
+                height: '150px!important',
+                width: '100%',
+                backgroundColor: '#fff',
+                display: 'block',
+                marginTop: '20px'
             }}>
                 <Swiper
                     effect={'coverflow'}
@@ -42,7 +56,7 @@ export default function SwiperPhotos() {
                     centeredSlides={true}
                     navigation={true}
                     // centeredSlides={true}
-                    slidesPerView={ 'auto'}
+                    slidesPerView={'auto'}
                     loop={true}
                     autoplay={{ delay: 2500, disableOnInteraction: false }}
                     pagination={{
@@ -51,17 +65,18 @@ export default function SwiperPhotos() {
                     className="mySwiper"
                 >
 
-            {
-                photosDetail.map((e,i)=><>
-                <SwiperSlide>
-                        <SwipCardPhoto imageIndex={i} />
-                    </SwiperSlide>
-                </>)
-                    
-                
-                
-            }
-                   
+                    {
+                        swiperImagesDetails.map((image, i) => 
+                        <>
+                            <SwiperSlide>
+                                <SwipCardPhoto imageName={image} />
+                            </SwiperSlide>
+                        </>)
+
+
+
+                    }
+
                 </Swiper>
             </div>
         </>

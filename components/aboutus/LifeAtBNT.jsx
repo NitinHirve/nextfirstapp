@@ -1,15 +1,76 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import SwiperPhotos from './SwiperPhotos'
 import { Box, Typography, useMediaQuery } from '@mui/material'
 import Link from 'next/link'
 import style from '../.././styles/aboutus/lifeatbnt.module.css';
-import YoutubeTestimonials from './YoutubeTestimonials'
+import YoutubeTestimonials from './YoutubeTestimonials';
+import AWS from 'aws-sdk';
+
+
+const OUR_PEOPLE_URL = 'https://bntblogs.s3.ap-south-1.amazonaws.com/ourPeopleImages/'
 
 
 
 const LifeAtBNT = () => {
 
     const isMobile = useMediaQuery((theme) => theme.breakpoints.down('sm'));
+
+    const [ourPeopleDetails, setOurPeopleDetails] = useState(null)
+    const [swiperImagesDetails, setSwiperImagesDetails] = useState(null)
+
+    const fetchOurPeopleDetails = async () => {
+        const response = await fetch('https://bntblogs.s3.ap-south-1.amazonaws.com/ourPeopleImages/ourPeopleJson.txt')
+        const data = await response.json();
+        console.log('fetchOurPeopleDetails : ', data)
+        setOurPeopleDetails(data)
+    }
+
+
+
+    const fetchSwiperImagesDetails = () => {
+
+        console.log('fetchSwiperImagesDetails calling ...')
+
+        AWS.config.update({
+            accessKeyId: 'AKIAVLICWAWYILERCINV',
+            secretAccessKey: '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',
+            region: 'ap-south-1'
+        });
+
+        const s3 = new AWS.S3();
+
+        const bucketName = 'bntblogs';
+        const folderPrefix = 'swiperImages/';
+
+        const params = {
+            Bucket: bucketName,
+            Prefix: folderPrefix,
+        };
+
+        s3.listObjectsV2(params, (err, data) => {
+            if (err) {
+                console.error('Error getting S3 SwiperImages objects:', err);
+            } else {
+                // Extract the list of items from the response data
+                const items = data.Contents.map((object) => object.Key);
+
+                const newItems = items.map(item => {
+                    return item.replace('swiperImages/', '')
+                })
+
+                newItems.splice(0, 1);
+                setSwiperImagesDetails(newItems)
+
+            }
+        });
+
+    }
+
+
+    useEffect(() => {
+        fetchOurPeopleDetails();
+        fetchSwiperImagesDetails()
+    }, [])
 
 
     return (
@@ -46,40 +107,48 @@ const LifeAtBNT = () => {
             </Box>
 
             {/* <Box sx={{ height: '200px' }}></Box> */}
-            <Box>
-                <Box sx={{ width: '100%', height: { sm: '250px', xs: 'auto' }, display: 'flex', flexWrap: 'wrap' }}>
-                    <Box className={style.photoGridImgBack} sx={{ width: { sm: '25%', xs: '50%' }, height: { sm: '100%', xs: '170px' } }}>
-                        <img style={{ width: '100%', height: '100%' }} src="/aboutus/lifeatBnt/images/boysBNTminNew.webp" ></img>
+            {ourPeopleDetails && (
+                <Box>
+                    <Box sx={{ width: '100%', height: { sm: '250px', xs: 'auto' }, display: 'flex', flexWrap: 'wrap' }}>
+                        <Box className={style.photoGridImgBack} sx={{ width: { sm: '25%', xs: '50%' }, height: { sm: '100%', xs: '170px' } }}>
+                            <img alt='imagealt' style={{ width: '100%', height: '100%' }} src={OUR_PEOPLE_URL + ourPeopleDetails?.images[0]} ></img>
+                        </Box>
+                        <Box data-aos="flip-right" sx={{ width: { sm: '25%', xs: '50%' }, height: { sm: '100%', xs: '170px' }, backgroundColor: '#1e8be1', padding: { sm: '40px', xs: '10px' } }}>
+                            <Typography sx={{ fontFamily: 'Alexandria', fontSize: { sm: '17px', xs: '14px' }, color: '#fff', fontWeight: 400 }}>
+                                {ourPeopleDetails?.headings[0]}
+                            </Typography>
+                        </Box>
+                        <Box className={style.photoGridImgBack} sx={{ width: { sm: '50%', xs: '100%' }, height: { sm: '100%', xs: '170px' }, backgroundImage: `url(${OUR_PEOPLE_URL + ourPeopleDetails?.images[1]})` }}></Box>
                     </Box>
-                    <Box data-aos="flip-right" sx={{ width: { sm: '25%', xs: '50%' }, height: { sm: '100%', xs: '170px' }, backgroundColor: '#1e8be1', padding: { sm: '40px', xs: '10px' } }}>
-                        <Typography sx={{ fontFamily: 'Alexandria', fontSize: { sm: '17px', xs: '14px' }, color: '#fff', fontWeight: 400 }}>
-                            Let loose and groove to the rhythm! Our parties are legendary to unleash your inner dancing diva or disco king!                        </Typography>
-                    </Box>
-                    <Box className={style.photoGridImgBack} sx={{ width: { sm: '50%', xs: '100%' }, height: { sm: '100%', xs: '170px' }, backgroundImage: 'url(/aboutus/lifeatBnt/images/pawanaback4MinNew.webp)' }}></Box>
-                </Box>
-                <Box sx={{ width: '100%', height: { sm: '250px', xs: 'auto' }, display: 'flex', flexWrap: 'wrap' }}>
-                    <Box data-aos="flip-left" sx={{ width: { sm: '25%', xs: '50%' }, height: { sm: '100%', xs: '170px' }, backgroundColor: '#f7f7f7', padding: { sm: '40px', xs: '10px' } }}>
-                        <Typography sx={{ fontFamily: 'Alexandria', fontSize: { sm: '17px', xs: '13px' }, color: 'black', fontWeight: 400 }}>
-                            {"When it's time to break free from the office walls, we embark on exciting team outings."}                      </Typography>
-                    </Box>
-                    <Box className={style.photoGridImgBack} sx={{ width: { sm: '25%', xs: '50%' }, height: { sm: '100%', xs: '170px' }, backgroundImage: 'url(/aboutus/lifeatBnt/images/girlsBNTminNew.webp)' }}></Box>
-                    <Box data-aos="flip-right" sx={{ width: { sm: '25%', xs: '50%' }, backgroundColor: '#f7f7f7', padding: '40px', height: { sm: '100%', xs: '170px' }, padding: { sm: '40px', xs: '10px' } }}>
-                        <Typography sx={{ fontFamily: 'Alexandria', fontSize: { sm: '17px', xs: '13px' }, color: 'black', fontWeight: 400 }}>
-                            Our outings are an opportunity to break free from the usual office dress code and unleash crazy imagination.                        </Typography>
-                    </Box>
-                    <Box className={style.photoGridImgBack} sx={{ width: { sm: '25%', xs: '50%' }, height: { sm: '100%', xs: '170px' }, backgroundImage: 'url(/aboutus/lifeatBnt/images/pawanaBornfire2MinNew.webp)' }}></Box>
+                    <Box sx={{ width: '100%', height: { sm: '250px', xs: 'auto' }, display: 'flex', flexWrap: 'wrap' }}>
+                        <Box data-aos="flip-left" sx={{ width: { sm: '25%', xs: '50%' }, height: { sm: '100%', xs: '170px' }, backgroundColor: '#f7f7f7', padding: { sm: '40px', xs: '10px' } }}>
+                            <Typography sx={{ fontFamily: 'Alexandria', fontSize: { sm: '17px', xs: '13px' }, color: 'black', fontWeight: 400 }}>
+                                {ourPeopleDetails?.headings[1]}
+                            </Typography>
+                        </Box>
+                        <Box className={style.photoGridImgBack} sx={{ width: { sm: '25%', xs: '50%' }, height: { sm: '100%', xs: '170px' }, backgroundImage: `url(${OUR_PEOPLE_URL + ourPeopleDetails?.images[2]})` }}></Box>
+                        <Box data-aos="flip-right" sx={{ width: { sm: '25%', xs: '50%' }, backgroundColor: '#f7f7f7', padding: '40px', height: { sm: '100%', xs: '170px' }, padding: { sm: '40px', xs: '10px' } }}>
+                            <Typography sx={{ fontFamily: 'Alexandria', fontSize: { sm: '17px', xs: '13px' }, color: 'black', fontWeight: 400 }}>
+                                {ourPeopleDetails?.headings[2]}
+                            </Typography>
+                        </Box>
+                        <Box className={style.photoGridImgBack} sx={{ width: { sm: '25%', xs: '50%' }, height: { sm: '100%', xs: '170px' }, backgroundImage: `url(${OUR_PEOPLE_URL + ourPeopleDetails?.images[3]})` }}></Box>
 
-                </Box>
-                <Box sx={{ width: '100%', height: { sm: '250px', xs: '300px' }, display: 'flex', flexWrap: 'wrap' }}>
-                    <Box className={style.photoGridImgBack} sx={{ width: { sm: '50%', xs: '100%' }, height: { sm: '100%', xs: '170px' }, backgroundImage: 'url(/aboutus/lifeatBnt/images/groupBNTNew.webp)' }}></Box>
-                    <Box className={style.photoGridImgBack} sx={{ width: { sm: '25%', xs: '50%' }, height: { sm: '100%', xs: '170px' }, backgroundImage: 'url(/aboutus/lifeatBnt/images/prathmeshTrek.jpg)' }}></Box>
+                    </Box>
+                    <Box sx={{ width: '100%', height: { sm: '250px', xs: '300px' }, display: 'flex', flexWrap: 'wrap' }}>
+                        <Box className={style.photoGridImgBack} sx={{ width: { sm: '50%', xs: '100%' }, height: { sm: '100%', xs: '170px' }, backgroundImage: `url(${OUR_PEOPLE_URL + ourPeopleDetails?.images[4]})` }}></Box>
+                        <Box className={style.photoGridImgBack} sx={{ width: { sm: '25%', xs: '50%' }, height: { sm: '100%', xs: '170px' }, backgroundImage: `url(${OUR_PEOPLE_URL + ourPeopleDetails?.images[5]})` }}></Box>
 
-                    <Box data-aos="flip-left" sx={{ width: { sm: '25%', xs: '50%' }, height: { sm: '100%', xs: '170px' }, backgroundColor: '#1e8be1', padding: { sm: '40px', xs: '10px' } }}>
-                        <Typography sx={{ fontFamily: 'Alexandria', fontSize: { sm: '17px', xs: '14px' }, color: '#fff', fontWeight: 400 }}>
-                            {"It's not just about winning; it's about the spirit of healthy competition, teamwork, and having a blast on the field."}                      </Typography>
+                        <Box data-aos="flip-left" sx={{ width: { sm: '25%', xs: '50%' }, height: { sm: '100%', xs: '170px' }, backgroundColor: '#1e8be1', padding: { sm: '40px', xs: '10px' } }}>
+                            <Typography sx={{ fontFamily: 'Alexandria', fontSize: { sm: '17px', xs: '14px' }, color: '#fff', fontWeight: 400 }}>
+                                {ourPeopleDetails?.headings[3]}
+                            </Typography>
+                        </Box>
                     </Box>
                 </Box>
-            </Box>
+
+            )}
+
 
             <Box sx={{ height: { xs: '100px', sm: '180px' }, display: 'flex', justifyContent: 'center', margin: { sm: '40px 0 10px 0', xs: '80px 0px 0px 0px' } }} >
                 <Box  >
@@ -94,9 +163,9 @@ const LifeAtBNT = () => {
 
 
 
-            <Box sx={{ margin: { sm: '70px 0px 70px 0px', xs: '20px' }, display: 'flex', flexDirection: { sm: 'row', xs: 'column' }, alignItems: 'center', justifyContent: 'center', gap: {sm:'80px',xs:'30px'} }}>
-                <YoutubeTestimonials videoId={'JK8Xob0zbFk'} height={isMobile?'200':'250'} width={isMobile?'100%':'440'}  />
-                <YoutubeTestimonials videoId={'TBFLV4OsI7s'} height={isMobile?'200':'250'} width={isMobile?'100%':'440'} />
+            <Box sx={{ margin: { sm: '70px 0px 70px 0px', xs: '20px' }, display: 'flex', flexDirection: { sm: 'row', xs: 'column' }, alignItems: 'center', justifyContent: 'center', gap: { sm: '80px', xs: '30px' } }}>
+                <YoutubeTestimonials videoId={'JK8Xob0zbFk'} height={isMobile ? '200' : '250'} width={isMobile ? '100%' : '440'} />
+                <YoutubeTestimonials videoId={'TBFLV4OsI7s'} height={isMobile ? '200' : '250'} width={isMobile ? '100%' : '440'} />
             </Box>
 
 
@@ -115,7 +184,7 @@ const LifeAtBNT = () => {
                     We believe work with fun can bring the best output. So, to make our team productive we take every chance to have fun and absolutely enjoy our breaks.
                 </Typography>
             </Box>
-            <SwiperPhotos />
+           {swiperImagesDetails && <SwiperPhotos swiperImagesDetails={swiperImagesDetails} /> } 
 
             <Box sx={{ height: '190px' }}>
                 <Box sx={{ width: '100vw', height: '100%', marginTop: '150px', display: 'flex' }}>
