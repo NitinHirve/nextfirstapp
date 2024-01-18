@@ -333,7 +333,7 @@ const Career = ({ jobsDetailsResponse }) => {
                     </Typography>
 
                     <Box sx={{ width: '100%', border: '1px solid #d9dbde', backgroundColor: '#fafafa', paddingTop: '40px', display: 'flex', justifyContent: 'center' }}>
-                        <ConnectForm setIsFormSubmitted={setIsFormSubmitted} setModelOpen= {setOpen} />
+                        <ConnectForm positionName={jobDetails.position_name} setIsFormSubmitted={setIsFormSubmitted} setModelOpen= {setOpen} />
 
                     </Box>
 

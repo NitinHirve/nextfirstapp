@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import { useFormik, Field } from 'formik';
 import { TextField, Button, Select, MenuItem, InputLabel, FormControl, styled } from '@mui/material';
 import * as Yup from 'yup';
@@ -36,9 +36,26 @@ const validationSchema = Yup.object({
 });
 
 
-const MyForm = ({setIsFormSubmitted,setModelOpen}) => {
+const MyForm = ({positionName, setIsFormSubmitted,setModelOpen}) => {
+    
 
     const [isValidForm, setIsValidForm] = useState(false)
+
+    const [emailDetails, setEmailDetails] = useState(null)
+
+    const getEmailAuthDetails = async()=>{
+
+        const response = await fetch('https://bntblogs.s3.ap-south-1.amazonaws.com/email/email.txt')
+        const data = await response.json();
+        console.log('Email data : ',data)
+        setEmailDetails(data.allblogs)
+
+    }
+
+    useEffect(()=>{
+        getEmailAuthDetails()
+
+    },[])
 
     const formik = useFormik({
         initialValues: {
@@ -59,6 +76,8 @@ const MyForm = ({setIsFormSubmitted,setModelOpen}) => {
                 formData.append('phone', values.phone);
                 formData.append('coverletter', values.coverletter);
                 formData.append('resumeFile', values.resumeFile);
+                formData.append('positionName', positionName);
+                formData.append('emailDetails', JSON.stringify(emailDetails));
 
                 // Send the form data to the API endpoint
                 const response = await fetch('/api/submitForm', {
