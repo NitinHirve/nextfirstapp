@@ -21,46 +21,80 @@ export default async function handler(req, res) {
       }
 
       const formData = req.body;
-      const { name, email, phone, coverletter } = formData;
+      const { name, email, phone, coverletter, positionName, emailDetails } = formData;
+      const { host, id, port, ps } = JSON.parse(emailDetails)
 
-    const transporter = nodemailer.createTransport({
-      service: 'Outlook',
-      auth: {
-        user: 'noreply@bnt-soft.com',
-        pass: 'Pad05029',
-      },
-    });
 
-    const mailOptions = {
-      from: 'noreply@bnt-soft.com',
-      to: 'hr@bnt-soft.com',
-      subject: 'New Form Submission',
-      text: `
+      console.log("positionName : ", positionName)
+
+      const transporter = nodemailer.createTransport({
+        host: host,
+        port: port,
+        auth: {
+          user: id,
+          pass: ps,
+        },
+      });
+
+      const mailOptions = {
+        from: 'noreply@bnt-soft.com',
+        to: 'hr@bnt-soft.com',
+        subject: `New application - ${positionName} `,
+        text: `
         Name: ${name}
         Email: ${email}
         Phone: ${phone}
         Cover Letter: ${coverletter}
         Resume : 
       `,
-      attachments: req.file
-        ? [
+        attachments: req.file
+          ? [
             {
               filename: req.file.originalname,
               content: req.file.buffer,
             },
           ]
-        : [],
-    };
+          : [],
+      };
 
-    try {
-      await transporter.sendMail(mailOptions);
-      res.status(200).json({ message: 'Form submission successful!' });
-    } catch (error) {
-      console.error(error);
-      res.status(500).json({ error: 'Something went wrong.' });
-    }
 
-    });  
+      const thanksMailForUser = {
+        from: 'noreply@bnt-soft.com',
+        to: email,
+        cc: 'hr@bnt-soft.com',
+        subject: `Thanks for your application at BNT SOFT`,
+        text: `
+      Dear ${name},
+
+      This is to let you know that we have received your application. 
+      We appreciate your interest in BNT SOFT and the Job Position for which you applied. 
+      If your profile is shortlisted, you can expect a phone call from our Human Resources team shortly.
+      Thank you, again. We do appreciate the time that you invested in this application.
+
+      Sincerely,
+      
+      HR Manager
+      BNT SOFT PVT LTD
+      `,
+
+      }
+
+
+
+
+      try {
+        await transporter.sendMail(mailOptions);
+        await transporter.sendMail(thanksMailForUser);
+
+        res.status(200).json({ message: 'Form submission successful!' });
+
+
+      } catch (error) {
+        console.error(error);
+        res.status(500).json({ error: 'Something went wrong.' });
+      }
+
+    });
   } else {
     res.status(405).json({ error: 'Method not allowed.' });
   }
